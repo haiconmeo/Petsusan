@@ -1,0 +1,1001 @@
+id,item,image,age,cat_giong,cat_loai,price,weight,color,amounts
+1,Ornate rock dragon,http://dummyimage.com/210x196.jpg/5fa2dd/ffffff,4,25,25,$5.24,1,Khaki,25
+2,"Woodpecker, downy",http://dummyimage.com/166x247.jpg/5fa2dd/ffffff,4,17,21,$1.04,10,Teal,65
+3,Australian sea lion,http://dummyimage.com/136x176.jpg/cc0000/ffffff,1,55,73,$3.42,1,Pink,23
+4,Cape clawless otter,http://dummyimage.com/192x197.jpg/5fa2dd/ffffff,5,84,50,$4.85,3,Green,9
+5,"Hornbill, southern ground",http://dummyimage.com/214x105.jpg/cc0000/ffffff,4,27,80,$1.22,8,Violet,4
+6,Australian brush turkey,http://dummyimage.com/213x173.jpg/dddddd/000000,4,70,87,$7.32,2,Crimson,70
+7,Red-knobbed coot,http://dummyimage.com/193x241.jpg/cc0000/ffffff,10,37,57,$4.85,5,Purple,45
+8,"Insect, stick",http://dummyimage.com/233x206.jpg/ff4444/ffffff,6,24,57,$1.02,3,Pink,70
+9,European stork,http://dummyimage.com/141x191.jpg/cc0000/ffffff,2,70,10,$5.01,8,Pink,30
+10,"Lizard, giant girdled",http://dummyimage.com/125x133.jpg/ff4444/ffffff,5,79,90,$1.39,6,Aquamarine,8
+11,"Butterfly, canadian tiger swallowtail",http://dummyimage.com/209x108.jpg/cc0000/ffffff,4,20,89,$2.50,3,Violet,57
+12,"Rhea, gray",http://dummyimage.com/141x196.jpg/dddddd/000000,4,72,22,$4.28,2,Khaki,53
+13,Green-backed heron,http://dummyimage.com/161x243.jpg/ff4444/ffffff,6,99,44,$2.09,3,Teal,61
+14,Puma,http://dummyimage.com/157x125.jpg/ff4444/ffffff,3,42,50,$9.53,5,Violet,100
+15,"Porcupine, north american",http://dummyimage.com/203x230.jpg/cc0000/ffffff,10,35,13,$0.55,2,Purple,78
+16,Wattled crane,http://dummyimage.com/200x101.jpg/ff4444/ffffff,2,29,80,$4.25,4,Aquamarine,27
+17,"Turtle, long-necked",http://dummyimage.com/115x114.jpg/cc0000/ffffff,5,29,33,$2.31,10,Blue,12
+18,"Jackal, golden",http://dummyimage.com/234x121.jpg/dddddd/000000,1,12,81,$5.55,3,Purple,21
+19,"Buffalo, american",http://dummyimage.com/199x122.jpg/dddddd/000000,2,29,28,$8.34,6,Khaki,84
+20,Wood pigeon,http://dummyimage.com/132x162.jpg/dddddd/000000,1,15,78,$7.35,1,Maroon,100
+21,"Magpie, australian",http://dummyimage.com/247x227.jpg/ff4444/ffffff,7,21,10,$6.97,9,Goldenrod,79
+22,Nubian bee-eater,http://dummyimage.com/201x114.jpg/cc0000/ffffff,1,72,3,$0.50,7,Blue,27
+23,"Deer, black-tailed",http://dummyimage.com/165x127.jpg/dddddd/000000,3,84,41,$3.76,7,Crimson,1
+24,Vervet monkey,http://dummyimage.com/242x167.jpg/cc0000/ffffff,3,18,37,$6.51,1,Aquamarine,69
+25,"Tortoise, desert",http://dummyimage.com/208x111.jpg/cc0000/ffffff,10,25,33,$0.85,8,Yellow,89
+26,"Woodcock, american",http://dummyimage.com/208x119.jpg/5fa2dd/ffffff,8,64,3,$0.21,5,Khaki,2
+27,"Cat, long-tailed spotted",http://dummyimage.com/242x205.jpg/dddddd/000000,5,8,29,$8.37,7,Crimson,81
+28,"Ox, musk",http://dummyimage.com/217x226.jpg/ff4444/ffffff,5,77,51,$6.45,9,Green,18
+29,Gemsbok,http://dummyimage.com/112x114.jpg/dddddd/000000,8,19,86,$1.77,6,Khaki,35
+30,Urial,http://dummyimage.com/123x197.jpg/ff4444/ffffff,1,74,95,$4.87,1,Fuscia,89
+31,Tawny eagle,http://dummyimage.com/132x115.jpg/ff4444/ffffff,2,94,27,$2.21,6,Orange,66
+32,Roseat flamingo,http://dummyimage.com/137x241.jpg/cc0000/ffffff,5,43,43,$6.19,8,Indigo,88
+33,Thirteen-lined squirrel,http://dummyimage.com/207x228.jpg/dddddd/000000,1,67,94,$2.40,3,Pink,100
+34,"Lizard, giant girdled",http://dummyimage.com/155x220.jpg/cc0000/ffffff,5,9,7,$0.11,3,Mauv,24
+35,"Vulture, griffon",http://dummyimage.com/173x165.jpg/dddddd/000000,7,14,13,$3.34,9,Aquamarine,52
+36,Goliath heron,http://dummyimage.com/122x240.jpg/5fa2dd/ffffff,2,6,8,$4.96,5,Pink,5
+37,"Baboon, chacma",http://dummyimage.com/155x120.jpg/ff4444/ffffff,4,71,71,$7.36,1,Mauv,98
+38,"Teal, hottentot",http://dummyimage.com/102x182.jpg/ff4444/ffffff,7,66,44,$3.62,5,Goldenrod,11
+39,"Cat, long-tailed spotted",http://dummyimage.com/114x245.jpg/5fa2dd/ffffff,6,18,70,$3.50,9,Pink,62
+40,Guerza,http://dummyimage.com/233x213.jpg/5fa2dd/ffffff,2,82,41,$6.55,7,Yellow,35
+41,White-winged tern,http://dummyimage.com/140x231.jpg/5fa2dd/ffffff,3,23,4,$4.47,4,Puce,42
+42,Little heron,http://dummyimage.com/248x114.jpg/5fa2dd/ffffff,6,74,9,$7.58,4,Maroon,37
+43,"Bat, madagascar fruit",http://dummyimage.com/248x122.jpg/dddddd/000000,5,72,2,$3.96,10,Mauv,35
+44,Grey heron,http://dummyimage.com/175x124.jpg/5fa2dd/ffffff,4,95,41,$8.57,9,Khaki,21
+45,Black-throated cardinal,http://dummyimage.com/169x224.jpg/cc0000/ffffff,6,1,29,$1.74,6,Violet,64
+46,Eastern indigo snake,http://dummyimage.com/236x247.jpg/ff4444/ffffff,7,78,34,$4.71,10,Red,57
+47,"Sparrow, house",http://dummyimage.com/150x154.jpg/5fa2dd/ffffff,2,12,3,$6.92,4,Teal,29
+48,Snake-necked turtle,http://dummyimage.com/195x225.jpg/5fa2dd/ffffff,9,79,26,$1.31,7,Puce,63
+49,"Gecko, tokay",http://dummyimage.com/176x219.jpg/dddddd/000000,2,83,80,$8.94,5,Turquoise,12
+50,White-tailed deer,http://dummyimage.com/149x174.jpg/5fa2dd/ffffff,8,36,26,$4.52,9,Goldenrod,24
+51,"Macaque, japanese",http://dummyimage.com/219x101.jpg/dddddd/000000,9,68,74,$3.40,2,Indigo,34
+52,Egyptian goose,http://dummyimage.com/246x176.jpg/ff4444/ffffff,3,97,74,$5.25,8,Green,89
+53,Sage hen,http://dummyimage.com/103x239.jpg/cc0000/ffffff,3,29,42,$7.62,3,Red,91
+54,"Monitor, white-throated",http://dummyimage.com/245x142.jpg/dddddd/000000,9,38,29,$0.39,5,Crimson,37
+55,"Wolf, common",http://dummyimage.com/108x208.jpg/ff4444/ffffff,7,51,59,$3.36,2,Turquoise,53
+56,Black-footed ferret,http://dummyimage.com/234x175.jpg/5fa2dd/ffffff,1,71,23,$2.94,2,Pink,35
+57,"Deer, savannah",http://dummyimage.com/216x198.jpg/ff4444/ffffff,1,49,75,$3.82,3,Fuscia,26
+58,"Kingfisher, white-throated",http://dummyimage.com/154x191.jpg/5fa2dd/ffffff,7,61,62,$0.14,5,Mauv,59
+59,"Squirrel, african bush",http://dummyimage.com/203x183.jpg/dddddd/000000,6,20,78,$6.94,6,Purple,66
+60,"Heron, grey",http://dummyimage.com/217x148.jpg/dddddd/000000,10,61,35,$7.99,7,Blue,6
+61,Eastern indigo snake,http://dummyimage.com/122x180.jpg/5fa2dd/ffffff,4,16,81,$6.36,3,Purple,13
+62,Clark's nutcracker,http://dummyimage.com/104x242.jpg/cc0000/ffffff,6,89,14,$8.85,8,Red,60
+63,Western bearded dragon,http://dummyimage.com/250x242.jpg/5fa2dd/ffffff,3,25,12,$4.52,4,Red,2
+64,Rock dove,http://dummyimage.com/237x129.jpg/cc0000/ffffff,10,14,33,$8.35,10,Puce,8
+65,Ring-tailed gecko,http://dummyimage.com/120x169.jpg/ff4444/ffffff,9,36,33,$8.40,7,Aquamarine,12
+66,"Wolf, common",http://dummyimage.com/208x104.jpg/ff4444/ffffff,6,23,63,$0.47,6,Red,17
+67,Great horned owl,http://dummyimage.com/149x226.jpg/5fa2dd/ffffff,9,66,74,$2.09,9,Red,99
+68,Blesbok,http://dummyimage.com/186x174.jpg/ff4444/ffffff,3,92,45,$7.44,7,Yellow,60
+69,"Gull, lava",http://dummyimage.com/137x115.jpg/5fa2dd/ffffff,7,61,85,$0.97,3,Khaki,23
+70,Dromedary camel,http://dummyimage.com/222x130.jpg/ff4444/ffffff,5,23,72,$9.80,3,Teal,58
+71,Lappet-faced vulture,http://dummyimage.com/108x100.jpg/5fa2dd/ffffff,4,48,99,$7.04,3,Fuscia,17
+72,"Lion, south american sea",http://dummyimage.com/145x237.jpg/ff4444/ffffff,5,1,27,$4.20,3,Mauv,9
+73,"Butterfly, tropical buckeye",http://dummyimage.com/122x200.jpg/dddddd/000000,5,66,95,$0.45,5,Green,66
+74,"Stork, painted",http://dummyimage.com/162x233.jpg/ff4444/ffffff,10,71,44,$1.76,2,Violet,64
+75,Turkey vulture,http://dummyimage.com/152x236.jpg/cc0000/ffffff,1,39,78,$2.97,2,Aquamarine,29
+76,Komodo dragon,http://dummyimage.com/171x236.jpg/5fa2dd/ffffff,2,49,88,$5.14,6,Blue,48
+77,Laughing kookaburra,http://dummyimage.com/242x170.jpg/5fa2dd/ffffff,3,26,87,$7.01,7,Maroon,8
+78,Two-toed sloth,http://dummyimage.com/114x172.jpg/5fa2dd/ffffff,1,88,1,$8.45,6,Teal,12
+79,"Stork, marabou",http://dummyimage.com/174x183.jpg/dddddd/000000,6,76,55,$7.28,9,Aquamarine,56
+80,"Starling, superb",http://dummyimage.com/144x194.jpg/ff4444/ffffff,5,55,2,$5.21,10,Puce,43
+81,"Flamingo, lesser",http://dummyimage.com/192x222.jpg/dddddd/000000,4,61,57,$9.83,3,Indigo,51
+82,"Rabbit, eastern cottontail",http://dummyimage.com/250x124.jpg/cc0000/ffffff,3,99,56,$5.99,8,Mauv,45
+83,"Siskin, pine",http://dummyimage.com/171x183.jpg/5fa2dd/ffffff,8,28,42,$8.32,5,Aquamarine,70
+84,Ground monitor (unidentified),http://dummyimage.com/145x179.jpg/cc0000/ffffff,1,65,89,$5.73,1,Yellow,61
+85,"Bat, asian false vampire",http://dummyimage.com/102x190.jpg/dddddd/000000,8,66,28,$3.30,9,Maroon,39
+86,Indian peacock,http://dummyimage.com/248x149.jpg/5fa2dd/ffffff,10,91,8,$1.14,3,Red,38
+87,Eastern white pelican,http://dummyimage.com/228x107.jpg/ff4444/ffffff,5,22,81,$1.33,7,Orange,66
+88,Crab (unidentified),http://dummyimage.com/199x188.jpg/ff4444/ffffff,1,37,39,$1.62,5,Indigo,55
+89,"Porcupine, crested",http://dummyimage.com/250x131.jpg/ff4444/ffffff,9,13,93,$4.06,5,Red,11
+90,Black-crowned crane,http://dummyimage.com/175x209.jpg/5fa2dd/ffffff,9,46,32,$9.48,10,Goldenrod,18
+91,Sportive lemur,http://dummyimage.com/167x168.jpg/cc0000/ffffff,9,22,36,$7.48,1,Mauv,62
+92,Leadbeateri's ground hornbill,http://dummyimage.com/232x185.jpg/ff4444/ffffff,10,89,81,$6.04,9,Turquoise,47
+93,"Dove, emerald-spotted wood",http://dummyimage.com/242x198.jpg/5fa2dd/ffffff,10,64,58,$7.25,10,Green,57
+94,Manatee,http://dummyimage.com/187x211.jpg/ff4444/ffffff,9,48,12,$5.81,3,Orange,68
+95,Blue crane,http://dummyimage.com/206x169.jpg/dddddd/000000,3,93,8,$1.66,4,Indigo,3
+96,"Stork, black-necked",http://dummyimage.com/211x112.jpg/dddddd/000000,2,18,50,$0.19,1,Yellow,47
+97,"Heron, green-backed",http://dummyimage.com/137x164.jpg/dddddd/000000,6,85,38,$1.58,2,Turquoise,48
+98,Blacksmith plover,http://dummyimage.com/198x165.jpg/cc0000/ffffff,2,73,27,$1.04,3,Puce,21
+99,Little cormorant,http://dummyimage.com/118x136.jpg/ff4444/ffffff,2,86,9,$7.56,10,Blue,48
+100,Common shelduck,http://dummyimage.com/194x238.jpg/ff4444/ffffff,9,68,12,$3.97,6,Turquoise,39
+101,Black bear,http://dummyimage.com/104x114.jpg/cc0000/ffffff,10,41,53,$4.07,9,Pink,95
+102,"Crocodile, nile",http://dummyimage.com/166x249.jpg/dddddd/000000,4,90,72,$5.71,8,Violet,10
+103,Red howler monkey,http://dummyimage.com/194x204.jpg/ff4444/ffffff,6,90,45,$8.21,3,Puce,28
+104,Frog (unidentified),http://dummyimage.com/235x186.jpg/ff4444/ffffff,10,99,99,$6.39,8,Goldenrod,32
+105,"Heron, green",http://dummyimage.com/220x121.jpg/cc0000/ffffff,10,67,27,$3.25,10,Aquamarine,72
+106,Lizard (unidentified),http://dummyimage.com/236x249.jpg/5fa2dd/ffffff,4,89,77,$5.16,8,Maroon,3
+107,"Flamingo, chilean",http://dummyimage.com/237x230.jpg/ff4444/ffffff,6,92,72,$9.72,7,Puce,94
+108,Numbat,http://dummyimage.com/215x166.jpg/ff4444/ffffff,5,4,79,$9.61,1,Teal,61
+109,"Deer, roe",http://dummyimage.com/153x158.jpg/cc0000/ffffff,10,73,45,$6.78,8,Teal,4
+110,"Brocket, brown",http://dummyimage.com/227x249.jpg/dddddd/000000,2,86,18,$1.94,8,Blue,52
+111,Greater sage grouse,http://dummyimage.com/131x248.jpg/dddddd/000000,1,89,65,$7.24,9,Blue,59
+112,"Bustard, kori",http://dummyimage.com/180x170.jpg/dddddd/000000,8,6,49,$9.45,6,Mauv,17
+113,Javanese cormorant,http://dummyimage.com/179x204.jpg/ff4444/ffffff,2,70,18,$8.66,6,Blue,88
+114,"Bird, black-throated butcher",http://dummyimage.com/243x118.jpg/ff4444/ffffff,8,77,83,$7.15,10,Puce,6
+115,Nilgai,http://dummyimage.com/202x237.jpg/ff4444/ffffff,6,72,5,$0.95,1,Crimson,37
+116,"Crow, pied",http://dummyimage.com/180x145.jpg/ff4444/ffffff,6,53,92,$4.93,5,Maroon,80
+117,Komodo dragon,http://dummyimage.com/186x187.jpg/5fa2dd/ffffff,8,70,21,$9.52,7,Crimson,82
+118,Asian elephant,http://dummyimage.com/108x242.jpg/ff4444/ffffff,7,95,26,$8.67,5,Teal,80
+119,"Antelope, four-horned",http://dummyimage.com/250x159.jpg/cc0000/ffffff,4,80,99,$7.57,10,Red,55
+120,"Sheep, stone",http://dummyimage.com/112x126.jpg/dddddd/000000,10,78,91,$3.66,8,Maroon,62
+121,"Heron, goliath",http://dummyimage.com/169x165.jpg/dddddd/000000,5,63,30,$2.40,1,Aquamarine,28
+122,"Screamer, crested",http://dummyimage.com/247x202.jpg/ff4444/ffffff,8,72,46,$9.37,3,Maroon,48
+123,Red and blue macaw,http://dummyimage.com/212x216.jpg/5fa2dd/ffffff,2,51,84,$1.51,7,Goldenrod,12
+124,Grizzly bear,http://dummyimage.com/128x191.jpg/ff4444/ffffff,9,22,79,$9.11,6,Crimson,54
+125,Ground monitor (unidentified),http://dummyimage.com/236x136.jpg/ff4444/ffffff,3,58,21,$1.14,6,Purple,10
+126,House crow,http://dummyimage.com/162x171.jpg/5fa2dd/ffffff,7,74,54,$9.77,5,Orange,55
+127,Black-throated cardinal,http://dummyimage.com/172x146.jpg/cc0000/ffffff,4,43,21,$2.89,6,Yellow,47
+128,Striped hyena,http://dummyimage.com/194x147.jpg/ff4444/ffffff,8,73,19,$2.93,8,Green,57
+129,Savanna fox,http://dummyimage.com/145x167.jpg/cc0000/ffffff,10,6,35,$4.66,9,Fuscia,83
+130,Ant (unidentified),http://dummyimage.com/161x125.jpg/5fa2dd/ffffff,2,72,77,$8.79,10,Maroon,4
+131,"Finch, common melba",http://dummyimage.com/193x213.jpg/dddddd/000000,10,63,48,$4.22,10,Puce,52
+132,European beaver,http://dummyimage.com/138x169.jpg/dddddd/000000,5,70,29,$7.38,8,Fuscia,95
+133,"Goose, egyptian",http://dummyimage.com/218x167.jpg/dddddd/000000,2,43,59,$4.83,3,Orange,31
+134,Black-faced kangaroo,http://dummyimage.com/138x103.jpg/ff4444/ffffff,4,47,68,$6.12,10,Yellow,42
+135,Blue crane,http://dummyimage.com/242x243.jpg/ff4444/ffffff,7,21,89,$0.64,3,Orange,41
+136,Green-winged trumpeter,http://dummyimage.com/187x136.jpg/ff4444/ffffff,3,67,48,$7.71,2,Fuscia,39
+137,Least chipmunk,http://dummyimage.com/148x114.jpg/5fa2dd/ffffff,9,12,3,$3.70,6,Puce,72
+138,Sable antelope,http://dummyimage.com/165x103.jpg/5fa2dd/ffffff,9,88,20,$8.45,7,Mauv,91
+139,"Goose, canada",http://dummyimage.com/181x183.jpg/cc0000/ffffff,5,98,40,$2.31,9,Teal,27
+140,Dark-winged trumpeter,http://dummyimage.com/130x126.jpg/cc0000/ffffff,4,69,61,$9.02,4,Orange,73
+141,"Beaver, european",http://dummyimage.com/136x136.jpg/5fa2dd/ffffff,1,67,2,$1.36,9,Orange,10
+142,Common waterbuck,http://dummyimage.com/165x105.jpg/5fa2dd/ffffff,6,2,83,$8.42,8,Goldenrod,100
+143,"Weaver, lesser masked",http://dummyimage.com/198x152.jpg/cc0000/ffffff,9,13,98,$5.75,6,Green,97
+144,"Macaw, blue and yellow",http://dummyimage.com/129x171.jpg/5fa2dd/ffffff,7,89,65,$2.39,3,Aquamarine,65
+145,"Bulbul, african red-eyed",http://dummyimage.com/207x182.jpg/5fa2dd/ffffff,9,55,78,$0.72,6,Puce,26
+146,Australian magpie,http://dummyimage.com/121x202.jpg/5fa2dd/ffffff,9,22,23,$7.63,9,Turquoise,49
+147,"Macaque, rhesus",http://dummyimage.com/159x136.jpg/5fa2dd/ffffff,3,93,79,$3.00,5,Maroon,75
+148,Arctic hare,http://dummyimage.com/194x178.jpg/ff4444/ffffff,6,77,8,$7.59,3,Maroon,39
+149,"Cat, african wild",http://dummyimage.com/174x137.jpg/cc0000/ffffff,2,2,32,$4.67,6,Fuscia,13
+150,Ornate rock dragon,http://dummyimage.com/134x119.jpg/cc0000/ffffff,6,1,22,$7.89,6,Indigo,84
+151,"Penguin, little blue",http://dummyimage.com/106x184.jpg/dddddd/000000,3,14,2,$7.79,2,Aquamarine,76
+152,Prehensile-tailed porcupine,http://dummyimage.com/220x171.jpg/5fa2dd/ffffff,3,95,88,$9.29,8,Red,99
+153,"Cat, european wild",http://dummyimage.com/112x208.jpg/5fa2dd/ffffff,3,36,40,$0.52,5,Goldenrod,23
+154,Black-faced kangaroo,http://dummyimage.com/101x111.jpg/ff4444/ffffff,9,35,57,$2.27,5,Red,60
+155,Guanaco,http://dummyimage.com/146x192.jpg/5fa2dd/ffffff,9,79,26,$5.85,4,Teal,27
+156,"Tarantula, salmon pink bird eater",http://dummyimage.com/239x120.jpg/5fa2dd/ffffff,5,50,71,$0.66,9,Orange,62
+157,"Anteater, australian spiny",http://dummyimage.com/228x158.jpg/cc0000/ffffff,1,89,33,$5.29,6,Maroon,80
+158,Osprey,http://dummyimage.com/190x159.jpg/ff4444/ffffff,7,11,35,$5.00,6,Teal,34
+159,Greater rhea,http://dummyimage.com/214x149.jpg/dddddd/000000,9,87,87,$6.71,4,Aquamarine,41
+160,"Robin, white-throated",http://dummyimage.com/189x158.jpg/5fa2dd/ffffff,7,44,32,$2.75,7,Mauv,46
+161,Ringtail,http://dummyimage.com/211x127.jpg/dddddd/000000,7,36,30,$4.43,6,Fuscia,72
+162,Raccoon dog,http://dummyimage.com/173x235.jpg/cc0000/ffffff,5,72,94,$8.26,5,Blue,48
+163,"Buffalo, asian water",http://dummyimage.com/200x171.jpg/5fa2dd/ffffff,6,47,89,$9.81,9,Green,35
+164,Savannah deer (unidentified),http://dummyimage.com/199x122.jpg/cc0000/ffffff,10,59,36,$0.61,4,Mauv,46
+165,Western palm tanager (unidentified),http://dummyimage.com/206x180.jpg/cc0000/ffffff,10,12,92,$6.29,8,Purple,55
+166,Southern ground hornbill,http://dummyimage.com/153x172.jpg/5fa2dd/ffffff,6,8,58,$8.93,6,Purple,36
+167,"Woodpecker, red-headed",http://dummyimage.com/113x128.jpg/dddddd/000000,4,95,14,$9.76,9,Teal,21
+168,"Hyena, brown",http://dummyimage.com/184x105.jpg/dddddd/000000,7,88,44,$3.18,3,Red,69
+169,Cape cobra,http://dummyimage.com/166x233.jpg/dddddd/000000,8,77,50,$6.52,4,Blue,92
+170,Red sheep,http://dummyimage.com/197x151.jpg/dddddd/000000,1,86,34,$4.22,6,Teal,51
+171,Red lava crab,http://dummyimage.com/238x249.jpg/5fa2dd/ffffff,1,97,41,$8.51,8,Mauv,71
+172,Red sheep,http://dummyimage.com/203x176.jpg/5fa2dd/ffffff,5,87,76,$3.94,6,Maroon,77
+173,Hyrax,http://dummyimage.com/103x115.jpg/ff4444/ffffff,9,24,77,$6.37,10,Khaki,56
+174,Bent-toed gecko,http://dummyimage.com/226x170.jpg/5fa2dd/ffffff,9,85,61,$6.31,2,Red,10
+175,Mudskipper (unidentified),http://dummyimage.com/241x141.jpg/cc0000/ffffff,8,10,39,$6.15,8,Yellow,40
+176,White-bellied sea eagle,http://dummyimage.com/112x220.jpg/dddddd/000000,6,22,78,$9.34,1,Purple,58
+177,"Sloth, pale-throated three-toed",http://dummyimage.com/231x165.jpg/dddddd/000000,9,4,10,$5.52,3,Khaki,73
+178,"Crocodile, nile",http://dummyimage.com/178x100.jpg/cc0000/ffffff,10,46,67,$1.82,2,Indigo,5
+179,"Porcupine, indian",http://dummyimage.com/243x128.jpg/5fa2dd/ffffff,3,1,28,$3.19,4,Aquamarine,99
+180,Mandras tree shrew,http://dummyimage.com/157x202.jpg/ff4444/ffffff,8,76,42,$8.23,1,Fuscia,95
+181,American racer,http://dummyimage.com/223x214.jpg/dddddd/000000,8,84,19,$1.91,7,Green,68
+182,Southern hairy-nosed wombat,http://dummyimage.com/185x179.jpg/cc0000/ffffff,4,57,93,$2.17,8,Green,16
+183,"Bustard, kori",http://dummyimage.com/134x129.jpg/ff4444/ffffff,4,60,1,$8.58,7,Puce,39
+184,"Sloth, two-toed",http://dummyimage.com/177x211.jpg/5fa2dd/ffffff,2,93,68,$4.77,3,Mauv,7
+185,Pygmy possum,http://dummyimage.com/192x155.jpg/5fa2dd/ffffff,3,12,23,$9.43,4,Crimson,80
+186,Pampa gray fox,http://dummyimage.com/110x159.jpg/dddddd/000000,2,41,65,$5.20,7,Pink,69
+187,"Pheasant, ring-necked",http://dummyimage.com/118x156.jpg/ff4444/ffffff,6,10,15,$0.53,1,Turquoise,95
+188,"Macaque, bonnet",http://dummyimage.com/171x150.jpg/ff4444/ffffff,10,18,47,$7.94,3,Goldenrod,93
+189,American alligator,http://dummyimage.com/230x145.jpg/5fa2dd/ffffff,1,73,98,$0.85,9,Goldenrod,1
+190,Grey mouse lemur,http://dummyimage.com/205x101.jpg/ff4444/ffffff,4,60,70,$6.61,4,Teal,38
+191,Caribou,http://dummyimage.com/198x149.jpg/5fa2dd/ffffff,2,42,41,$4.47,5,Mauv,31
+192,"Pelican, brown",http://dummyimage.com/224x200.jpg/ff4444/ffffff,9,6,51,$4.42,8,Pink,13
+193,"Heron, green-backed",http://dummyimage.com/122x187.jpg/ff4444/ffffff,7,47,68,$7.31,4,Green,77
+194,Spectacled caiman,http://dummyimage.com/137x120.jpg/ff4444/ffffff,3,2,73,$5.07,3,Pink,75
+195,"Lion, asian",http://dummyimage.com/148x193.jpg/ff4444/ffffff,7,67,31,$4.47,8,Orange,39
+196,"Heron, grey",http://dummyimage.com/168x135.jpg/dddddd/000000,1,93,17,$0.32,5,Green,95
+197,"Seal, northern elephant",http://dummyimage.com/215x186.jpg/cc0000/ffffff,2,40,79,$3.71,10,Teal,7
+198,Bahama pintail,http://dummyimage.com/232x169.jpg/5fa2dd/ffffff,4,96,44,$2.24,7,Orange,94
+199,Dusky rattlesnake,http://dummyimage.com/113x187.jpg/ff4444/ffffff,8,91,39,$4.33,1,Blue,87
+200,"Racer, blue",http://dummyimage.com/181x232.jpg/dddddd/000000,4,91,4,$2.66,8,Crimson,19
+201,"Vulture, oriental white-backed",http://dummyimage.com/115x203.jpg/dddddd/000000,5,23,11,$9.02,8,Mauv,53
+202,Bateleur eagle,http://dummyimage.com/136x184.jpg/cc0000/ffffff,3,23,22,$9.70,7,Crimson,15
+203,"Goose, spur-winged",http://dummyimage.com/170x231.jpg/cc0000/ffffff,7,55,84,$0.48,10,Pink,68
+204,Horned rattlesnake,http://dummyimage.com/151x239.jpg/ff4444/ffffff,6,66,53,$8.90,2,Fuscia,26
+205,"Otter, small-clawed",http://dummyimage.com/213x151.jpg/dddddd/000000,10,40,96,$1.11,5,Fuscia,60
+206,"Phalarope, red-necked",http://dummyimage.com/242x102.jpg/5fa2dd/ffffff,1,23,60,$6.48,5,Indigo,83
+207,Southern white-crowned shrike,http://dummyimage.com/238x223.jpg/5fa2dd/ffffff,6,38,90,$7.80,5,Teal,66
+208,African red-eyed bulbul,http://dummyimage.com/108x146.jpg/ff4444/ffffff,4,56,85,$4.90,4,Green,99
+209,"Lechwe, kafue flats",http://dummyimage.com/219x132.jpg/5fa2dd/ffffff,10,17,100,$8.15,4,Purple,74
+210,"Hen, sage",http://dummyimage.com/119x165.jpg/5fa2dd/ffffff,4,24,100,$5.62,5,Crimson,9
+211,Cougar,http://dummyimage.com/109x161.jpg/cc0000/ffffff,7,54,53,$8.28,6,Turquoise,81
+212,"Roller, lilac-breasted",http://dummyimage.com/148x145.jpg/cc0000/ffffff,4,48,98,$5.77,4,Green,24
+213,"Dragon, netted rock",http://dummyimage.com/160x231.jpg/dddddd/000000,9,13,74,$8.71,1,Purple,64
+214,"Beaver, eurasian",http://dummyimage.com/195x159.jpg/ff4444/ffffff,6,79,60,$6.51,6,Mauv,58
+215,Tiger,http://dummyimage.com/175x180.jpg/ff4444/ffffff,8,63,78,$7.38,9,Khaki,77
+216,Brush-tailed rat kangaroo,http://dummyimage.com/250x247.jpg/ff4444/ffffff,10,29,16,$0.49,10,Orange,40
+217,"Civet, common palm",http://dummyimage.com/201x202.jpg/5fa2dd/ffffff,5,35,36,$2.41,3,Turquoise,56
+218,"Roller, lilac-breasted",http://dummyimage.com/110x217.jpg/5fa2dd/ffffff,2,78,27,$3.31,6,Goldenrod,94
+219,"Francolin, coqui",http://dummyimage.com/111x162.jpg/ff4444/ffffff,3,97,85,$5.43,4,Yellow,53
+220,"Tortoise, burmese brown mountain",http://dummyimage.com/150x248.jpg/cc0000/ffffff,7,55,79,$5.24,5,Blue,45
+221,"Wambenger, red-tailed",http://dummyimage.com/227x214.jpg/ff4444/ffffff,1,20,64,$7.24,8,Red,10
+222,"Pintail, bahama",http://dummyimage.com/203x202.jpg/cc0000/ffffff,7,38,90,$4.81,8,Fuscia,57
+223,American bighorn sheep,http://dummyimage.com/189x204.jpg/cc0000/ffffff,10,41,16,$6.47,3,Orange,64
+224,Common zebra,http://dummyimage.com/161x102.jpg/cc0000/ffffff,2,93,25,$3.51,1,Teal,93
+225,Oribi,http://dummyimage.com/128x132.jpg/5fa2dd/ffffff,5,9,32,$1.34,10,Mauv,72
+226,"Snake, tiger",http://dummyimage.com/242x245.jpg/5fa2dd/ffffff,10,58,25,$1.46,6,Maroon,54
+227,Bushbuck,http://dummyimage.com/187x227.jpg/ff4444/ffffff,1,49,88,$2.57,7,Maroon,58
+228,Rock dove,http://dummyimage.com/146x238.jpg/cc0000/ffffff,2,25,27,$9.47,10,Khaki,90
+229,"Grebe, little",http://dummyimage.com/224x114.jpg/5fa2dd/ffffff,9,7,67,$0.70,3,Violet,53
+230,"Wallaby, whip-tailed",http://dummyimage.com/163x134.jpg/ff4444/ffffff,7,50,30,$9.99,1,Mauv,85
+231,"Mongoose, javan gold-spotted",http://dummyimage.com/172x198.jpg/ff4444/ffffff,6,49,67,$9.12,5,Puce,39
+232,"Cormorant, king",http://dummyimage.com/105x235.jpg/dddddd/000000,3,82,26,$8.27,4,Goldenrod,57
+233,Bird (unidentified),http://dummyimage.com/107x204.jpg/dddddd/000000,2,49,48,$0.79,6,Orange,15
+234,Fork-tailed drongo,http://dummyimage.com/181x168.jpg/cc0000/ffffff,6,3,18,$6.04,6,Goldenrod,39
+235,"Turkey, wild",http://dummyimage.com/202x109.jpg/5fa2dd/ffffff,8,55,20,$2.75,6,Indigo,24
+236,Red squirrel,http://dummyimage.com/209x201.jpg/5fa2dd/ffffff,5,67,40,$2.40,2,Orange,75
+237,Blue duck,http://dummyimage.com/196x128.jpg/ff4444/ffffff,9,60,9,$4.90,2,Turquoise,11
+238,Puna ibis,http://dummyimage.com/110x177.jpg/ff4444/ffffff,3,38,29,$3.86,4,Yellow,81
+239,"Goose, andean",http://dummyimage.com/228x111.jpg/ff4444/ffffff,3,14,63,$5.42,3,Fuscia,95
+240,North American porcupine,http://dummyimage.com/118x231.jpg/dddddd/000000,9,24,74,$3.93,8,Maroon,52
+241,"Pelican, great white",http://dummyimage.com/181x228.jpg/ff4444/ffffff,6,96,100,$2.25,5,Purple,86
+242,Yellow-brown sungazer,http://dummyimage.com/243x247.jpg/ff4444/ffffff,6,37,99,$9.80,1,Teal,8
+243,Savanna baboon,http://dummyimage.com/165x247.jpg/ff4444/ffffff,3,9,54,$5.37,3,Mauv,92
+244,Guerza,http://dummyimage.com/200x171.jpg/ff4444/ffffff,8,97,78,$6.64,2,Yellow,5
+245,"Lizard, desert spiny",http://dummyimage.com/202x216.jpg/cc0000/ffffff,4,53,90,$7.13,4,Violet,85
+246,"Godwit, hudsonian",http://dummyimage.com/231x235.jpg/dddddd/000000,4,84,10,$8.82,8,Turquoise,46
+247,"Deer, barasingha",http://dummyimage.com/181x193.jpg/5fa2dd/ffffff,8,42,19,$8.72,5,Pink,62
+248,Spectacled caiman,http://dummyimage.com/227x120.jpg/cc0000/ffffff,6,14,86,$2.84,5,Goldenrod,39
+249,"Fox, crab-eating",http://dummyimage.com/227x184.jpg/5fa2dd/ffffff,9,71,24,$9.26,6,Crimson,99
+250,"Constrictor, eastern boa",http://dummyimage.com/116x206.jpg/cc0000/ffffff,4,97,10,$4.36,4,Mauv,43
+251,Two-toed tree sloth,http://dummyimage.com/136x205.jpg/cc0000/ffffff,5,82,33,$6.87,3,Maroon,53
+252,Common boubou shrike,http://dummyimage.com/189x136.jpg/cc0000/ffffff,10,68,20,$0.32,2,Aquamarine,30
+253,American black bear,http://dummyimage.com/103x146.jpg/5fa2dd/ffffff,4,35,46,$9.41,2,Goldenrod,70
+254,Red squirrel,http://dummyimage.com/171x191.jpg/cc0000/ffffff,4,19,99,$4.48,8,Pink,100
+255,"Eland, common",http://dummyimage.com/212x100.jpg/ff4444/ffffff,9,84,48,$5.26,3,Mauv,37
+256,"Sloth, two-toed tree",http://dummyimage.com/183x197.jpg/dddddd/000000,5,61,80,$2.18,7,Purple,55
+257,"Mockingbird, galapagos",http://dummyimage.com/160x229.jpg/5fa2dd/ffffff,2,19,14,$0.63,5,Crimson,61
+258,Steller's sea lion,http://dummyimage.com/226x142.jpg/5fa2dd/ffffff,10,96,5,$9.75,4,Goldenrod,68
+259,Nine-banded armadillo,http://dummyimage.com/167x149.jpg/cc0000/ffffff,5,92,33,$9.87,2,Indigo,20
+260,Adouri (unidentified),http://dummyimage.com/158x198.jpg/cc0000/ffffff,7,57,23,$5.87,4,Yellow,99
+261,"Rhinoceros, square-lipped",http://dummyimage.com/137x175.jpg/cc0000/ffffff,1,89,17,$1.31,6,Green,61
+262,Cereopsis goose,http://dummyimage.com/120x239.jpg/ff4444/ffffff,2,6,99,$8.53,8,Indigo,79
+263,Jungle kangaroo,http://dummyimage.com/102x125.jpg/dddddd/000000,2,11,8,$3.57,1,Crimson,67
+264,Puma,http://dummyimage.com/182x152.jpg/cc0000/ffffff,1,98,55,$8.92,8,Aquamarine,4
+265,"Rhea, greater",http://dummyimage.com/239x110.jpg/dddddd/000000,4,27,26,$7.60,3,Turquoise,53
+266,Barasingha deer,http://dummyimage.com/245x245.jpg/dddddd/000000,9,12,98,$4.05,5,Violet,68
+267,"Nuthatch, red-breasted",http://dummyimage.com/207x186.jpg/dddddd/000000,8,12,25,$2.74,8,Mauv,47
+268,Reindeer,http://dummyimage.com/244x168.jpg/ff4444/ffffff,8,23,87,$3.29,8,Violet,4
+269,Savanna baboon,http://dummyimage.com/162x191.jpg/dddddd/000000,10,38,84,$4.67,10,Fuscia,94
+270,"Hawk, ferruginous",http://dummyimage.com/112x250.jpg/dddddd/000000,10,65,73,$8.59,7,Aquamarine,89
+271,"Wallaby, bennett's",http://dummyimage.com/248x193.jpg/ff4444/ffffff,7,95,23,$7.21,5,Orange,48
+272,"Colobus, white-mantled",http://dummyimage.com/221x168.jpg/cc0000/ffffff,1,44,2,$8.56,3,Blue,15
+273,"Skunk, western spotted",http://dummyimage.com/125x180.jpg/ff4444/ffffff,4,73,30,$1.28,2,Pink,93
+274,"Alligator, american",http://dummyimage.com/101x240.jpg/ff4444/ffffff,1,90,43,$9.29,6,Teal,1
+275,"Antelope, sable",http://dummyimage.com/117x135.jpg/cc0000/ffffff,2,94,73,$7.12,2,Turquoise,38
+276,Crown of thorns starfish,http://dummyimage.com/140x108.jpg/cc0000/ffffff,5,53,89,$1.22,10,Khaki,72
+277,Common rhea,http://dummyimage.com/127x247.jpg/cc0000/ffffff,9,35,94,$3.46,1,Mauv,69
+278,"Waxbill, violet-eared",http://dummyimage.com/146x106.jpg/5fa2dd/ffffff,5,75,75,$7.47,2,Orange,76
+279,European spoonbill,http://dummyimage.com/228x205.jpg/dddddd/000000,5,73,53,$8.82,8,Turquoise,23
+280,Jungle kangaroo,http://dummyimage.com/243x162.jpg/dddddd/000000,8,52,87,$8.19,3,Red,12
+281,North American red fox,http://dummyimage.com/240x222.jpg/cc0000/ffffff,2,55,100,$3.60,8,Turquoise,85
+282,Eastern cottontail rabbit,http://dummyimage.com/243x197.jpg/5fa2dd/ffffff,1,17,1,$0.69,8,Indigo,41
+283,"Kangaroo, black-faced",http://dummyimage.com/126x113.jpg/5fa2dd/ffffff,10,60,77,$4.21,1,Mauv,12
+284,White-nosed coatimundi,http://dummyimage.com/105x105.jpg/cc0000/ffffff,9,3,24,$7.85,4,Green,88
+285,Gray duiker,http://dummyimage.com/168x227.jpg/cc0000/ffffff,2,86,86,$1.81,2,Turquoise,80
+286,Eurasian beaver,http://dummyimage.com/126x112.jpg/5fa2dd/ffffff,1,73,7,$0.17,8,Goldenrod,46
+287,European spoonbill,http://dummyimage.com/173x130.jpg/5fa2dd/ffffff,3,89,91,$3.93,4,Crimson,21
+288,"Alligator, mississippi",http://dummyimage.com/140x179.jpg/ff4444/ffffff,2,90,74,$2.49,10,Turquoise,25
+289,"Pie, rufous tree",http://dummyimage.com/120x249.jpg/dddddd/000000,2,12,86,$2.66,6,Turquoise,65
+290,"Lizard, goanna",http://dummyimage.com/100x109.jpg/ff4444/ffffff,6,83,51,$7.75,2,Puce,2
+291,Common shelduck,http://dummyimage.com/197x239.jpg/cc0000/ffffff,9,95,86,$5.69,1,Aquamarine,51
+292,Indian leopard,http://dummyimage.com/129x181.jpg/cc0000/ffffff,9,96,99,$5.25,1,Turquoise,67
+293,Cougar,http://dummyimage.com/190x104.jpg/ff4444/ffffff,6,37,74,$3.10,9,Crimson,42
+294,White-winged tern,http://dummyimage.com/207x176.jpg/dddddd/000000,1,98,85,$3.75,9,Blue,80
+295,"Buffalo, wild water",http://dummyimage.com/171x223.jpg/cc0000/ffffff,8,73,87,$9.24,4,Maroon,3
+296,King vulture,http://dummyimage.com/215x186.jpg/ff4444/ffffff,9,74,84,$6.13,3,Pink,3
+297,"Swan, black",http://dummyimage.com/150x207.jpg/cc0000/ffffff,9,22,12,$2.28,5,Red,99
+298,"Falcon, peregrine",http://dummyimage.com/221x211.jpg/dddddd/000000,2,98,88,$4.89,8,Green,1
+299,Paddy heron (unidentified),http://dummyimage.com/118x177.jpg/dddddd/000000,4,99,90,$4.50,4,Purple,15
+300,"Bandicoot, short-nosed",http://dummyimage.com/127x159.jpg/5fa2dd/ffffff,1,21,59,$2.48,4,Teal,95
+301,Swainson's francolin,http://dummyimage.com/170x206.jpg/dddddd/000000,8,99,68,$0.39,4,Maroon,42
+302,Hottentot teal,http://dummyimage.com/110x138.jpg/ff4444/ffffff,1,86,54,$6.11,1,Turquoise,11
+303,Kelp gull,http://dummyimage.com/205x238.jpg/dddddd/000000,2,77,12,$1.42,2,Green,46
+304,Crown of thorns starfish,http://dummyimage.com/243x134.jpg/5fa2dd/ffffff,4,89,67,$2.31,6,Turquoise,57
+305,"Beaver, american",http://dummyimage.com/107x182.jpg/5fa2dd/ffffff,6,77,6,$9.13,10,Green,11
+306,Collared peccary,http://dummyimage.com/202x160.jpg/dddddd/000000,10,35,55,$4.95,5,Goldenrod,77
+307,Nelson ground squirrel,http://dummyimage.com/243x132.jpg/cc0000/ffffff,2,25,57,$0.88,5,Purple,46
+308,Agile wallaby,http://dummyimage.com/140x117.jpg/5fa2dd/ffffff,8,12,55,$9.22,5,Maroon,67
+309,"Monkey, vervet",http://dummyimage.com/223x246.jpg/dddddd/000000,2,88,7,$1.54,5,Crimson,1
+310,"Monitor, two-banded",http://dummyimage.com/153x196.jpg/5fa2dd/ffffff,3,53,53,$0.47,5,Indigo,27
+311,Land iguana,http://dummyimage.com/155x237.jpg/5fa2dd/ffffff,4,22,68,$1.73,6,Pink,34
+312,"Seal, common",http://dummyimage.com/237x194.jpg/ff4444/ffffff,1,39,52,$5.18,1,Khaki,43
+313,"Gull, herring",http://dummyimage.com/207x201.jpg/ff4444/ffffff,9,17,94,$5.53,4,Khaki,22
+314,Red kangaroo,http://dummyimage.com/182x109.jpg/ff4444/ffffff,3,94,96,$8.37,1,Goldenrod,57
+315,"Zebra, common",http://dummyimage.com/250x250.jpg/ff4444/ffffff,9,60,13,$9.93,1,Aquamarine,61
+316,Swamp deer,http://dummyimage.com/143x237.jpg/cc0000/ffffff,5,33,63,$3.27,4,Crimson,52
+317,"Civet, common palm",http://dummyimage.com/239x227.jpg/ff4444/ffffff,10,55,96,$2.04,8,Blue,98
+318,"Brocket, brown",http://dummyimage.com/101x194.jpg/5fa2dd/ffffff,4,1,58,$4.97,6,Turquoise,18
+319,Northern phalarope,http://dummyimage.com/183x203.jpg/ff4444/ffffff,7,19,25,$6.90,6,Indigo,70
+320,"Constrictor, eastern boa",http://dummyimage.com/169x241.jpg/cc0000/ffffff,4,5,10,$0.50,4,Goldenrod,76
+321,White-faced tree rat,http://dummyimage.com/163x235.jpg/5fa2dd/ffffff,8,5,52,$9.29,6,Violet,95
+322,"Gecko, ring-tailed",http://dummyimage.com/100x198.jpg/5fa2dd/ffffff,1,24,95,$0.68,7,Pink,64
+323,Yellow-brown sungazer,http://dummyimage.com/179x189.jpg/ff4444/ffffff,7,31,27,$2.85,8,Blue,69
+324,White spoonbill,http://dummyimage.com/145x103.jpg/ff4444/ffffff,1,45,48,$1.77,3,Turquoise,6
+325,Bald eagle,http://dummyimage.com/188x129.jpg/5fa2dd/ffffff,6,27,91,$7.56,6,Red,97
+326,"Squirrel, richardson's ground",http://dummyimage.com/135x170.jpg/cc0000/ffffff,3,1,91,$7.92,2,Goldenrod,91
+327,White-necked raven,http://dummyimage.com/195x214.jpg/ff4444/ffffff,7,19,21,$6.04,8,Yellow,87
+328,Blue catfish,http://dummyimage.com/161x174.jpg/dddddd/000000,1,62,41,$5.56,1,Red,7
+329,Indian jackal,http://dummyimage.com/100x103.jpg/ff4444/ffffff,6,64,83,$9.36,10,Fuscia,26
+330,Grizzly bear,http://dummyimage.com/104x119.jpg/cc0000/ffffff,1,16,28,$8.83,9,Indigo,62
+331,Common palm civet,http://dummyimage.com/184x113.jpg/dddddd/000000,6,26,13,$1.52,4,Mauv,71
+332,Burmese black mountain tortoise,http://dummyimage.com/162x207.jpg/cc0000/ffffff,2,73,12,$9.94,9,Aquamarine,65
+333,Rainbow lory,http://dummyimage.com/106x192.jpg/5fa2dd/ffffff,4,47,99,$1.67,8,Puce,4
+334,Brown capuchin,http://dummyimage.com/183x172.jpg/5fa2dd/ffffff,2,69,27,$3.73,10,Violet,49
+335,"Turtle, snake-necked",http://dummyimage.com/204x205.jpg/5fa2dd/ffffff,1,24,10,$1.13,8,Teal,92
+336,"Cockatoo, red-tailed",http://dummyimage.com/232x216.jpg/dddddd/000000,8,45,93,$2.42,4,Mauv,6
+337,"Dik, kirk's dik",http://dummyimage.com/201x231.jpg/dddddd/000000,4,84,54,$2.92,4,Turquoise,72
+338,White-browed sparrow weaver,http://dummyimage.com/143x200.jpg/cc0000/ffffff,2,64,18,$2.76,10,Goldenrod,57
+339,"Camel, dromedary",http://dummyimage.com/119x220.jpg/ff4444/ffffff,9,9,12,$4.27,9,Violet,79
+340,"Colobus, magistrate black",http://dummyimage.com/248x221.jpg/5fa2dd/ffffff,4,47,64,$4.15,1,Violet,84
+341,"Teal, hottentot",http://dummyimage.com/124x148.jpg/cc0000/ffffff,2,33,52,$0.08,7,Fuscia,17
+342,"Lizard, frilled",http://dummyimage.com/213x232.jpg/cc0000/ffffff,9,76,43,$9.73,9,Goldenrod,19
+343,Red-necked wallaby,http://dummyimage.com/113x114.jpg/dddddd/000000,8,13,38,$5.64,10,Green,69
+344,"Jackal, black-backed",http://dummyimage.com/123x173.jpg/cc0000/ffffff,2,19,82,$8.99,5,Violet,64
+345,"Gull, kelp",http://dummyimage.com/131x120.jpg/5fa2dd/ffffff,1,90,27,$8.95,3,Green,32
+346,Civet (unidentified),http://dummyimage.com/181x151.jpg/5fa2dd/ffffff,8,48,35,$6.81,2,Crimson,82
+347,"Egret, snowy",http://dummyimage.com/104x200.jpg/dddddd/000000,5,78,8,$4.15,9,Yellow,67
+348,"Pelican, australian",http://dummyimage.com/188x222.jpg/dddddd/000000,10,80,44,$3.72,1,Crimson,88
+349,Long-necked turtle,http://dummyimage.com/114x187.jpg/5fa2dd/ffffff,5,68,81,$5.28,4,Green,62
+350,"Heron, gray",http://dummyimage.com/213x171.jpg/dddddd/000000,8,31,97,$7.53,10,Goldenrod,68
+351,Jaguarundi,http://dummyimage.com/169x141.jpg/5fa2dd/ffffff,3,7,44,$2.28,5,Violet,8
+352,Green-winged trumpeter,http://dummyimage.com/207x128.jpg/cc0000/ffffff,9,91,66,$1.34,9,Blue,9
+353,Green-winged trumpeter,http://dummyimage.com/234x228.jpg/ff4444/ffffff,10,88,23,$0.25,9,Blue,88
+354,Asian elephant,http://dummyimage.com/216x191.jpg/cc0000/ffffff,1,38,28,$8.01,2,Orange,32
+355,"Fox, crab-eating",http://dummyimage.com/213x170.jpg/5fa2dd/ffffff,4,90,82,$2.56,9,Pink,13
+356,Grey fox,http://dummyimage.com/200x160.jpg/cc0000/ffffff,3,13,10,$8.04,10,Indigo,57
+357,"Lechwe, kafue flats",http://dummyimage.com/138x249.jpg/cc0000/ffffff,6,2,18,$6.71,4,Purple,48
+358,"Otter, canadian river",http://dummyimage.com/146x126.jpg/5fa2dd/ffffff,8,86,79,$0.25,2,Violet,100
+359,"Armadillo, nine-banded",http://dummyimage.com/189x138.jpg/ff4444/ffffff,7,6,23,$2.50,9,Purple,89
+360,Southern elephant seal,http://dummyimage.com/201x206.jpg/dddddd/000000,5,43,3,$9.15,6,Orange,100
+361,Banded mongoose,http://dummyimage.com/221x111.jpg/ff4444/ffffff,2,99,100,$4.25,1,Crimson,52
+362,Southern screamer,http://dummyimage.com/106x138.jpg/5fa2dd/ffffff,2,31,90,$5.04,3,Goldenrod,16
+363,Brazilian tapir,http://dummyimage.com/198x226.jpg/cc0000/ffffff,2,54,30,$2.65,5,Aquamarine,30
+364,Collared lizard,http://dummyimage.com/185x171.jpg/5fa2dd/ffffff,7,75,6,$8.59,6,Yellow,29
+365,"Rhinoceros, white",http://dummyimage.com/100x152.jpg/cc0000/ffffff,4,98,96,$1.35,9,Maroon,40
+366,"Catfish, blue",http://dummyimage.com/180x125.jpg/ff4444/ffffff,3,24,95,$9.98,9,Turquoise,33
+367,Southern sea lion,http://dummyimage.com/223x246.jpg/dddddd/000000,6,22,71,$3.44,1,Maroon,57
+368,Common turkey,http://dummyimage.com/113x197.jpg/cc0000/ffffff,6,24,28,$1.06,3,Blue,52
+369,"Squirrel, richardson's ground",http://dummyimage.com/147x106.jpg/dddddd/000000,1,47,66,$8.06,5,Red,66
+370,Bennett's wallaby,http://dummyimage.com/162x106.jpg/ff4444/ffffff,5,61,74,$8.38,4,Crimson,70
+371,Kinkajou,http://dummyimage.com/109x151.jpg/cc0000/ffffff,9,88,10,$0.67,10,Puce,32
+372,Pronghorn,http://dummyimage.com/146x124.jpg/dddddd/000000,3,84,74,$2.05,7,Yellow,64
+373,"Cockatoo, sulfur-crested",http://dummyimage.com/142x144.jpg/ff4444/ffffff,7,79,41,$1.42,1,Puce,37
+374,Spotted hyena,http://dummyimage.com/180x130.jpg/cc0000/ffffff,5,74,79,$0.99,4,Blue,59
+375,"Bulbul, african red-eyed",http://dummyimage.com/138x149.jpg/dddddd/000000,4,68,6,$6.31,7,Crimson,28
+376,"Monitor, white-throated",http://dummyimage.com/118x132.jpg/dddddd/000000,7,52,46,$8.10,7,Indigo,43
+377,African pied wagtail,http://dummyimage.com/144x234.jpg/cc0000/ffffff,7,18,41,$8.03,1,Violet,54
+378,Brindled gnu,http://dummyimage.com/184x176.jpg/ff4444/ffffff,7,97,72,$3.68,4,Pink,67
+379,"Tinamou, elegant crested",http://dummyimage.com/164x100.jpg/dddddd/000000,6,99,78,$4.46,9,Teal,46
+380,Greater rhea,http://dummyimage.com/145x187.jpg/dddddd/000000,5,9,58,$8.22,6,Violet,43
+381,"Hawk, galapagos",http://dummyimage.com/247x158.jpg/dddddd/000000,10,44,54,$4.96,7,Green,87
+382,"Goldeneye, common",http://dummyimage.com/239x236.jpg/5fa2dd/ffffff,1,6,33,$2.29,3,Violet,2
+383,"Baboon, savanna",http://dummyimage.com/235x241.jpg/cc0000/ffffff,10,29,54,$4.94,3,Turquoise,16
+384,Tsessebe,http://dummyimage.com/229x204.jpg/dddddd/000000,3,54,28,$5.13,10,Khaki,34
+385,"Loris, slender",http://dummyimage.com/235x113.jpg/dddddd/000000,3,87,55,$3.93,10,Violet,2
+386,Blue-tongued skink,http://dummyimage.com/100x133.jpg/ff4444/ffffff,6,8,35,$9.08,6,Violet,36
+387,Kirk's dik dik,http://dummyimage.com/219x125.jpg/ff4444/ffffff,10,81,50,$7.72,5,Maroon,48
+388,Saddle-billed stork,http://dummyimage.com/207x220.jpg/dddddd/000000,7,64,26,$0.36,4,Goldenrod,26
+389,Magellanic penguin,http://dummyimage.com/141x200.jpg/cc0000/ffffff,8,93,62,$0.81,1,Red,7
+390,"Wallaby, red-necked",http://dummyimage.com/232x105.jpg/dddddd/000000,2,36,41,$2.44,8,Green,50
+391,"Rattlesnake, eastern diamondback",http://dummyimage.com/134x117.jpg/ff4444/ffffff,10,34,48,$8.63,8,Indigo,83
+392,Red-tailed phascogale,http://dummyimage.com/220x222.jpg/dddddd/000000,10,93,56,$9.78,7,Turquoise,18
+393,"Raven, cape",http://dummyimage.com/153x213.jpg/ff4444/ffffff,10,27,5,$9.49,2,Crimson,72
+394,Brazilian otter,http://dummyimage.com/218x137.jpg/ff4444/ffffff,10,88,64,$4.32,8,Orange,65
+395,Greylag goose,http://dummyimage.com/110x200.jpg/dddddd/000000,6,35,42,$5.62,6,Crimson,36
+396,Western spotted skunk,http://dummyimage.com/224x193.jpg/cc0000/ffffff,5,9,96,$3.30,8,Khaki,36
+397,American woodcock,http://dummyimage.com/110x150.jpg/dddddd/000000,1,98,1,$0.65,3,Indigo,99
+398,Indian star tortoise,http://dummyimage.com/190x144.jpg/cc0000/ffffff,3,60,83,$4.36,10,Indigo,52
+399,"Hen, sage",http://dummyimage.com/191x164.jpg/dddddd/000000,1,69,7,$9.57,9,Teal,47
+400,Numbat,http://dummyimage.com/123x119.jpg/dddddd/000000,1,28,43,$2.86,4,Turquoise,22
+401,Javan gold-spotted mongoose,http://dummyimage.com/213x150.jpg/5fa2dd/ffffff,9,7,72,$1.43,5,Pink,69
+402,"Stork, openbill",http://dummyimage.com/107x246.jpg/5fa2dd/ffffff,6,58,55,$2.05,8,Khaki,31
+403,"Badger, american",http://dummyimage.com/228x166.jpg/ff4444/ffffff,4,95,61,$4.04,6,Turquoise,6
+404,Neotropic cormorant,http://dummyimage.com/105x148.jpg/5fa2dd/ffffff,4,83,45,$3.95,9,Teal,18
+405,Chilean flamingo,http://dummyimage.com/147x174.jpg/cc0000/ffffff,2,96,64,$1.54,2,Purple,76
+406,"Monkey, vervet",http://dummyimage.com/227x177.jpg/ff4444/ffffff,2,98,8,$4.52,7,Fuscia,15
+407,"Heron, goliath",http://dummyimage.com/109x204.jpg/5fa2dd/ffffff,5,6,81,$5.75,3,Mauv,19
+408,Pied butcher bird,http://dummyimage.com/214x123.jpg/ff4444/ffffff,1,16,59,$9.72,9,Teal,16
+409,Least chipmunk,http://dummyimage.com/150x198.jpg/5fa2dd/ffffff,10,32,1,$3.57,5,Yellow,88
+410,"Wallaby, river",http://dummyimage.com/117x139.jpg/5fa2dd/ffffff,4,70,37,$5.81,7,Orange,4
+411,Snow goose,http://dummyimage.com/240x110.jpg/5fa2dd/ffffff,8,4,70,$6.78,4,Goldenrod,20
+412,"Goose, cape barren",http://dummyimage.com/180x135.jpg/5fa2dd/ffffff,1,76,81,$6.18,1,Puce,1
+413,Yak,http://dummyimage.com/106x206.jpg/ff4444/ffffff,6,74,41,$4.65,3,Goldenrod,33
+414,"Bandicoot, short-nosed",http://dummyimage.com/239x170.jpg/dddddd/000000,5,17,31,$4.18,7,Teal,60
+415,White rhinoceros,http://dummyimage.com/133x149.jpg/cc0000/ffffff,9,53,8,$7.68,5,Purple,18
+416,King cormorant,http://dummyimage.com/156x221.jpg/ff4444/ffffff,3,56,98,$3.01,9,Crimson,81
+417,"Eagle, tawny",http://dummyimage.com/246x210.jpg/ff4444/ffffff,10,3,60,$8.82,1,Teal,17
+418,Four-spotted skimmer,http://dummyimage.com/165x198.jpg/dddddd/000000,4,59,52,$8.96,10,Turquoise,94
+419,Emerald green tree boa,http://dummyimage.com/131x218.jpg/cc0000/ffffff,6,20,42,$0.01,6,Yellow,1
+420,"Kite, black",http://dummyimage.com/167x133.jpg/ff4444/ffffff,5,93,38,$0.46,9,Mauv,34
+421,African porcupine,http://dummyimage.com/133x228.jpg/ff4444/ffffff,4,65,100,$3.34,3,Violet,80
+422,"Gecko, bent-toed",http://dummyimage.com/174x155.jpg/cc0000/ffffff,5,55,84,$3.24,1,Violet,41
+423,Lesser masked weaver,http://dummyimage.com/122x226.jpg/ff4444/ffffff,5,8,61,$8.66,3,Orange,16
+424,Eastern dwarf mongoose,http://dummyimage.com/158x182.jpg/ff4444/ffffff,1,86,48,$3.45,10,Aquamarine,39
+425,Blackish oystercatcher,http://dummyimage.com/179x152.jpg/cc0000/ffffff,10,48,34,$4.10,1,Violet,17
+426,Rufous-collared sparrow,http://dummyimage.com/144x160.jpg/ff4444/ffffff,9,63,28,$7.84,4,Goldenrod,48
+427,American buffalo,http://dummyimage.com/165x188.jpg/5fa2dd/ffffff,3,43,61,$0.82,6,Orange,38
+428,Azara's zorro,http://dummyimage.com/177x194.jpg/5fa2dd/ffffff,8,7,37,$3.04,6,Goldenrod,92
+429,Ringtail,http://dummyimage.com/156x220.jpg/dddddd/000000,5,11,44,$4.09,4,Red,49
+430,"Stork, woolly-necked",http://dummyimage.com/207x234.jpg/dddddd/000000,7,48,13,$8.61,6,Violet,40
+431,Secretary bird,http://dummyimage.com/207x158.jpg/dddddd/000000,3,25,55,$9.55,3,Indigo,32
+432,Sea birds (unidentified),http://dummyimage.com/175x160.jpg/dddddd/000000,5,32,5,$5.02,9,Teal,65
+433,Uinta ground squirrel,http://dummyimage.com/155x151.jpg/cc0000/ffffff,10,100,45,$6.39,10,Khaki,69
+434,White-necked raven,http://dummyimage.com/121x182.jpg/5fa2dd/ffffff,9,16,19,$1.64,6,Puce,98
+435,"Cockatoo, roseate",http://dummyimage.com/106x114.jpg/dddddd/000000,7,18,43,$3.27,10,Yellow,37
+436,Little brown dove,http://dummyimage.com/178x132.jpg/dddddd/000000,2,72,39,$8.35,9,Mauv,82
+437,"Starling, red-shouldered glossy",http://dummyimage.com/105x243.jpg/cc0000/ffffff,4,5,12,$4.13,2,Orange,84
+438,Madagascar fruit bat,http://dummyimage.com/101x217.jpg/dddddd/000000,9,26,60,$7.50,1,Violet,16
+439,American buffalo,http://dummyimage.com/133x109.jpg/cc0000/ffffff,10,35,19,$0.33,7,Puce,17
+440,Hoary marmot,http://dummyimage.com/155x134.jpg/5fa2dd/ffffff,7,53,100,$5.33,5,Puce,27
+441,Chacma baboon,http://dummyimage.com/150x158.jpg/5fa2dd/ffffff,6,98,45,$8.14,2,Purple,15
+442,"Jacana, african",http://dummyimage.com/179x210.jpg/cc0000/ffffff,3,97,59,$8.28,6,Red,53
+443,"Nuthatch, red-breasted",http://dummyimage.com/112x247.jpg/ff4444/ffffff,4,76,51,$7.40,2,Red,24
+444,Sable antelope,http://dummyimage.com/137x245.jpg/dddddd/000000,8,68,92,$2.19,4,Green,71
+445,"Langur, gray",http://dummyimage.com/223x174.jpg/ff4444/ffffff,2,86,95,$3.86,1,Aquamarine,61
+446,"Eagle, bateleur",http://dummyimage.com/125x117.jpg/cc0000/ffffff,10,49,43,$6.69,9,Teal,41
+447,Giant girdled lizard,http://dummyimage.com/100x236.jpg/5fa2dd/ffffff,10,28,1,$4.70,9,Aquamarine,26
+448,Western spotted skunk,http://dummyimage.com/117x128.jpg/ff4444/ffffff,8,49,9,$3.93,8,Turquoise,50
+449,"Turtle, snake-necked",http://dummyimage.com/155x151.jpg/dddddd/000000,7,95,36,$2.54,3,Orange,61
+450,"Chickadee, black-capped",http://dummyimage.com/187x248.jpg/cc0000/ffffff,6,17,17,$6.40,7,Aquamarine,48
+451,"Kangaroo, red",http://dummyimage.com/223x247.jpg/cc0000/ffffff,4,93,65,$2.16,10,Puce,60
+452,"Armadillo, nine-banded",http://dummyimage.com/114x170.jpg/ff4444/ffffff,3,23,81,$1.33,1,Crimson,72
+453,"Dog, raccoon",http://dummyimage.com/175x152.jpg/5fa2dd/ffffff,6,30,86,$5.69,9,Mauv,20
+454,Mudskipper (unidentified),http://dummyimage.com/204x135.jpg/ff4444/ffffff,2,15,46,$2.49,6,Green,38
+455,Wood pigeon,http://dummyimage.com/169x241.jpg/dddddd/000000,8,89,7,$0.20,1,Green,82
+456,"Rhinoceros, white",http://dummyimage.com/198x249.jpg/cc0000/ffffff,6,21,38,$2.38,5,Red,26
+457,Blue catfish,http://dummyimage.com/219x141.jpg/cc0000/ffffff,4,70,77,$9.91,9,Orange,4
+458,Frog (unidentified),http://dummyimage.com/240x200.jpg/dddddd/000000,2,45,17,$1.80,6,Maroon,59
+459,Sugar glider,http://dummyimage.com/170x113.jpg/5fa2dd/ffffff,6,71,22,$9.94,6,Fuscia,96
+460,"Squirrel, indian giant",http://dummyimage.com/232x216.jpg/5fa2dd/ffffff,1,12,48,$0.03,9,Puce,16
+461,Great skua,http://dummyimage.com/220x214.jpg/cc0000/ffffff,2,17,2,$7.46,1,Teal,58
+462,Aardwolf,http://dummyimage.com/224x152.jpg/5fa2dd/ffffff,2,14,80,$5.49,3,Turquoise,76
+463,Tasmanian devil,http://dummyimage.com/134x247.jpg/5fa2dd/ffffff,7,38,36,$7.14,10,Aquamarine,7
+464,"Whale, killer",http://dummyimage.com/230x124.jpg/dddddd/000000,6,73,37,$7.59,2,Mauv,37
+465,"Bandicoot, short-nosed",http://dummyimage.com/146x247.jpg/dddddd/000000,6,65,100,$1.95,6,Blue,14
+466,Western palm tanager (unidentified),http://dummyimage.com/136x240.jpg/5fa2dd/ffffff,5,64,91,$6.19,4,Red,80
+467,"Squirrel, nelson ground",http://dummyimage.com/107x116.jpg/5fa2dd/ffffff,2,47,7,$2.45,2,Red,22
+468,"Otter, north american river",http://dummyimage.com/111x112.jpg/dddddd/000000,8,70,38,$9.31,3,Orange,68
+469,"Kangaroo, western grey",http://dummyimage.com/169x170.jpg/ff4444/ffffff,5,47,50,$0.45,3,Red,25
+470,"Deer, swamp",http://dummyimage.com/122x163.jpg/dddddd/000000,6,34,72,$1.32,10,Violet,41
+471,"Lion, african",http://dummyimage.com/103x183.jpg/5fa2dd/ffffff,6,41,37,$6.11,5,Puce,12
+472,"Chickadee, black-capped",http://dummyimage.com/211x189.jpg/dddddd/000000,5,18,47,$2.55,7,Khaki,54
+473,Fisher,http://dummyimage.com/192x241.jpg/5fa2dd/ffffff,9,86,36,$7.26,2,Mauv,96
+474,"Cat, native",http://dummyimage.com/218x243.jpg/cc0000/ffffff,7,37,97,$2.62,1,Khaki,66
+475,"Deer, red",http://dummyimage.com/229x144.jpg/dddddd/000000,6,17,53,$9.07,8,Blue,63
+476,"Cobra, egyptian",http://dummyimage.com/204x154.jpg/ff4444/ffffff,10,26,50,$1.08,2,Violet,19
+477,"Squirrel, red",http://dummyimage.com/190x229.jpg/cc0000/ffffff,3,47,74,$6.97,4,Fuscia,71
+478,Kirk's dik dik,http://dummyimage.com/194x104.jpg/cc0000/ffffff,10,71,35,$1.62,8,Blue,54
+479,"Dragon, ornate rock",http://dummyimage.com/234x222.jpg/5fa2dd/ffffff,9,26,74,$7.91,4,Fuscia,5
+480,Yellow-throated sandgrouse,http://dummyimage.com/148x167.jpg/5fa2dd/ffffff,7,43,41,$8.08,5,Aquamarine,18
+481,"Iguana, marine",http://dummyimage.com/169x114.jpg/cc0000/ffffff,1,23,40,$8.79,8,Khaki,39
+482,Platypus,http://dummyimage.com/167x127.jpg/5fa2dd/ffffff,2,37,50,$8.62,1,Green,19
+483,Eastern quoll,http://dummyimage.com/237x147.jpg/cc0000/ffffff,3,24,10,$4.61,6,Red,83
+484,"Seal, northern elephant",http://dummyimage.com/132x141.jpg/5fa2dd/ffffff,9,58,65,$2.08,8,Yellow,11
+485,"Squirrel, pine",http://dummyimage.com/221x170.jpg/dddddd/000000,9,47,13,$7.31,10,Blue,87
+486,Crested porcupine,http://dummyimage.com/243x221.jpg/ff4444/ffffff,3,18,13,$7.76,3,Crimson,9
+487,"Insect, stick",http://dummyimage.com/186x207.jpg/cc0000/ffffff,4,81,10,$6.88,5,Teal,24
+488,Cape raven,http://dummyimage.com/180x164.jpg/dddddd/000000,7,31,5,$5.86,5,Pink,83
+489,Black-necked stork,http://dummyimage.com/141x124.jpg/dddddd/000000,10,71,74,$0.69,6,Indigo,39
+490,Rhesus monkey,http://dummyimage.com/233x182.jpg/dddddd/000000,8,43,45,$1.62,1,Puce,58
+491,Southern tamandua,http://dummyimage.com/245x212.jpg/dddddd/000000,2,45,86,$9.84,9,Teal,73
+492,White-necked stork,http://dummyimage.com/133x149.jpg/dddddd/000000,6,94,8,$6.55,3,Orange,61
+493,Tarantula,http://dummyimage.com/241x190.jpg/ff4444/ffffff,5,63,69,$8.49,8,Purple,84
+494,Yellow-bellied marmot,http://dummyimage.com/183x120.jpg/5fa2dd/ffffff,2,39,43,$9.67,2,Crimson,18
+495,"Grouse, greater sage",http://dummyimage.com/149x123.jpg/dddddd/000000,7,62,98,$9.15,6,Mauv,52
+496,"Bustard, denham's",http://dummyimage.com/212x217.jpg/cc0000/ffffff,6,29,79,$4.46,4,Indigo,96
+497,"Whale, southern right",http://dummyimage.com/119x106.jpg/cc0000/ffffff,6,87,72,$8.67,2,Puce,12
+498,"Phascogale, brush-tailed",http://dummyimage.com/223x145.jpg/ff4444/ffffff,7,53,35,$7.27,7,Turquoise,76
+499,"Heron, black-crowned night",http://dummyimage.com/165x246.jpg/cc0000/ffffff,5,24,53,$1.25,1,Aquamarine,79
+500,"Parakeet, rose-ringed",http://dummyimage.com/116x172.jpg/cc0000/ffffff,1,19,25,$9.16,5,Mauv,9
+501,"Gecko, barking",http://dummyimage.com/208x208.jpg/dddddd/000000,3,46,58,$2.55,3,Violet,8
+502,Pale white-eye,http://dummyimage.com/165x194.jpg/5fa2dd/ffffff,3,85,18,$9.10,3,Orange,86
+503,"Lorikeet, scaly-breasted",http://dummyimage.com/151x185.jpg/ff4444/ffffff,6,6,50,$2.31,2,Crimson,54
+504,Snowy sheathbill,http://dummyimage.com/142x156.jpg/ff4444/ffffff,10,21,94,$3.16,5,Fuscia,100
+505,Savanna fox,http://dummyimage.com/141x224.jpg/5fa2dd/ffffff,3,8,27,$9.24,1,Pink,7
+506,Springhare,http://dummyimage.com/182x244.jpg/ff4444/ffffff,7,39,82,$0.51,2,Mauv,82
+507,White-tailed deer,http://dummyimage.com/181x102.jpg/cc0000/ffffff,7,62,10,$7.07,4,Indigo,32
+508,"Weaver, white-browed sparrow",http://dummyimage.com/245x238.jpg/cc0000/ffffff,5,20,97,$8.62,9,Mauv,65
+509,"Hawk, red-tailed",http://dummyimage.com/197x100.jpg/ff4444/ffffff,9,26,19,$8.11,8,Teal,83
+510,"Lemur, ring-tailed",http://dummyimage.com/117x137.jpg/5fa2dd/ffffff,2,17,16,$4.62,5,Purple,10
+511,"Duiker, common",http://dummyimage.com/186x235.jpg/5fa2dd/ffffff,8,84,45,$4.83,2,Aquamarine,33
+512,Sun gazer,http://dummyimage.com/195x138.jpg/cc0000/ffffff,6,38,28,$8.57,8,Green,14
+513,"Porcupine, north american",http://dummyimage.com/157x191.jpg/ff4444/ffffff,1,12,89,$7.05,1,Orange,87
+514,"Shelduck, common",http://dummyimage.com/111x194.jpg/5fa2dd/ffffff,5,34,26,$1.91,8,Teal,17
+515,"Stork, painted",http://dummyimage.com/212x169.jpg/5fa2dd/ffffff,8,28,80,$9.60,3,Crimson,77
+516,Warthog,http://dummyimage.com/194x227.jpg/ff4444/ffffff,7,46,77,$9.84,3,Puce,56
+517,European shelduck,http://dummyimage.com/148x192.jpg/cc0000/ffffff,2,25,99,$2.48,8,Blue,71
+518,Javanese cormorant,http://dummyimage.com/249x174.jpg/dddddd/000000,10,43,59,$2.30,9,Goldenrod,50
+519,Native cat,http://dummyimage.com/151x250.jpg/cc0000/ffffff,1,20,6,$9.55,5,Indigo,8
+520,"Phalarope, northern",http://dummyimage.com/249x105.jpg/dddddd/000000,5,36,15,$7.98,10,Indigo,68
+521,Eastern indigo snake,http://dummyimage.com/190x115.jpg/ff4444/ffffff,5,34,98,$5.85,1,Red,36
+522,"Rhinoceros, white",http://dummyimage.com/225x131.jpg/dddddd/000000,4,75,87,$7.12,8,Aquamarine,84
+523,"Eagle, golden",http://dummyimage.com/128x158.jpg/cc0000/ffffff,6,47,40,$3.39,10,Teal,35
+524,Red-winged blackbird,http://dummyimage.com/218x208.jpg/dddddd/000000,9,80,94,$9.09,9,Puce,40
+525,Lava gull,http://dummyimage.com/236x208.jpg/ff4444/ffffff,6,54,56,$9.02,10,Puce,69
+526,Elegant crested tinamou,http://dummyimage.com/201x164.jpg/5fa2dd/ffffff,4,55,59,$1.98,2,Khaki,74
+527,Blacksmith plover,http://dummyimage.com/216x108.jpg/dddddd/000000,10,48,47,$0.93,2,Mauv,26
+528,Wild water buffalo,http://dummyimage.com/128x181.jpg/dddddd/000000,10,15,35,$8.61,10,Green,7
+529,Slender-billed cockatoo,http://dummyimage.com/228x187.jpg/ff4444/ffffff,3,9,48,$9.88,8,Mauv,22
+530,Collared peccary,http://dummyimage.com/220x133.jpg/dddddd/000000,5,49,63,$8.20,9,Puce,100
+531,Red-billed hornbill,http://dummyimage.com/133x219.jpg/5fa2dd/ffffff,9,49,61,$2.14,7,Pink,61
+532,Common wallaroo,http://dummyimage.com/233x194.jpg/5fa2dd/ffffff,6,90,29,$2.86,5,Green,90
+533,Arctic hare,http://dummyimage.com/239x246.jpg/cc0000/ffffff,7,88,98,$6.30,10,Blue,75
+534,Cougar,http://dummyimage.com/164x219.jpg/cc0000/ffffff,5,5,77,$2.22,8,Aquamarine,67
+535,Downy woodpecker,http://dummyimage.com/233x175.jpg/5fa2dd/ffffff,6,16,64,$9.45,8,Puce,99
+536,"Monitor, two-banded",http://dummyimage.com/104x146.jpg/ff4444/ffffff,9,39,55,$2.77,4,Turquoise,47
+537,"Macaque, bonnet",http://dummyimage.com/172x131.jpg/dddddd/000000,5,22,72,$7.73,9,Fuscia,20
+538,"Anteater, giant",http://dummyimage.com/166x196.jpg/5fa2dd/ffffff,3,75,86,$5.27,5,Yellow,97
+539,"Tortoise, indian star",http://dummyimage.com/112x184.jpg/ff4444/ffffff,3,85,40,$7.02,10,Fuscia,23
+540,White-nosed coatimundi,http://dummyimage.com/209x171.jpg/ff4444/ffffff,4,59,50,$5.29,7,Mauv,62
+541,"Seal, harbor",http://dummyimage.com/169x225.jpg/5fa2dd/ffffff,3,57,97,$8.74,4,Mauv,81
+542,Asian red fox,http://dummyimage.com/135x178.jpg/5fa2dd/ffffff,2,100,99,$5.98,9,Goldenrod,5
+543,Honey badger,http://dummyimage.com/231x235.jpg/cc0000/ffffff,4,61,23,$4.53,10,Green,7
+544,"Buffalo, asian water",http://dummyimage.com/250x210.jpg/dddddd/000000,1,61,79,$7.85,7,Mauv,74
+545,"Cat, african wild",http://dummyimage.com/171x165.jpg/dddddd/000000,6,40,17,$3.08,6,Goldenrod,16
+546,"Lizard, frilled",http://dummyimage.com/156x208.jpg/cc0000/ffffff,10,96,10,$5.30,8,Pink,79
+547,Wild water buffalo,http://dummyimage.com/215x193.jpg/ff4444/ffffff,6,97,63,$7.60,5,Puce,43
+548,Water moccasin,http://dummyimage.com/190x107.jpg/ff4444/ffffff,4,33,38,$0.17,9,Indigo,80
+549,"Otter, cape clawless",http://dummyimage.com/169x187.jpg/ff4444/ffffff,2,5,43,$7.79,10,Pink,61
+550,"Wallaby, dama",http://dummyimage.com/175x234.jpg/5fa2dd/ffffff,5,58,87,$1.07,4,Puce,77
+551,"Rat, white-faced tree",http://dummyimage.com/186x153.jpg/cc0000/ffffff,6,39,99,$6.38,10,Khaki,71
+552,Small-toothed palm civet,http://dummyimage.com/232x114.jpg/dddddd/000000,6,2,70,$5.63,2,Indigo,89
+553,Great white pelican,http://dummyimage.com/201x234.jpg/dddddd/000000,6,2,79,$4.02,4,Red,82
+554,Herring gull,http://dummyimage.com/100x127.jpg/dddddd/000000,7,22,72,$6.21,8,Fuscia,61
+555,Caribou,http://dummyimage.com/236x181.jpg/5fa2dd/ffffff,5,2,33,$8.62,9,Puce,23
+556,Barasingha deer,http://dummyimage.com/110x102.jpg/dddddd/000000,8,86,67,$9.07,3,Yellow,62
+557,"Crow, pied",http://dummyimage.com/206x110.jpg/5fa2dd/ffffff,4,27,11,$2.11,5,Maroon,82
+558,"Shelduck, european",http://dummyimage.com/225x202.jpg/ff4444/ffffff,8,97,87,$9.69,10,Pink,51
+559,"Toucan, red-billed",http://dummyimage.com/180x250.jpg/5fa2dd/ffffff,6,94,85,$9.76,5,Purple,56
+560,Brindled gnu,http://dummyimage.com/199x154.jpg/cc0000/ffffff,3,100,39,$9.26,2,Blue,55
+561,"Lion, asian",http://dummyimage.com/208x117.jpg/cc0000/ffffff,5,31,9,$1.20,2,Crimson,16
+562,"Sloth, pale-throated three-toed",http://dummyimage.com/128x104.jpg/5fa2dd/ffffff,9,57,3,$6.51,3,Puce,26
+563,Hoary marmot,http://dummyimage.com/106x125.jpg/5fa2dd/ffffff,8,40,76,$3.80,6,Violet,5
+564,"Peccary, white-lipped",http://dummyimage.com/168x156.jpg/ff4444/ffffff,7,17,12,$9.03,10,Blue,54
+565,"Moccasin, water",http://dummyimage.com/113x103.jpg/dddddd/000000,8,51,7,$3.66,5,Teal,38
+566,Blue peacock,http://dummyimage.com/160x177.jpg/ff4444/ffffff,8,49,80,$4.76,9,Indigo,68
+567,"Lizard, blue-tongued",http://dummyimage.com/133x157.jpg/cc0000/ffffff,1,16,86,$5.80,2,Fuscia,88
+568,Eastern fox squirrel,http://dummyimage.com/228x148.jpg/ff4444/ffffff,3,10,44,$0.86,1,Crimson,98
+569,"Dragon, frilled",http://dummyimage.com/126x229.jpg/dddddd/000000,10,67,52,$3.49,6,Yellow,48
+570,Sacred ibis,http://dummyimage.com/163x166.jpg/5fa2dd/ffffff,7,16,48,$0.65,4,Purple,30
+571,Large-eared bushbaby,http://dummyimage.com/247x231.jpg/cc0000/ffffff,2,46,2,$8.11,4,Maroon,28
+572,"Gazelle, thomson's",http://dummyimage.com/215x117.jpg/cc0000/ffffff,5,42,35,$7.10,2,Fuscia,78
+573,"Hornbill, red-billed",http://dummyimage.com/244x158.jpg/ff4444/ffffff,5,49,28,$0.52,10,Mauv,62
+574,African ground squirrel (unidentified),http://dummyimage.com/191x123.jpg/ff4444/ffffff,5,96,68,$1.72,10,Maroon,91
+575,Brown and yellow marshbird,http://dummyimage.com/202x146.jpg/cc0000/ffffff,1,35,28,$4.08,8,Mauv,29
+576,"Admiral, indian red",http://dummyimage.com/186x235.jpg/dddddd/000000,8,22,89,$4.03,8,Teal,65
+577,Red lava crab,http://dummyimage.com/227x174.jpg/ff4444/ffffff,1,4,15,$2.14,4,Teal,50
+578,Arctic fox,http://dummyimage.com/123x237.jpg/cc0000/ffffff,10,56,20,$4.64,2,Indigo,24
+579,"Whale, baleen",http://dummyimage.com/154x104.jpg/ff4444/ffffff,2,7,20,$1.23,8,Green,44
+580,"Crane, blue",http://dummyimage.com/171x156.jpg/cc0000/ffffff,9,55,63,$9.51,4,Green,32
+581,Woodchuck,http://dummyimage.com/146x131.jpg/dddddd/000000,5,90,39,$5.73,1,Green,52
+582,"Kangaroo, black-faced",http://dummyimage.com/138x191.jpg/dddddd/000000,2,62,35,$5.23,3,Indigo,12
+583,"Grebe, little",http://dummyimage.com/177x204.jpg/cc0000/ffffff,1,97,78,$9.44,1,Maroon,26
+584,"Turtle, snake-necked",http://dummyimage.com/201x204.jpg/5fa2dd/ffffff,4,77,46,$0.25,4,Turquoise,19
+585,"Cockatoo, red-breasted",http://dummyimage.com/169x216.jpg/5fa2dd/ffffff,9,49,87,$4.20,9,Red,94
+586,Bennett's wallaby,http://dummyimage.com/240x213.jpg/ff4444/ffffff,3,87,59,$4.90,3,Purple,51
+587,"Bird, secretary",http://dummyimage.com/232x158.jpg/cc0000/ffffff,4,92,60,$5.51,9,Maroon,25
+588,"Wambenger, red-tailed",http://dummyimage.com/186x200.jpg/dddddd/000000,5,42,93,$1.38,8,Violet,33
+589,Ring-tailed lemur,http://dummyimage.com/250x109.jpg/ff4444/ffffff,2,70,42,$0.25,5,Goldenrod,39
+590,Eagle owl (unidentified),http://dummyimage.com/181x167.jpg/dddddd/000000,8,11,51,$3.73,7,Khaki,77
+591,Uinta ground squirrel,http://dummyimage.com/139x218.jpg/ff4444/ffffff,9,8,45,$3.34,3,Purple,29
+592,Hoary marmot,http://dummyimage.com/176x172.jpg/ff4444/ffffff,4,29,97,$2.45,7,Violet,81
+593,Cook's tree boa,http://dummyimage.com/139x236.jpg/ff4444/ffffff,2,78,70,$2.04,7,Maroon,73
+594,"Stork, marabou",http://dummyimage.com/161x171.jpg/5fa2dd/ffffff,4,85,54,$6.35,9,Maroon,10
+595,Gray langur,http://dummyimage.com/179x179.jpg/dddddd/000000,2,88,8,$9.69,8,Mauv,49
+596,Long-crested hawk eagle,http://dummyimage.com/147x232.jpg/cc0000/ffffff,3,58,30,$4.16,1,Violet,91
+597,Large-eared bushbaby,http://dummyimage.com/217x190.jpg/5fa2dd/ffffff,6,27,33,$9.51,3,Teal,18
+598,Indian tree pie,http://dummyimage.com/122x241.jpg/cc0000/ffffff,5,30,87,$8.96,5,Violet,66
+599,South American puma,http://dummyimage.com/115x242.jpg/dddddd/000000,2,77,61,$1.89,1,Violet,75
+600,"Armadillo, common long-nosed",http://dummyimage.com/106x211.jpg/ff4444/ffffff,10,99,7,$9.30,6,Aquamarine,67
+601,Antelope ground squirrel,http://dummyimage.com/235x179.jpg/5fa2dd/ffffff,4,75,22,$7.12,8,Pink,18
+602,"Gonolek, burchell's",http://dummyimage.com/203x211.jpg/cc0000/ffffff,8,54,22,$6.76,2,Blue,37
+603,"Bear, grizzly",http://dummyimage.com/116x217.jpg/cc0000/ffffff,7,31,31,$1.99,2,Turquoise,5
+604,Aardwolf,http://dummyimage.com/214x151.jpg/ff4444/ffffff,2,72,23,$8.65,8,Puce,9
+605,Giant heron,http://dummyimage.com/125x146.jpg/5fa2dd/ffffff,9,87,76,$5.63,4,Crimson,79
+606,"Jaeger, long-tailed",http://dummyimage.com/198x117.jpg/dddddd/000000,2,76,30,$5.22,7,Purple,75
+607,"Gorilla, western lowland",http://dummyimage.com/112x128.jpg/dddddd/000000,7,36,27,$4.58,6,Turquoise,66
+608,Neotropic cormorant,http://dummyimage.com/220x213.jpg/5fa2dd/ffffff,6,47,55,$9.57,7,Goldenrod,94
+609,"Peacock, blue",http://dummyimage.com/134x197.jpg/cc0000/ffffff,1,73,61,$3.69,6,Turquoise,96
+610,"Deer, mule",http://dummyimage.com/168x150.jpg/cc0000/ffffff,4,29,6,$0.72,6,Pink,30
+611,"Butterfly, tropical buckeye",http://dummyimage.com/237x173.jpg/5fa2dd/ffffff,7,49,31,$8.13,4,Green,86
+612,"Fox, cape",http://dummyimage.com/217x103.jpg/ff4444/ffffff,9,63,91,$6.95,4,Goldenrod,99
+613,"Barbet, levaillant's",http://dummyimage.com/155x157.jpg/5fa2dd/ffffff,5,21,13,$2.58,5,Orange,89
+614,"Civet, small-toothed palm",http://dummyimage.com/156x164.jpg/5fa2dd/ffffff,3,49,31,$4.72,4,Blue,55
+615,Snake-necked turtle,http://dummyimage.com/120x139.jpg/5fa2dd/ffffff,10,26,43,$3.33,1,Red,77
+616,Fork-tailed drongo,http://dummyimage.com/241x104.jpg/5fa2dd/ffffff,7,2,95,$0.67,8,Goldenrod,50
+617,Fairy penguin,http://dummyimage.com/154x224.jpg/dddddd/000000,9,24,43,$9.73,8,Puce,84
+618,Common dolphin,http://dummyimage.com/196x243.jpg/ff4444/ffffff,2,96,6,$5.45,1,Teal,11
+619,Chacma baboon,http://dummyimage.com/182x110.jpg/5fa2dd/ffffff,4,75,48,$1.95,8,Indigo,54
+620,"Fox, silver-backed",http://dummyimage.com/154x155.jpg/5fa2dd/ffffff,2,85,73,$5.99,3,Green,61
+621,Black-crowned night heron,http://dummyimage.com/137x110.jpg/dddddd/000000,1,53,84,$3.86,2,Puce,62
+622,Common genet,http://dummyimage.com/222x222.jpg/5fa2dd/ffffff,1,40,37,$3.29,10,Puce,91
+623,"Buffalo, wild water",http://dummyimage.com/189x155.jpg/dddddd/000000,2,52,71,$8.00,2,Khaki,91
+624,Blue crane,http://dummyimage.com/192x176.jpg/dddddd/000000,9,37,56,$1.56,6,Blue,30
+625,Southern brown bandicoot,http://dummyimage.com/242x247.jpg/dddddd/000000,1,84,91,$7.74,5,Blue,39
+626,"Darter, african",http://dummyimage.com/133x185.jpg/dddddd/000000,9,22,85,$9.08,1,Red,4
+627,"Tern, royal",http://dummyimage.com/234x134.jpg/dddddd/000000,5,37,28,$3.75,1,Indigo,67
+628,"Waterbuck, defassa",http://dummyimage.com/190x236.jpg/5fa2dd/ffffff,9,29,14,$6.77,9,Turquoise,18
+629,"Cliffchat, mocking",http://dummyimage.com/229x206.jpg/ff4444/ffffff,7,37,12,$5.63,5,Aquamarine,17
+630,Blue crane,http://dummyimage.com/144x234.jpg/dddddd/000000,9,27,60,$5.48,7,Green,72
+631,"Otter, cape clawless",http://dummyimage.com/238x237.jpg/dddddd/000000,5,28,90,$9.56,4,Khaki,64
+632,Savannah deer (unidentified),http://dummyimage.com/124x195.jpg/ff4444/ffffff,3,45,74,$9.33,3,Puce,15
+633,Tiger cat,http://dummyimage.com/242x146.jpg/dddddd/000000,5,100,4,$5.89,7,Blue,96
+634,"Starfish, crown of thorns",http://dummyimage.com/226x236.jpg/cc0000/ffffff,10,65,88,$8.99,5,Goldenrod,85
+635,Long-finned pilot whale,http://dummyimage.com/218x154.jpg/ff4444/ffffff,10,42,16,$4.57,6,Yellow,43
+636,"Goose, andean",http://dummyimage.com/106x201.jpg/ff4444/ffffff,7,49,56,$3.49,3,Indigo,4
+637,"Crane, brolga",http://dummyimage.com/158x101.jpg/cc0000/ffffff,7,96,86,$1.58,9,Purple,5
+638,Long-tailed skua,http://dummyimage.com/160x126.jpg/ff4444/ffffff,4,79,85,$2.95,1,Red,42
+639,"Peccary, white-lipped",http://dummyimage.com/238x250.jpg/cc0000/ffffff,3,75,85,$3.62,10,Purple,81
+640,Roe deer,http://dummyimage.com/214x180.jpg/5fa2dd/ffffff,4,60,15,$0.43,8,Khaki,2
+641,Whip-tailed wallaby,http://dummyimage.com/210x213.jpg/ff4444/ffffff,2,21,4,$5.62,10,Green,23
+642,"Deer, red",http://dummyimage.com/209x155.jpg/dddddd/000000,4,81,31,$3.95,9,Fuscia,32
+643,"Legaan, Monitor (unidentified)",http://dummyimage.com/226x242.jpg/dddddd/000000,10,76,47,$9.86,5,Goldenrod,14
+644,"Parrot, hawk-headed",http://dummyimage.com/154x219.jpg/dddddd/000000,9,80,43,$9.47,7,Goldenrod,32
+645,"Starling, cape",http://dummyimage.com/176x226.jpg/5fa2dd/ffffff,4,84,6,$7.32,2,Crimson,88
+646,"Gull, kelp",http://dummyimage.com/217x111.jpg/dddddd/000000,7,5,35,$6.98,4,Crimson,8
+647,Crowned eagle,http://dummyimage.com/140x126.jpg/cc0000/ffffff,4,62,80,$0.50,1,Crimson,41
+648,Sidewinder,http://dummyimage.com/245x100.jpg/5fa2dd/ffffff,10,16,62,$9.67,2,Turquoise,2
+649,Red hartebeest,http://dummyimage.com/220x125.jpg/dddddd/000000,3,46,45,$9.23,7,Turquoise,89
+650,Savannah deer,http://dummyimage.com/213x108.jpg/dddddd/000000,2,46,91,$8.98,5,Maroon,36
+651,"Marmot, yellow-bellied",http://dummyimage.com/205x250.jpg/5fa2dd/ffffff,6,89,35,$5.67,4,Yellow,84
+652,Greater roadrunner,http://dummyimage.com/108x175.jpg/cc0000/ffffff,6,17,25,$1.81,2,Aquamarine,78
+653,"Sloth, pale-throated three-toed",http://dummyimage.com/128x244.jpg/5fa2dd/ffffff,9,75,85,$5.37,2,Pink,70
+654,Nyala,http://dummyimage.com/116x189.jpg/cc0000/ffffff,9,33,10,$8.59,7,Aquamarine,77
+655,Puma,http://dummyimage.com/100x210.jpg/cc0000/ffffff,7,77,19,$4.00,6,Violet,12
+656,"Turtle, long-necked",http://dummyimage.com/106x248.jpg/ff4444/ffffff,10,40,49,$9.70,6,Mauv,69
+657,Hoary marmot,http://dummyimage.com/104x220.jpg/5fa2dd/ffffff,2,42,81,$7.77,4,Purple,61
+658,Savannah deer,http://dummyimage.com/107x123.jpg/dddddd/000000,4,86,87,$0.36,1,Teal,81
+659,"Possum, western pygmy",http://dummyimage.com/181x138.jpg/ff4444/ffffff,1,66,29,$5.04,2,Puce,53
+660,King vulture,http://dummyimage.com/187x193.jpg/5fa2dd/ffffff,4,84,91,$2.17,7,Puce,17
+661,"Spoonbill, european",http://dummyimage.com/127x198.jpg/ff4444/ffffff,2,78,85,$6.54,7,Blue,13
+662,"Parakeet, rose-ringed",http://dummyimage.com/111x167.jpg/ff4444/ffffff,9,27,93,$0.52,6,Fuscia,68
+663,Giraffe,http://dummyimage.com/212x161.jpg/cc0000/ffffff,9,88,90,$7.85,8,Pink,55
+664,Green heron,http://dummyimage.com/165x128.jpg/cc0000/ffffff,9,88,16,$7.17,10,Fuscia,32
+665,Egyptian cobra,http://dummyimage.com/108x168.jpg/ff4444/ffffff,10,36,89,$5.69,7,Orange,40
+666,Russian dragonfly,http://dummyimage.com/171x191.jpg/dddddd/000000,7,32,4,$9.41,8,Purple,74
+667,Elegant crested tinamou,http://dummyimage.com/169x224.jpg/dddddd/000000,5,58,100,$5.82,6,Red,3
+668,Emu,http://dummyimage.com/184x222.jpg/dddddd/000000,2,27,84,$9.60,5,Pink,98
+669,"Hedgehog, south african",http://dummyimage.com/188x192.jpg/dddddd/000000,9,66,75,$5.32,7,Violet,82
+670,"Moccasin, water",http://dummyimage.com/218x184.jpg/ff4444/ffffff,9,11,44,$1.79,1,Purple,85
+671,"Shark, blue",http://dummyimage.com/113x177.jpg/cc0000/ffffff,10,35,40,$2.18,6,Purple,38
+672,Bateleur eagle,http://dummyimage.com/247x245.jpg/cc0000/ffffff,4,2,13,$0.80,8,Red,13
+673,African red-eyed bulbul,http://dummyimage.com/168x108.jpg/dddddd/000000,7,39,25,$2.97,3,Maroon,94
+674,"Squirrel, arctic ground",http://dummyimage.com/157x131.jpg/dddddd/000000,7,74,57,$3.34,2,Red,53
+675,"Peccary, white-lipped",http://dummyimage.com/131x234.jpg/dddddd/000000,9,37,26,$9.37,3,Aquamarine,81
+676,"Seal, northern fur",http://dummyimage.com/220x101.jpg/ff4444/ffffff,4,17,2,$9.52,9,Crimson,13
+677,Topi,http://dummyimage.com/242x117.jpg/5fa2dd/ffffff,5,17,72,$9.00,10,Red,33
+678,"Dog, black-tailed prairie",http://dummyimage.com/169x107.jpg/5fa2dd/ffffff,10,12,61,$5.68,9,Goldenrod,33
+679,African wild dog,http://dummyimage.com/195x181.jpg/dddddd/000000,8,28,98,$4.65,4,Orange,58
+680,"Dove, mourning collared",http://dummyimage.com/180x183.jpg/dddddd/000000,3,52,34,$4.74,10,Crimson,65
+681,Hudsonian godwit,http://dummyimage.com/179x149.jpg/5fa2dd/ffffff,7,15,99,$4.52,9,Khaki,73
+682,Saddle-billed stork,http://dummyimage.com/233x111.jpg/5fa2dd/ffffff,2,22,55,$5.85,5,Maroon,84
+683,Collared peccary,http://dummyimage.com/241x244.jpg/cc0000/ffffff,2,94,12,$1.80,8,Mauv,9
+684,Bennett's wallaby,http://dummyimage.com/123x191.jpg/cc0000/ffffff,7,30,27,$5.87,8,Khaki,10
+685,White-fronted capuchin,http://dummyimage.com/250x196.jpg/5fa2dd/ffffff,5,49,28,$5.14,10,Puce,93
+686,"Armadillo, giant",http://dummyimage.com/154x206.jpg/dddddd/000000,6,16,32,$4.81,3,Puce,43
+687,"Falcon, prairie",http://dummyimage.com/163x180.jpg/cc0000/ffffff,4,81,59,$0.38,9,Red,100
+688,River wallaby,http://dummyimage.com/122x234.jpg/cc0000/ffffff,8,31,32,$8.19,8,Puce,86
+689,Bird (unidentified),http://dummyimage.com/182x247.jpg/dddddd/000000,9,15,71,$3.96,9,Red,60
+690,"Starling, greater blue-eared",http://dummyimage.com/236x165.jpg/5fa2dd/ffffff,5,96,85,$2.80,10,Crimson,3
+691,"Alligator, american",http://dummyimage.com/229x233.jpg/cc0000/ffffff,4,26,53,$5.00,6,Turquoise,60
+692,Springbok,http://dummyimage.com/158x127.jpg/dddddd/000000,4,80,37,$5.85,9,Teal,49
+693,Two-toed tree sloth,http://dummyimage.com/200x228.jpg/5fa2dd/ffffff,9,15,77,$1.59,6,Pink,8
+694,"Stork, painted",http://dummyimage.com/115x150.jpg/cc0000/ffffff,8,28,18,$6.47,2,Yellow,86
+695,"Lourie, grey",http://dummyimage.com/138x216.jpg/ff4444/ffffff,3,92,85,$9.53,10,Fuscia,40
+696,"Spoonbill, european",http://dummyimage.com/169x102.jpg/cc0000/ffffff,4,48,84,$4.92,6,Yellow,95
+697,"Wambenger, red-tailed",http://dummyimage.com/214x111.jpg/cc0000/ffffff,10,70,66,$3.58,2,Puce,48
+698,Kinkajou,http://dummyimage.com/175x185.jpg/cc0000/ffffff,6,29,29,$8.89,9,Blue,65
+699,"Fox, crab-eating",http://dummyimage.com/212x111.jpg/5fa2dd/ffffff,5,35,41,$2.80,7,Pink,10
+700,House sparrow,http://dummyimage.com/145x228.jpg/5fa2dd/ffffff,9,26,66,$6.89,6,Turquoise,77
+701,"Squirrel, indian giant",http://dummyimage.com/133x132.jpg/dddddd/000000,10,77,58,$4.52,6,Pink,30
+702,North American river otter,http://dummyimage.com/174x226.jpg/cc0000/ffffff,6,65,80,$1.03,2,Green,3
+703,"Quoll, spotted-tailed",http://dummyimage.com/175x135.jpg/ff4444/ffffff,9,93,91,$5.61,1,Maroon,70
+704,"Antelope, sable",http://dummyimage.com/148x102.jpg/dddddd/000000,1,50,75,$6.74,10,Pink,16
+705,"White-eye, pale",http://dummyimage.com/176x111.jpg/cc0000/ffffff,10,70,14,$1.91,2,Yellow,40
+706,"Cockatoo, red-tailed",http://dummyimage.com/145x161.jpg/ff4444/ffffff,6,38,42,$7.31,6,Puce,89
+707,Stanley bustard,http://dummyimage.com/217x205.jpg/ff4444/ffffff,8,43,96,$2.39,1,Blue,10
+708,Roan antelope,http://dummyimage.com/133x235.jpg/dddddd/000000,1,19,66,$8.39,1,Fuscia,2
+709,"Rat, white-faced tree",http://dummyimage.com/155x175.jpg/dddddd/000000,2,13,22,$1.55,1,Orange,83
+710,"Hawk-eagle, crowned",http://dummyimage.com/138x230.jpg/cc0000/ffffff,5,9,14,$3.64,7,Teal,12
+711,"Glider, squirrel",http://dummyimage.com/120x248.jpg/5fa2dd/ffffff,6,59,60,$3.98,4,Blue,87
+712,"Stork, greater adjutant",http://dummyimage.com/242x179.jpg/ff4444/ffffff,5,75,91,$6.74,2,Pink,77
+713,Cape raven,http://dummyimage.com/219x126.jpg/5fa2dd/ffffff,7,46,77,$8.46,5,Pink,81
+714,Ovenbird,http://dummyimage.com/103x154.jpg/dddddd/000000,5,70,12,$1.94,5,Blue,6
+715,Zorilla,http://dummyimage.com/245x166.jpg/ff4444/ffffff,9,6,80,$6.99,3,Yellow,99
+716,"Kiskadee, great",http://dummyimage.com/166x229.jpg/dddddd/000000,3,91,98,$7.04,7,Aquamarine,19
+717,"Caracara, yellow-headed",http://dummyimage.com/164x183.jpg/ff4444/ffffff,6,89,10,$7.06,8,Indigo,11
+718,"Tapir, brazilian",http://dummyimage.com/150x144.jpg/cc0000/ffffff,2,54,94,$4.24,2,Teal,98
+719,"Glider, sugar",http://dummyimage.com/114x241.jpg/ff4444/ffffff,2,95,58,$4.71,1,Mauv,41
+720,Galapagos mockingbird,http://dummyimage.com/105x113.jpg/dddddd/000000,3,55,26,$0.47,3,Purple,85
+721,"Thrasher, curve-billed",http://dummyimage.com/196x117.jpg/dddddd/000000,7,69,43,$9.03,4,Violet,49
+722,"Meerkat, red",http://dummyimage.com/247x150.jpg/ff4444/ffffff,1,13,54,$8.17,4,Orange,43
+723,"Barbet, levaillant's",http://dummyimage.com/107x241.jpg/5fa2dd/ffffff,7,20,40,$8.84,3,Yellow,60
+724,Stone sheep,http://dummyimage.com/185x101.jpg/dddddd/000000,8,40,23,$3.97,3,Turquoise,46
+725,"Cat, native",http://dummyimage.com/117x168.jpg/cc0000/ffffff,4,39,89,$5.23,9,Purple,1
+726,Dark-winged trumpeter,http://dummyimage.com/109x177.jpg/dddddd/000000,7,97,81,$3.71,4,Indigo,20
+727,Wolf spider,http://dummyimage.com/124x163.jpg/cc0000/ffffff,4,40,36,$9.13,4,Teal,98
+728,Mountain lion,http://dummyimage.com/132x226.jpg/ff4444/ffffff,10,54,68,$9.55,5,Maroon,37
+729,American crow,http://dummyimage.com/234x127.jpg/dddddd/000000,6,7,81,$7.42,1,Red,49
+730,Ring-tailed possum,http://dummyimage.com/214x182.jpg/cc0000/ffffff,6,37,79,$9.96,3,Maroon,24
+731,"Quoll, eastern",http://dummyimage.com/121x128.jpg/ff4444/ffffff,4,74,68,$5.79,1,Violet,61
+732,"Deer, roe",http://dummyimage.com/205x209.jpg/cc0000/ffffff,1,35,11,$1.08,2,Aquamarine,75
+733,Australian brush turkey,http://dummyimage.com/101x202.jpg/5fa2dd/ffffff,7,21,74,$4.28,2,Green,17
+734,Four-striped grass mouse,http://dummyimage.com/233x153.jpg/5fa2dd/ffffff,7,88,60,$2.88,3,Pink,95
+735,African darter,http://dummyimage.com/250x224.jpg/5fa2dd/ffffff,2,76,66,$3.73,5,Orange,93
+736,"Antelope, roan",http://dummyimage.com/218x229.jpg/5fa2dd/ffffff,7,3,89,$3.51,7,Crimson,33
+737,Black-tailed tree creeper,http://dummyimage.com/167x207.jpg/5fa2dd/ffffff,5,97,24,$8.45,6,Turquoise,23
+738,Burrowing owl,http://dummyimage.com/130x114.jpg/dddddd/000000,6,58,86,$6.33,7,Purple,85
+739,Australian masked owl,http://dummyimage.com/241x195.jpg/5fa2dd/ffffff,3,6,39,$5.38,6,Red,91
+740,Brush-tailed phascogale,http://dummyimage.com/138x136.jpg/ff4444/ffffff,10,77,25,$2.66,10,Maroon,48
+741,"Lapwing, southern",http://dummyimage.com/172x134.jpg/5fa2dd/ffffff,8,46,74,$3.20,8,Puce,7
+742,Rhesus macaque,http://dummyimage.com/173x197.jpg/5fa2dd/ffffff,3,71,86,$2.03,8,Teal,40
+743,"Meerkat, red",http://dummyimage.com/136x191.jpg/5fa2dd/ffffff,1,66,69,$4.50,2,Puce,30
+744,Desert kangaroo rat,http://dummyimage.com/123x166.jpg/cc0000/ffffff,2,99,82,$4.40,7,Indigo,5
+745,Rose-ringed parakeet,http://dummyimage.com/178x226.jpg/ff4444/ffffff,2,50,27,$2.66,10,Fuscia,36
+746,Thirteen-lined squirrel,http://dummyimage.com/107x165.jpg/ff4444/ffffff,1,1,21,$7.42,2,Orange,87
+747,"Bear, black",http://dummyimage.com/174x225.jpg/5fa2dd/ffffff,10,82,62,$6.71,4,Puce,6
+748,Mudskipper (unidentified),http://dummyimage.com/115x123.jpg/cc0000/ffffff,8,14,8,$3.59,2,Khaki,12
+749,"Eland, common",http://dummyimage.com/216x140.jpg/dddddd/000000,1,19,55,$0.79,10,Violet,43
+750,Rufous tree pie,http://dummyimage.com/220x168.jpg/dddddd/000000,7,22,97,$0.62,2,Pink,2
+751,"Tern, white-winged black",http://dummyimage.com/213x234.jpg/cc0000/ffffff,1,43,89,$9.22,6,Teal,93
+752,African wild dog,http://dummyimage.com/195x214.jpg/5fa2dd/ffffff,8,39,78,$8.22,10,Pink,7
+753,Brown pelican,http://dummyimage.com/126x185.jpg/ff4444/ffffff,5,82,55,$6.73,5,Goldenrod,42
+754,Common goldeneye,http://dummyimage.com/144x190.jpg/dddddd/000000,6,52,33,$8.07,4,Puce,54
+755,"White-eye, pale",http://dummyimage.com/188x100.jpg/5fa2dd/ffffff,6,2,42,$9.02,5,Goldenrod,98
+756,Long-finned pilot whale,http://dummyimage.com/106x104.jpg/dddddd/000000,9,56,2,$7.39,8,Fuscia,84
+757,Galapagos sea lion,http://dummyimage.com/196x153.jpg/ff4444/ffffff,8,90,12,$4.54,6,Fuscia,57
+758,Long-tailed skua,http://dummyimage.com/161x175.jpg/cc0000/ffffff,7,92,3,$0.80,2,Yellow,89
+759,"Squirrel, smith's bush",http://dummyimage.com/186x168.jpg/5fa2dd/ffffff,8,91,91,$8.08,2,Puce,58
+760,"Legaan, ground",http://dummyimage.com/227x164.jpg/dddddd/000000,10,86,98,$2.73,1,Crimson,99
+761,Red and blue macaw,http://dummyimage.com/140x169.jpg/ff4444/ffffff,10,42,41,$9.18,9,Fuscia,62
+762,"Weaver, red-billed buffalo",http://dummyimage.com/153x110.jpg/dddddd/000000,2,90,90,$7.29,6,Khaki,33
+763,Four-spotted skimmer,http://dummyimage.com/127x137.jpg/cc0000/ffffff,7,95,58,$9.66,3,Goldenrod,42
+764,"Goose, cereopsis",http://dummyimage.com/250x166.jpg/cc0000/ffffff,7,46,53,$1.90,3,Indigo,16
+765,"Salmon, sockeye",http://dummyimage.com/144x144.jpg/dddddd/000000,3,82,90,$1.25,4,Purple,13
+766,Swallow-tail gull,http://dummyimage.com/129x229.jpg/dddddd/000000,8,25,95,$9.89,5,Mauv,60
+767,"Puffin, horned",http://dummyimage.com/247x207.jpg/cc0000/ffffff,1,80,38,$0.75,8,Aquamarine,95
+768,American black bear,http://dummyimage.com/229x103.jpg/5fa2dd/ffffff,5,90,24,$3.10,9,Teal,81
+769,Purple moorhen,http://dummyimage.com/229x187.jpg/5fa2dd/ffffff,5,51,15,$8.01,4,Violet,37
+770,"Kangaroo, eastern grey",http://dummyimage.com/100x199.jpg/ff4444/ffffff,10,96,78,$7.32,7,Khaki,100
+771,Barking gecko,http://dummyimage.com/182x211.jpg/dddddd/000000,10,77,49,$5.55,8,Khaki,40
+772,Giraffe,http://dummyimage.com/118x246.jpg/cc0000/ffffff,1,92,49,$0.40,4,Indigo,3
+773,"Parakeet, rose-ringed",http://dummyimage.com/170x187.jpg/ff4444/ffffff,4,8,79,$1.58,3,Violet,70
+774,Common goldeneye,http://dummyimage.com/185x246.jpg/ff4444/ffffff,8,92,55,$0.06,4,Maroon,62
+775,Common wombat,http://dummyimage.com/117x182.jpg/dddddd/000000,6,97,32,$1.27,8,Orange,66
+776,Snowy sheathbill,http://dummyimage.com/180x218.jpg/cc0000/ffffff,7,40,91,$0.83,10,Turquoise,51
+777,Sloth bear,http://dummyimage.com/129x104.jpg/ff4444/ffffff,10,19,14,$4.11,6,Blue,81
+778,Black-crowned night heron,http://dummyimage.com/152x238.jpg/ff4444/ffffff,8,21,96,$7.01,8,Indigo,58
+779,Common nighthawk,http://dummyimage.com/250x236.jpg/5fa2dd/ffffff,2,28,79,$7.58,6,Goldenrod,3
+780,South American sea lion,http://dummyimage.com/121x146.jpg/dddddd/000000,6,92,90,$6.18,9,Violet,7
+781,Water legaan,http://dummyimage.com/248x247.jpg/cc0000/ffffff,3,76,78,$2.90,8,Indigo,21
+782,"Cat, cape wild",http://dummyimage.com/156x234.jpg/ff4444/ffffff,6,100,28,$9.28,2,Crimson,25
+783,Crowned hawk-eagle,http://dummyimage.com/199x158.jpg/5fa2dd/ffffff,10,35,17,$9.64,3,Green,61
+784,"Thrasher, curve-billed",http://dummyimage.com/199x202.jpg/5fa2dd/ffffff,9,33,46,$7.09,5,Crimson,30
+785,Striated heron,http://dummyimage.com/104x237.jpg/dddddd/000000,3,43,89,$4.49,6,Blue,90
+786,"Cockatoo, slender-billed",http://dummyimage.com/243x230.jpg/cc0000/ffffff,3,86,54,$4.91,4,Blue,51
+787,"Goose, cape barren",http://dummyimage.com/244x233.jpg/dddddd/000000,5,48,86,$5.66,6,Orange,91
+788,"Monkey, black spider",http://dummyimage.com/248x219.jpg/5fa2dd/ffffff,5,97,25,$6.64,1,Khaki,98
+789,"Lapwing, southern",http://dummyimage.com/222x147.jpg/ff4444/ffffff,7,55,8,$7.35,8,Aquamarine,38
+790,"Pigeon, feral rock",http://dummyimage.com/212x235.jpg/5fa2dd/ffffff,8,70,58,$8.99,4,Crimson,65
+791,Eastern cottontail rabbit,http://dummyimage.com/235x223.jpg/cc0000/ffffff,4,60,61,$7.74,6,Purple,3
+792,African jacana,http://dummyimage.com/131x168.jpg/cc0000/ffffff,1,46,13,$1.78,10,Orange,78
+793,Knob-nosed goose,http://dummyimage.com/243x119.jpg/5fa2dd/ffffff,8,40,83,$5.41,6,Crimson,59
+794,"Armadillo, giant",http://dummyimage.com/114x232.jpg/5fa2dd/ffffff,5,46,94,$7.77,9,Puce,65
+795,"Stork, yellow-billed",http://dummyimage.com/173x227.jpg/cc0000/ffffff,10,51,97,$9.20,3,Puce,88
+796,"Squirrel, eurasian red",http://dummyimage.com/214x232.jpg/cc0000/ffffff,4,97,28,$6.27,9,Indigo,43
+797,Blackish oystercatcher,http://dummyimage.com/184x167.jpg/ff4444/ffffff,2,27,26,$8.13,10,Goldenrod,18
+798,"Goldeneye, barrows",http://dummyimage.com/223x102.jpg/5fa2dd/ffffff,3,22,100,$5.59,3,Aquamarine,71
+799,Blue fox,http://dummyimage.com/225x157.jpg/dddddd/000000,7,31,1,$8.73,6,Crimson,37
+800,"Sifaka, verreaux's",http://dummyimage.com/250x171.jpg/cc0000/ffffff,8,11,10,$4.07,3,Maroon,77
+801,Mallard,http://dummyimage.com/173x106.jpg/dddddd/000000,2,57,49,$1.08,7,Khaki,44
+802,Four-horned antelope,http://dummyimage.com/177x108.jpg/ff4444/ffffff,2,77,92,$5.89,3,Teal,70
+803,Golden eagle,http://dummyimage.com/239x199.jpg/dddddd/000000,6,57,20,$2.19,4,Violet,34
+804,"Peacock, blue",http://dummyimage.com/138x210.jpg/cc0000/ffffff,8,94,74,$4.24,4,Purple,69
+805,Mule deer,http://dummyimage.com/130x184.jpg/5fa2dd/ffffff,6,16,95,$6.04,6,Teal,55
+806,Caracal,http://dummyimage.com/152x182.jpg/dddddd/000000,10,87,58,$3.78,3,Aquamarine,47
+807,"Otter, small-clawed",http://dummyimage.com/183x208.jpg/dddddd/000000,10,70,74,$4.67,9,Fuscia,56
+808,"Peccary, white-lipped",http://dummyimage.com/210x103.jpg/cc0000/ffffff,10,73,91,$1.65,1,Blue,57
+809,Baleen whale,http://dummyimage.com/105x137.jpg/dddddd/000000,5,71,55,$1.68,7,Violet,54
+810,Gray heron,http://dummyimage.com/139x183.jpg/5fa2dd/ffffff,9,48,30,$4.50,10,Maroon,33
+811,African wild cat,http://dummyimage.com/219x192.jpg/ff4444/ffffff,2,16,92,$4.63,7,Green,22
+812,"Vulture, lappet-faced",http://dummyimage.com/142x207.jpg/cc0000/ffffff,3,62,22,$9.67,6,Indigo,72
+813,"Spoonbill, european",http://dummyimage.com/207x141.jpg/cc0000/ffffff,8,13,55,$7.10,2,Fuscia,36
+814,"Albatross, galapagos",http://dummyimage.com/121x142.jpg/dddddd/000000,2,22,71,$1.96,4,Mauv,46
+815,Klipspringer,http://dummyimage.com/151x219.jpg/cc0000/ffffff,7,75,96,$7.86,2,Aquamarine,77
+816,"Tortoise, galapagos",http://dummyimage.com/165x101.jpg/5fa2dd/ffffff,3,50,44,$1.29,10,Puce,75
+817,"Squirrel, nelson ground",http://dummyimage.com/216x207.jpg/5fa2dd/ffffff,1,63,100,$5.97,1,Goldenrod,10
+818,"Deer, red",http://dummyimage.com/189x243.jpg/5fa2dd/ffffff,2,16,49,$8.43,7,Orange,20
+819,American alligator,http://dummyimage.com/248x192.jpg/dddddd/000000,10,28,63,$7.62,10,Violet,89
+820,"Otter, african clawless",http://dummyimage.com/208x222.jpg/ff4444/ffffff,9,51,23,$3.15,2,Green,28
+821,"Cormorant, flightless",http://dummyimage.com/136x211.jpg/ff4444/ffffff,4,64,27,$7.93,6,Goldenrod,44
+822,"Baboon, gelada",http://dummyimage.com/111x115.jpg/cc0000/ffffff,10,73,2,$6.48,1,Fuscia,28
+823,"Hawk-eagle, crowned",http://dummyimage.com/235x122.jpg/ff4444/ffffff,1,87,87,$6.47,10,Mauv,35
+824,African lynx,http://dummyimage.com/102x109.jpg/cc0000/ffffff,10,81,42,$0.38,7,Green,65
+825,"Bandicoot, short-nosed",http://dummyimage.com/147x132.jpg/ff4444/ffffff,8,16,6,$3.72,2,Purple,50
+826,Topi,http://dummyimage.com/163x235.jpg/cc0000/ffffff,7,98,100,$8.60,3,Blue,67
+827,"Francolin, coqui",http://dummyimage.com/241x152.jpg/ff4444/ffffff,2,72,5,$2.03,8,Aquamarine,48
+828,Australian sea lion,http://dummyimage.com/102x124.jpg/cc0000/ffffff,1,80,58,$1.67,4,Puce,15
+829,"Shelduck, european",http://dummyimage.com/226x103.jpg/cc0000/ffffff,6,26,46,$5.50,9,Maroon,86
+830,Rainbow lory,http://dummyimage.com/132x123.jpg/dddddd/000000,1,96,73,$6.00,6,Crimson,2
+831,Mandras tree shrew,http://dummyimage.com/141x129.jpg/cc0000/ffffff,1,52,68,$6.69,8,Turquoise,44
+832,Dromedary camel,http://dummyimage.com/215x239.jpg/5fa2dd/ffffff,9,79,30,$0.42,4,Khaki,51
+833,"Spurfowl, yellow-necked",http://dummyimage.com/224x107.jpg/ff4444/ffffff,6,49,12,$0.21,9,Blue,32
+834,Jungle kangaroo,http://dummyimage.com/224x211.jpg/ff4444/ffffff,1,15,89,$5.74,1,Puce,65
+835,White-throated robin,http://dummyimage.com/202x206.jpg/5fa2dd/ffffff,7,11,47,$8.13,5,Orange,72
+836,"Gull, dusky",http://dummyimage.com/247x228.jpg/5fa2dd/ffffff,1,72,79,$5.38,4,Turquoise,37
+837,"Bandicoot, long-nosed",http://dummyimage.com/221x182.jpg/ff4444/ffffff,5,77,54,$0.40,2,Fuscia,34
+838,"Flicker, field",http://dummyimage.com/212x130.jpg/cc0000/ffffff,1,66,9,$4.86,1,Puce,18
+839,Snowy owl,http://dummyimage.com/138x168.jpg/dddddd/000000,2,38,18,$0.38,2,Red,47
+840,"Sandgrouse, yellow-throated",http://dummyimage.com/103x130.jpg/5fa2dd/ffffff,9,72,84,$2.86,3,Purple,92
+841,Tree porcupine,http://dummyimage.com/227x149.jpg/5fa2dd/ffffff,8,52,91,$2.17,2,Maroon,84
+842,"Genet, common",http://dummyimage.com/136x144.jpg/cc0000/ffffff,7,90,82,$4.37,5,Fuscia,55
+843,White-tailed jackrabbit,http://dummyimage.com/162x136.jpg/dddddd/000000,6,61,38,$1.66,6,Purple,55
+844,"Moorhen, purple",http://dummyimage.com/104x215.jpg/5fa2dd/ffffff,6,85,33,$9.80,9,Indigo,28
+845,Chacma baboon,http://dummyimage.com/190x149.jpg/ff4444/ffffff,8,45,2,$5.36,3,Teal,36
+846,"Alligator, mississippi",http://dummyimage.com/158x146.jpg/5fa2dd/ffffff,5,34,89,$5.51,2,Blue,99
+847,Chestnut weaver,http://dummyimage.com/163x144.jpg/dddddd/000000,10,70,73,$8.38,5,Green,56
+848,Great egret,http://dummyimage.com/249x110.jpg/ff4444/ffffff,9,38,37,$6.21,9,Turquoise,85
+849,"Snake, tiger",http://dummyimage.com/235x102.jpg/5fa2dd/ffffff,5,50,20,$7.91,1,Goldenrod,74
+850,Indian star tortoise,http://dummyimage.com/122x241.jpg/dddddd/000000,8,69,49,$9.46,9,Blue,80
+851,Long-crested hawk eagle,http://dummyimage.com/106x214.jpg/cc0000/ffffff,6,52,50,$5.15,3,Teal,3
+852,Lesser flamingo,http://dummyimage.com/214x167.jpg/dddddd/000000,6,70,42,$7.34,7,Pink,86
+853,"Squirrel, richardson's ground",http://dummyimage.com/165x237.jpg/dddddd/000000,1,39,15,$8.81,9,Pink,32
+854,"Goldeneye, barrows",http://dummyimage.com/143x113.jpg/dddddd/000000,3,71,37,$7.55,6,Teal,15
+855,Dusky gull,http://dummyimage.com/210x181.jpg/5fa2dd/ffffff,9,49,86,$7.90,4,Teal,87
+856,"Stork, woolly-necked",http://dummyimage.com/134x132.jpg/ff4444/ffffff,1,89,17,$8.37,3,Crimson,15
+857,Salmon pink bird eater tarantula,http://dummyimage.com/206x242.jpg/cc0000/ffffff,6,20,71,$4.93,6,Khaki,32
+858,Least chipmunk,http://dummyimage.com/214x209.jpg/cc0000/ffffff,6,24,85,$2.74,10,Orange,62
+859,"Screamer, crested",http://dummyimage.com/189x164.jpg/dddddd/000000,10,53,35,$7.52,2,Purple,7
+860,"Owl, white-browed",http://dummyimage.com/217x105.jpg/cc0000/ffffff,5,88,69,$6.01,7,Purple,1
+861,Blue-breasted cordon bleu,http://dummyimage.com/154x155.jpg/ff4444/ffffff,2,39,85,$9.77,1,Yellow,81
+862,Pine squirrel,http://dummyimage.com/243x174.jpg/dddddd/000000,4,25,12,$2.02,3,Goldenrod,79
+863,Arctic tern,http://dummyimage.com/150x213.jpg/5fa2dd/ffffff,6,92,7,$2.60,9,Green,32
+864,Tarantula,http://dummyimage.com/177x226.jpg/cc0000/ffffff,4,94,16,$6.73,1,Maroon,44
+865,Silver-backed fox,http://dummyimage.com/109x158.jpg/ff4444/ffffff,7,88,72,$2.41,6,Aquamarine,14
+866,Steller's sea lion,http://dummyimage.com/123x226.jpg/dddddd/000000,1,88,46,$7.36,8,Aquamarine,54
+867,North American beaver,http://dummyimage.com/217x124.jpg/cc0000/ffffff,8,10,85,$9.91,8,Fuscia,50
+868,Magellanic penguin,http://dummyimage.com/101x103.jpg/5fa2dd/ffffff,2,63,56,$2.92,6,Maroon,54
+869,Scarlet macaw,http://dummyimage.com/164x218.jpg/5fa2dd/ffffff,4,80,93,$9.11,10,Orange,54
+870,"Penguin, little blue",http://dummyimage.com/101x176.jpg/ff4444/ffffff,3,9,20,$3.51,7,Crimson,33
+871,Eleven-banded armadillo (unidentified),http://dummyimage.com/155x156.jpg/ff4444/ffffff,3,34,90,$1.09,4,Turquoise,62
+872,"Rhea, common",http://dummyimage.com/195x190.jpg/dddddd/000000,5,10,37,$4.92,5,Purple,66
+873,Black curlew,http://dummyimage.com/142x114.jpg/ff4444/ffffff,7,83,22,$0.31,1,Red,38
+874,"Squirrel, smith's bush",http://dummyimage.com/178x247.jpg/ff4444/ffffff,5,17,99,$5.92,6,Aquamarine,34
+875,"Sheep, stone",http://dummyimage.com/231x108.jpg/dddddd/000000,1,32,29,$9.30,2,Yellow,11
+876,Silver-backed jackal,http://dummyimage.com/123x112.jpg/ff4444/ffffff,9,23,53,$4.41,10,Aquamarine,39
+877,Mississippi alligator,http://dummyimage.com/162x161.jpg/cc0000/ffffff,5,66,44,$9.79,9,Orange,29
+878,Yellow-headed caracara,http://dummyimage.com/112x116.jpg/cc0000/ffffff,4,23,48,$3.81,1,Green,48
+879,"Marmot, yellow-bellied",http://dummyimage.com/122x102.jpg/dddddd/000000,5,23,52,$8.39,10,Blue,54
+880,"Boa, malagasy ground",http://dummyimage.com/245x221.jpg/ff4444/ffffff,8,55,32,$4.29,2,Purple,88
+881,"Kangaroo, western grey",http://dummyimage.com/198x249.jpg/dddddd/000000,6,6,39,$6.79,6,Maroon,50
+882,Thomson's gazelle,http://dummyimage.com/148x213.jpg/ff4444/ffffff,2,79,90,$0.11,4,Indigo,93
+883,Swallow (unidentified),http://dummyimage.com/192x234.jpg/5fa2dd/ffffff,5,4,26,$8.28,6,Yellow,27
+884,"Oystercatcher, blackish",http://dummyimage.com/217x206.jpg/5fa2dd/ffffff,7,41,18,$2.49,8,Green,25
+885,"Lion, australian sea",http://dummyimage.com/162x190.jpg/cc0000/ffffff,2,45,48,$9.70,4,Indigo,64
+886,Gaur,http://dummyimage.com/198x147.jpg/dddddd/000000,2,23,87,$8.45,2,Pink,35
+887,Lesser double-collared sunbird,http://dummyimage.com/177x241.jpg/5fa2dd/ffffff,5,74,71,$8.44,3,Aquamarine,77
+888,"Gull, dusky",http://dummyimage.com/153x183.jpg/cc0000/ffffff,4,55,40,$0.53,8,Goldenrod,85
+889,Osprey,http://dummyimage.com/205x104.jpg/5fa2dd/ffffff,4,36,73,$5.52,9,Violet,25
+890,Spotted wood sandpiper,http://dummyimage.com/159x190.jpg/ff4444/ffffff,6,51,17,$7.26,8,Purple,60
+891,Bennett's wallaby,http://dummyimage.com/103x239.jpg/dddddd/000000,4,80,78,$7.76,8,Turquoise,11
+892,Sarus crane,http://dummyimage.com/145x166.jpg/cc0000/ffffff,5,20,8,$8.73,1,Crimson,81
+893,Pocket gopher (unidentified),http://dummyimage.com/130x204.jpg/5fa2dd/ffffff,9,31,37,$0.59,6,Aquamarine,66
+894,Leopard,http://dummyimage.com/161x131.jpg/cc0000/ffffff,3,59,41,$8.74,1,Yellow,39
+895,Downy woodpecker,http://dummyimage.com/147x165.jpg/ff4444/ffffff,1,53,17,$5.54,6,Puce,94
+896,"Dove, rock",http://dummyimage.com/250x109.jpg/cc0000/ffffff,8,76,93,$4.12,4,Teal,49
+897,"Hawk, ferruginous",http://dummyimage.com/108x190.jpg/dddddd/000000,6,81,26,$0.60,6,Fuscia,40
+898,"Shelduck, common",http://dummyimage.com/236x122.jpg/dddddd/000000,9,67,61,$1.90,1,Khaki,83
+899,"Thrasher, curve-billed",http://dummyimage.com/160x188.jpg/cc0000/ffffff,3,10,22,$2.23,9,Violet,94
+900,"Wallaby, red-necked",http://dummyimage.com/115x161.jpg/5fa2dd/ffffff,4,66,2,$4.23,2,Purple,2
+901,"Civet, common palm",http://dummyimage.com/184x215.jpg/ff4444/ffffff,6,60,90,$0.39,6,Blue,93
+902,"Fowl, helmeted guinea",http://dummyimage.com/210x123.jpg/5fa2dd/ffffff,9,65,94,$0.63,9,Fuscia,88
+903,Snowy owl,http://dummyimage.com/228x221.jpg/ff4444/ffffff,6,79,34,$7.56,4,Maroon,45
+904,"Trotter, lily",http://dummyimage.com/146x154.jpg/5fa2dd/ffffff,7,48,75,$0.51,5,Blue,95
+905,Eastern white pelican,http://dummyimage.com/235x238.jpg/5fa2dd/ffffff,1,76,33,$6.52,9,Pink,40
+906,"Cormorant, neotropic",http://dummyimage.com/142x163.jpg/dddddd/000000,2,78,60,$9.74,5,Purple,92
+907,"Spoonbill, white",http://dummyimage.com/124x234.jpg/dddddd/000000,2,11,69,$5.83,10,Mauv,2
+908,Long-billed corella,http://dummyimage.com/148x176.jpg/5fa2dd/ffffff,8,31,86,$2.66,1,Mauv,10
+909,"Grebe, little",http://dummyimage.com/245x237.jpg/5fa2dd/ffffff,6,43,88,$4.74,9,Purple,55
+910,"Constrictor, eastern boa",http://dummyimage.com/201x108.jpg/ff4444/ffffff,3,42,74,$3.88,8,Turquoise,21
+911,"Cormorant, flightless",http://dummyimage.com/173x207.jpg/5fa2dd/ffffff,10,13,48,$0.20,4,Crimson,67
+912,Red squirrel,http://dummyimage.com/235x232.jpg/cc0000/ffffff,8,26,13,$7.43,1,Aquamarine,1
+913,"Lion, galapagos sea",http://dummyimage.com/183x200.jpg/cc0000/ffffff,5,19,18,$3.84,2,Maroon,60
+914,"Goose, cereopsis",http://dummyimage.com/128x241.jpg/dddddd/000000,2,81,81,$1.83,2,Red,56
+915,"Tern, arctic",http://dummyimage.com/101x167.jpg/cc0000/ffffff,2,43,67,$4.77,1,Blue,88
+916,"Badger, american",http://dummyimage.com/101x161.jpg/dddddd/000000,7,3,12,$8.08,1,Puce,2
+917,"Woodpecker, red-headed",http://dummyimage.com/107x210.jpg/5fa2dd/ffffff,8,41,57,$3.44,8,Green,65
+918,"Raccoon, common",http://dummyimage.com/182x104.jpg/5fa2dd/ffffff,6,4,88,$2.70,7,Khaki,9
+919,"Kiskadee, great",http://dummyimage.com/151x174.jpg/5fa2dd/ffffff,4,72,71,$4.52,8,Green,87
+920,"Stork, openbill",http://dummyimage.com/165x184.jpg/cc0000/ffffff,1,66,15,$6.94,10,Orange,70
+921,"Peacock, blue",http://dummyimage.com/147x200.jpg/5fa2dd/ffffff,3,23,97,$4.59,5,Pink,49
+922,Frog (unidentified),http://dummyimage.com/114x203.jpg/dddddd/000000,7,73,64,$9.04,3,Khaki,24
+923,Common melba finch,http://dummyimage.com/119x175.jpg/cc0000/ffffff,3,23,31,$6.23,10,Violet,21
+924,Red-knobbed coot,http://dummyimage.com/235x105.jpg/dddddd/000000,1,9,24,$1.87,2,Violet,10
+925,Mocking cliffchat,http://dummyimage.com/171x106.jpg/5fa2dd/ffffff,8,86,100,$2.32,2,Aquamarine,7
+926,"Falcon, prairie",http://dummyimage.com/108x121.jpg/cc0000/ffffff,10,55,42,$5.57,1,Violet,58
+927,"Fox, arctic",http://dummyimage.com/170x204.jpg/dddddd/000000,2,44,60,$0.25,10,Blue,60
+928,Cape cobra,http://dummyimage.com/208x180.jpg/5fa2dd/ffffff,9,8,100,$3.19,2,Purple,27
+929,Magellanic penguin,http://dummyimage.com/172x133.jpg/cc0000/ffffff,2,96,74,$9.89,8,Indigo,42
+930,Goanna lizard,http://dummyimage.com/206x101.jpg/5fa2dd/ffffff,2,5,11,$0.28,8,Pink,51
+931,Bee-eater (unidentified),http://dummyimage.com/211x239.jpg/5fa2dd/ffffff,10,25,59,$8.05,4,Purple,4
+932,Madagascar hawk owl,http://dummyimage.com/115x114.jpg/dddddd/000000,6,6,24,$8.18,7,Turquoise,2
+933,"Crane, black-crowned",http://dummyimage.com/149x141.jpg/5fa2dd/ffffff,7,59,47,$4.70,9,Violet,47
+934,Margay,http://dummyimage.com/186x155.jpg/ff4444/ffffff,6,75,89,$7.17,6,Teal,87
+935,Ring-tailed gecko,http://dummyimage.com/125x188.jpg/ff4444/ffffff,9,100,42,$4.94,6,Teal,88
+936,Mountain duck,http://dummyimage.com/189x152.jpg/dddddd/000000,9,86,81,$3.50,5,Red,69
+937,Snowy sheathbill,http://dummyimage.com/222x189.jpg/cc0000/ffffff,8,54,25,$6.97,3,Maroon,32
+938,"Hawk, galapagos",http://dummyimage.com/163x141.jpg/dddddd/000000,5,41,71,$6.87,10,Red,89
+939,"Darter, african",http://dummyimage.com/193x247.jpg/dddddd/000000,3,89,85,$0.87,6,Green,45
+940,American woodcock,http://dummyimage.com/128x113.jpg/ff4444/ffffff,10,33,39,$0.57,7,Mauv,94
+941,Black-throated butcher bird,http://dummyimage.com/125x187.jpg/5fa2dd/ffffff,7,45,29,$5.45,6,Red,50
+942,Uinta ground squirrel,http://dummyimage.com/209x242.jpg/5fa2dd/ffffff,6,85,27,$7.72,6,Turquoise,68
+943,"Lion, california sea",http://dummyimage.com/163x240.jpg/dddddd/000000,4,87,44,$0.64,4,Yellow,87
+944,"Cliffchat, mocking",http://dummyimage.com/221x103.jpg/5fa2dd/ffffff,10,75,87,$7.36,8,Turquoise,4
+945,"Bat, asian false vampire",http://dummyimage.com/137x216.jpg/dddddd/000000,9,83,15,$0.50,9,Aquamarine,2
+946,Bottle-nose dolphin,http://dummyimage.com/194x161.jpg/dddddd/000000,2,59,18,$2.46,9,Violet,39
+947,Long-necked turtle,http://dummyimage.com/250x103.jpg/5fa2dd/ffffff,2,52,1,$3.17,3,Red,50
+948,"Deer, swamp",http://dummyimage.com/119x205.jpg/5fa2dd/ffffff,3,38,7,$6.32,2,Turquoise,35
+949,"Cardinal, black-throated",http://dummyimage.com/191x137.jpg/dddddd/000000,9,67,71,$1.02,1,Turquoise,15
+950,Vervet monkey,http://dummyimage.com/243x107.jpg/dddddd/000000,3,72,52,$9.24,7,Indigo,19
+951,Bahama pintail,http://dummyimage.com/144x116.jpg/dddddd/000000,7,79,11,$1.06,2,Aquamarine,40
+952,"Baboon, gelada",http://dummyimage.com/166x241.jpg/5fa2dd/ffffff,8,5,10,$3.01,6,Yellow,49
+953,White-rumped vulture,http://dummyimage.com/212x196.jpg/5fa2dd/ffffff,5,87,66,$5.37,10,Khaki,34
+954,"Sloth, two-toed tree",http://dummyimage.com/161x174.jpg/ff4444/ffffff,5,13,63,$0.19,6,Fuscia,60
+955,Black-crowned night heron,http://dummyimage.com/132x175.jpg/cc0000/ffffff,2,93,52,$6.58,3,Blue,91
+956,"Beaver, american",http://dummyimage.com/237x136.jpg/cc0000/ffffff,9,17,59,$3.36,4,Yellow,53
+957,Cape cobra,http://dummyimage.com/238x178.jpg/dddddd/000000,10,11,29,$4.70,9,Purple,3
+958,"Crab, red lava",http://dummyimage.com/144x164.jpg/dddddd/000000,5,53,81,$0.97,5,Maroon,42
+959,"Kangaroo, brush-tailed rat",http://dummyimage.com/119x152.jpg/dddddd/000000,3,57,29,$5.15,5,Maroon,84
+960,Numbat,http://dummyimage.com/220x170.jpg/cc0000/ffffff,10,18,27,$0.77,9,Red,86
+961,"Gull, dusky",http://dummyimage.com/196x137.jpg/5fa2dd/ffffff,3,28,84,$0.30,2,Crimson,50
+962,"Buffalo, wild water",http://dummyimage.com/242x100.jpg/dddddd/000000,6,91,81,$0.44,6,Maroon,60
+963,Indian mynah,http://dummyimage.com/207x229.jpg/5fa2dd/ffffff,10,4,1,$0.61,7,Orange,54
+964,"Starfish, crown of thorns",http://dummyimage.com/232x152.jpg/5fa2dd/ffffff,7,30,60,$1.82,2,Goldenrod,61
+965,"Pheasant, ring-necked",http://dummyimage.com/169x221.jpg/ff4444/ffffff,10,89,86,$4.92,7,Red,49
+966,Ant (unidentified),http://dummyimage.com/108x108.jpg/cc0000/ffffff,4,15,6,$0.96,6,Turquoise,23
+967,"Bird, pied butcher",http://dummyimage.com/186x240.jpg/ff4444/ffffff,5,99,94,$4.20,9,Crimson,25
+968,"Possum, ring-tailed",http://dummyimage.com/227x241.jpg/cc0000/ffffff,9,95,35,$8.90,4,Teal,4
+969,Sea birds (unidentified),http://dummyimage.com/220x250.jpg/dddddd/000000,4,41,44,$0.53,5,Green,29
+970,"Tortoise, radiated",http://dummyimage.com/237x188.jpg/5fa2dd/ffffff,10,44,8,$6.23,7,Mauv,26
+971,Black-tailed tree creeper,http://dummyimage.com/207x220.jpg/cc0000/ffffff,3,80,59,$2.39,7,Teal,75
+972,Chilean flamingo,http://dummyimage.com/210x147.jpg/5fa2dd/ffffff,2,65,97,$9.81,3,Puce,63
+973,Green-winged macaw,http://dummyimage.com/210x161.jpg/5fa2dd/ffffff,4,59,84,$3.74,5,Goldenrod,48
+974,Bare-faced go away bird,http://dummyimage.com/100x163.jpg/dddddd/000000,5,12,95,$0.73,7,Yellow,18
+975,"Polecat, african",http://dummyimage.com/204x195.jpg/5fa2dd/ffffff,1,46,32,$0.47,1,Turquoise,40
+976,Wood pigeon,http://dummyimage.com/157x218.jpg/ff4444/ffffff,2,37,20,$5.61,10,Yellow,95
+977,Griffon vulture,http://dummyimage.com/159x209.jpg/dddddd/000000,1,36,83,$3.85,5,Violet,38
+978,Knob-nosed goose,http://dummyimage.com/170x187.jpg/dddddd/000000,8,41,80,$2.29,5,Blue,4
+979,Emerald-spotted wood dove,http://dummyimage.com/202x111.jpg/5fa2dd/ffffff,4,75,76,$5.31,4,Goldenrod,26
+980,Common zorro,http://dummyimage.com/209x235.jpg/ff4444/ffffff,10,25,77,$3.95,10,Blue,84
+981,"Gull, silver",http://dummyimage.com/190x101.jpg/5fa2dd/ffffff,9,86,25,$1.41,8,Blue,3
+982,Western bearded dragon,http://dummyimage.com/175x222.jpg/5fa2dd/ffffff,2,100,63,$0.34,3,Teal,99
+983,Black vulture,http://dummyimage.com/195x185.jpg/dddddd/000000,3,81,1,$4.19,1,Teal,51
+984,"Kangaroo, brush-tailed rat",http://dummyimage.com/163x217.jpg/dddddd/000000,6,91,12,$6.67,8,Yellow,40
+985,Great skua,http://dummyimage.com/132x177.jpg/5fa2dd/ffffff,5,42,71,$9.04,6,Teal,99
+986,Musk ox,http://dummyimage.com/157x196.jpg/ff4444/ffffff,6,22,63,$8.76,9,Red,3
+987,Lily trotter,http://dummyimage.com/151x212.jpg/5fa2dd/ffffff,10,20,36,$5.42,3,Khaki,27
+988,Australian magpie,http://dummyimage.com/202x123.jpg/cc0000/ffffff,5,17,99,$1.45,8,Yellow,68
+989,Egyptian cobra,http://dummyimage.com/145x248.jpg/dddddd/000000,3,57,56,$4.23,9,Yellow,55
+990,Giraffe,http://dummyimage.com/106x229.jpg/dddddd/000000,1,36,33,$5.51,9,Puce,50
+991,"Lion, southern sea",http://dummyimage.com/105x172.jpg/ff4444/ffffff,9,42,27,$3.01,1,Puce,50
+992,Yellow-billed hornbill,http://dummyimage.com/192x180.jpg/dddddd/000000,2,83,10,$0.83,2,Goldenrod,25
+993,Gaur,http://dummyimage.com/235x142.jpg/cc0000/ffffff,3,38,9,$6.36,4,Crimson,57
+994,"Wallaroo, common",http://dummyimage.com/167x151.jpg/dddddd/000000,8,69,96,$0.23,3,Red,18
+995,Long-billed cockatoo,http://dummyimage.com/182x102.jpg/5fa2dd/ffffff,5,90,41,$4.76,2,Aquamarine,3
+996,Crested bunting,http://dummyimage.com/168x118.jpg/5fa2dd/ffffff,4,59,14,$2.30,2,Pink,46
+997,"Turtle, long-necked",http://dummyimage.com/160x149.jpg/dddddd/000000,8,89,51,$0.26,5,Orange,34
+998,Asian foreset tortoise,http://dummyimage.com/100x223.jpg/5fa2dd/ffffff,8,4,23,$6.71,8,Khaki,74
+999,Striated heron,http://dummyimage.com/187x114.jpg/5fa2dd/ffffff,10,44,96,$5.53,7,Orange,20
+1000,Asiatic wild ass,http://dummyimage.com/229x153.jpg/dddddd/000000,8,56,31,$0.84,3,Puce,98
