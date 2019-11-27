@@ -31,6 +31,14 @@ body {
   transition: 0.3s;
 }
 /* line 16, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/theme-default.scss */
+
+.check-click{
+  border-bottom: 5px solid #fff;
+}
+.check-click-button{
+  background: #fdcb6e ;
+  border: 3px solid #fdcb6e;
+}
 a,
 .button {
   -webkit-transition: 0.3s;
@@ -2761,7 +2769,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/_bradcam.scss */
 .bradcam_bg_1 {
-  background-image: url(./../img/banner/bradcam.png);
+  background-image: url("./../assets/rat.jpg");
 }
 
 /* line 4, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/_bradcam.scss */

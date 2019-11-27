@@ -9,8 +9,6 @@ export class PetComponent implements OnInit {
 
   constructor() { }
 
-  searchText;
-
   pets = [
     {  name: 'Dog', country: "assets/dog1.jpg" },
     {  name: 'Cat' , country: "assets/cat1.jpg"},
@@ -23,8 +21,9 @@ export class PetComponent implements OnInit {
     {  name: 'Dragon' , country: ""},
    
   ];
-
+  
   ngOnInit() {
+    
   }
 
 }
