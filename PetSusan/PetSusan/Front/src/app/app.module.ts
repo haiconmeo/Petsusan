@@ -13,6 +13,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ItemsComponent } from './items/items.component';
 import { PetListComponent } from './pet/pet-list/pet-list.component';
 import { PetDetailComponent } from './pet/pet-detail/pet-detail.component';
+import { LoginComponent } from './login/login.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { PetDetailComponent } from './pet/pet-detail/pet-detail.component';
     ContactComponent,
     ItemsComponent,
     PetListComponent,
-    PetDetailComponent
+    PetDetailComponent,
+    LoginComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
