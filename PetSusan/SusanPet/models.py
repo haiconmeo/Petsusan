@@ -22,6 +22,7 @@ class Address(models.Model):
 #thừa kế model User
 class Profile(models.Model):
     id = models.IntegerField(primary_key=True)
+    avatar = models.IntegerField()
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     phonenum = models.CharField(max_length=30, blank=True)
     address = models.ForeignKey(Address, on_delete=models.CASCADE,blank=True,null=True)
@@ -50,6 +51,9 @@ class Item(models.Model):
     weight = models.IntegerField()
     color = models.CharField(max_length=30)
     amounts = models.IntegerField()
+    #them 
+    sex = models.BooleanField()
+    description = models.TextField()
 class Post (models.Model):
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
     content = models.TextField()
