@@ -11,7 +11,6 @@ export class AppComponent {
   public check2 : boolean = false;
   public check3 : boolean = false;
   public check4 : boolean = false;
-  public check5 : boolean = false;
   public check6 : boolean = false;
 
   click1(){
@@ -19,7 +18,6 @@ export class AppComponent {
     this.check2 = false;
     this.check3 = false;
     this.check4 = false;
-    this.check5 = false;
     this.check6 = false;
   }
   click2(){
@@ -27,7 +25,6 @@ export class AppComponent {
     this.check2 = true;
     this.check3 = false;
     this.check4 = false;
-    this.check5 = false;
     this.check6 = false;
   }
 
@@ -36,7 +33,6 @@ export class AppComponent {
     this.check2 = false;
     this.check3 = true;
     this.check4 = false;
-    this.check5 = false;
     this.check6 = false;
   }
 
@@ -45,15 +41,6 @@ export class AppComponent {
     this.check2 = false;
     this.check3 = false;
     this.check4 = true;
-    this.check5 = false;
-    this.check6 = false;
-  }
-  click5(){
-    this.check1 = false;
-    this.check2 = false;
-    this.check3 = false;
-    this.check4 = false;
-    this.check5 = true;
     this.check6 = false;
   }
   click6(){
@@ -61,7 +48,6 @@ export class AppComponent {
     this.check2 = false;
     this.check3 = false;
     this.check4 = false;
-    this.check5 = false;
     this.check6 = true;
   }
 
