@@ -67,11 +67,23 @@ a:focus,
   text-decoration: none;
   outline: none;
 }
-
+.cart-home button:hover {
+  background:none;
+  border: none;
+}
+.cart-home button::after{
+  background:none;
+  border: none;
+}
+.cart-home button:target{
+  background:none;
+  border: none;
+}
 /* line 25, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/theme-default.scss */
 a:focus {
   text-decoration: none;
 }
+
 
 /* line 28, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/theme-default.scss */
 a:focus,
@@ -1041,7 +1053,6 @@ h3 {
   padding: 5px 20px;
   border-radius: 10px;
   transition: .7s;
-  
 }
 .cart-home a:hover{
   background: #fdcb6e ;

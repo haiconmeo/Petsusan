@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-items',
   templateUrl: './items.component.html',
-  styleUrls: ['.././../css/style.css', '.././../css/bootstrap.min.css',]
+  styleUrls: ['.././../css/style.css', '.././../css/bootstrap.min.css', ]
 })
 export class ItemsComponent implements OnInit {
 

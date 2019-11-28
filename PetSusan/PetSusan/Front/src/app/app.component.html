@@ -22,6 +22,7 @@
                                           <li><a (click)="click2()" routerLink="items">Items</a></li>
                                       </ul>
                                   </li>
+        
                                   <li><a (click)="click3()"style="color: #fff;" [ngClass]="{ 'check-click' : check3 == true}" style="color: #fff;"   routerLink="about">about</a></li>
                                   <li><a (click)="click4()"style="color: #fff;" [ngClass]="{ 'check-click' : check4 == true}" style="color: #fff;"  routerLink="contact">Contact</a></li>
                                   <li><a style="color: #fff;"  routerLink="contact">Blog</a></li>
@@ -31,10 +32,13 @@
                   </div>
                   
                     <div class="cart-home">
-                        <a (click)="click5()"style="color: #fff;" [ngClass]="{ 'check-click-button' : check5 == true}" style="color: #fff; "  routerLink="login">Login</a>
-                        <a (click)="click6()"style="color: #fff;" [ngClass]="{ 'check-click-button' : check6 == true}" style="color: #fff; display: inline;"  routerLink="cart">Cart <i class="fab fa-opencart"></i></a>
+                        <ng-template #popContent><app-login></app-login></ng-template>
+                        <ng-template #popTitle>Login now</ng-template>
+                        <button style="color: #fff; border: none; display: inline; " type="button"  placement="bottom"  [autoClose]="'outside'" class="btn btn-outline-secondary" [ngbPopover]="popContent" [popoverTitle]="popTitle">
+                            <a>Login</a>
+                        </button>
+                        <a (click)="click6()" [ngClass]="{ 'check-click-button' : check6 == true}" style="color: #fff; "  routerLink="cart">Cart <i class="fab fa-opencart"></i></a>
                     </div>
-                
               </div>
 
           </div>

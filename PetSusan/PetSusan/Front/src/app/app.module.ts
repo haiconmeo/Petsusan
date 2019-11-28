@@ -16,6 +16,9 @@ import { PetListComponent } from './pet/pet-list/pet-list.component';
 import { PetDetailComponent } from './pet/pet-detail/pet-detail.component';
 import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
+import { ItemQuickViewComponent } from './items/item-quick-view/item-quick-view.component';
+import { ItemDetailComponent } from './items/item-detail/item-detail.component';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +32,9 @@ import { CartComponent } from './cart/cart.component';
     PetListComponent,
     PetDetailComponent,
     LoginComponent,
-    CartComponent
+    CartComponent,
+    ItemQuickViewComponent,
+    ItemDetailComponent,
   ],
   imports: [
     BrowserModule,

@@ -11,7 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+ 
   {path: 'home', component: HomeComponent},
   {path: 'pet', component: PetComponent},
   {path: 'pet/dogs', component: PetListComponent},

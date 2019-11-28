@@ -74,10 +74,31 @@
                         My breeders number is 16644
                         
                         If you have any questions etc don’t hesitate to call or text me on 0405528585 or message me 🙂</p>
+
+                    <ngb-tabset [justify]="currentJustify">
+                        <ngb-tab title="Thông tin chi tiết">
+                            <ng-template ngbTabContent>
+                            <p>Đéo có cc gì hết</p>
+                            </ng-template>
+                        </ngb-tab>
+                        <ngb-tab title="Bình luận">
+                            <ng-template ngbTabContent>
+                                <p><strong>Rating</strong> :<ngb-rating [rate]="3"></ngb-rating>
+                                <input id="typeahead-basic" type="text" class="form-control"/>
+                            </ng-template>
+                        </ngb-tab>
+                        <ngb-tab title="Thông số kỹ thuật">
+                            <ng-template ngbTabContent>
+                                <p>Đây là con chó</p>
+                            </ng-template>
+                        </ngb-tab>
+                    </ngb-tabset>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+      
 
 <app-footer><app-footer>

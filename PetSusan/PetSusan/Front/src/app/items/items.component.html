@@ -23,7 +23,12 @@
                         <img src="{{item.country}}" alt="">
                     </div>
                     <h3>{{item.name}}</h3>
-                    <a href="#" class="line_btn">Add Cart</a>
+                    <ng-template #popContent><app-item-quick-view></app-item-quick-view></ng-template>
+                    <ng-template #popTitle>Login now</ng-template>
+                    <button style="color: #000; border :none " type="button"  placement="bottom"  [autoClose]="'outside'" class="btn btn-outline-secondary" [ngbPopover]="popContent" [popoverTitle]="popTitle">
+                        <a class="line_btn">Xem nhanh</a>
+                    </button>
+                    <a href="#" class="line_btn">Chi tiết</a>
                 </div>
             </div>
         </div>
