@@ -14,18 +14,22 @@ export class ContactComponent implements OnInit {
     Email:"",
     Message:"",
   }
-  
+  students :Contact[]=[]
   constructor(
     private contactservice:ContactService,
-    // private router :Router
+    private router :Router
   ) { }
 
   ngOnInit() {
   }
 
   Submit_message(){
-    console.log(this.contact.Message)
-    this.contactservice.addContact(this.contact).subscribe()
+    // console.log(this.contact.Message)
+    this.contactservice.addContact(this.contact).subscribe( result=> {
+      this.router.navigate(['/']);
+    }
+      )
   }
-
 }
+
+

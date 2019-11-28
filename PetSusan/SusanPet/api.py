@@ -47,6 +47,9 @@ def contact_list(request):
     """
     List all Raps, or create a new Rap.
     """
+    print (request.method)
+    print (request.data)
+    
     if request.method == 'GET':
         contacts = Contact.objects.all()
         serializer = ContactSerializer(contacts,context={'request': request} ,many=True)
