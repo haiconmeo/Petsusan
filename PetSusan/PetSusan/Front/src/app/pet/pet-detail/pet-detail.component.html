@@ -31,7 +31,17 @@
 
                     <div class="resepies_details">
                         <ul>
-                            <li><p><strong>Rating</strong> :<ngb-rating [rate]="3"></ngb-rating></li>
+                            <!-- <li><p><strong>Rating</strong> :<ngb-rating [rate]="3"></ngb-rating></li> -->
+                            <ng-template #t let-fill="fill">
+                                <span style="position: relative;display: inline-block;font-size: 3rem;color: #d3d3d3;" [class.full]="fill === 100">
+                                    <span style="position: absolute;display: inline-block;overflow: hidden;font-size: 3rem;color:#f1c40f;" [style.width.%]="fill">&#9733;</span>&#9733;
+                                </span>
+                                </ng-template>
+                                
+                                <ngb-rating [(rate)]="currentRate" [starTemplate]="t" [readonly]="true" max="5"></ngb-rating>
+                                
+                                <!-- <hr> -->
+                            <pre>Rate: <b>{{currentRate}}</b></pre>
                             <li><p><strong>Price</strong> : $1,800 </p></li>
                             <li><p><strong>Sex</strong> : male and female </p></li>
                             <li><p><strong>Size</strong> : large </p></li><br>

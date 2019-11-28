@@ -21,7 +21,7 @@ export class PetComponent implements OnInit {
     {  name: 'Dragon' , country: ""},
    
   ];
-  
+ 
   ngOnInit() {
     
   }

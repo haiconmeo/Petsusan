@@ -11,5 +11,5 @@ export class PetDetailComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  currentRate = 3.6;
 }
