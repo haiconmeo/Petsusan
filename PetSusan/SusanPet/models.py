@@ -22,7 +22,7 @@ class Address(models.Model):
 #thừa kế model User
 class Profile(models.Model):
     id = models.IntegerField(primary_key=True)
-    avatar = models.IntegerField()
+    # avatar = models.IntegerField()
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     phonenum = models.CharField(max_length=30, blank=True)
     address = models.ForeignKey(Address, on_delete=models.CASCADE,blank=True,null=True)
@@ -52,8 +52,8 @@ class Item(models.Model):
     color = models.CharField(max_length=30)
     amounts = models.IntegerField()
     #them 
-    sex = models.BooleanField()
-    description = models.TextField()
+    sex = models.BooleanField(default=True)
+    description = models.TextField(blank = True)
 class Post (models.Model):
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
     content = models.TextField()
@@ -75,6 +75,12 @@ class Rate(models.Model):
     item = models.ManyToManyField(Item,blank=True)
     Profile =models.ManyToManyField(Profile,blank=True)
     rate_u = models.IntegerField(default=-1)
+class Contact(models.Model):
+    Subject = models.CharField( max_length=50)
+    Email   = models.EmailField( max_length=254)
+    Name    = models.CharField(max_length=50)
+    Message = models.TextField(blank = True)
+
  
 
 

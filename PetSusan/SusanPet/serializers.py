@@ -1,12 +1,16 @@
 from rest_framework import serializers 
-from .models import Province_city,Profile
+from .models import Province_city,Profile,Contact,Item
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
+
 class Province_citySerializer(serializers.ModelSerializer):
     class Meta:
         model =  Province_city
         fields = '__all__'
-
+class ContactSerializer(serializers.ModelSerializer):
+    class Meta:
+        model =  Contact
+        fields = '__all__'
 class RegisterSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
@@ -38,3 +42,7 @@ class profileSerializer(serializers.ModelSerializer):
   class Meta:
     model= Profile
     fields = '__all__'
+class ItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model =  Item
+        fields = '__all__'
