@@ -1,29 +1,31 @@
 import { Component, OnInit } from '@angular/core';
+import { ListItemsService } from '../_services/list-items.service';
+import { List } from '../_models/list-item.class';
+
 
 @Component({
   selector: 'app-items',
   templateUrl: './items.component.html',
-  styleUrls: ['.././../css/style.css', '.././../css/bootstrap.min.css',]
+  styleUrls: ['.././../css/style.css', '.././../css/bootstrap.min.css', ]
 })
-export class ItemsComponent implements OnInit {
+export class ItemsComponent implements OnInit{
 
-  constructor() { }
+  public list : List[] =[];
 
-  items = [
-    {  name: 'Dog', country: "assets/dog1.jpg" },
-    {  name: 'Cat' , country: "assets/cat1.jpg"},
-    {  name: 'Fox' , country: "assets/fox1.jpg"},
-    {  name: 'Snake', country: "assets/dog1.jpg" },
-    {  name: 'House' , country: "assets/cat1.jpg"},
-    {  name: 'Fish' , country: "assets/fox1.jpg"},
-    {  name: 'Sheep', country: "assets/dog1.jpg" },
-    {  name: 'Hamter' , country: "assets/cat1.jpg"},
-    {  name: 'Dragon' , country: "assets/fox1.jpg"},
-   
-  ];
-
+  constructor(
+    public listItem : ListItemsService
+  ) { }
 
   ngOnInit() {
+    this.showItem();
+    this.listItem.getAllItems()
+  }
+
+  
+  showItem(){
+     this.listItem.getAllItems().subscribe((data) => 
+      this.list = data
+    );
   }
 
 }

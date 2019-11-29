@@ -12,18 +12,19 @@
                       </div>
                   </div>
                   <div class="col-xl-6 col-lg-7">
-                      <div class="main-menu   d-none d-lg-block">
+                      <div  class="main-menu   d-none d-lg-block">
                           <nav>
                               <ul  id="navigation">
-                                  <li><a style="color: #fff;"  routerLink="home">Home</a></li>
-                                  <li><a style="color: #fff;"  routerLink="pet">Shop <i class="fas fa-sort-down"></i></a>
+                                  <li><a (click)="click1()"style="color: #fff;" [ngClass]="{ 'check-click' : check1 == true}" routerLink="home">Home</a></li>
+                                  <li><a style="color: #fff;" [ngClass]="{ 'check-click' : check2 == true}"  style="color: #fff;"  routerLink="pet">Shop <i class="fas fa-sort-down"></i></a>
                                       <ul  class="submenu">
-                                          <li><a  routerLink="pet">Pet</a></li>
-                                          <li><a  routerLink="items">Items</a></li>
+                                          <li><a (click)="click2()" routerLink="pet">Pet</a></li>
+                                          <li><a (click)="click2()" routerLink="items">Items</a></li>
                                       </ul>
                                   </li>
-                                  <li><a style="color: #fff;"   routerLink="about">about</a></li>
-                                  <li><a style="color: #fff;"  routerLink="contact">Contact</a></li>
+        
+                                  <li><a (click)="click3()"style="color: #fff;" [ngClass]="{ 'check-click' : check3 == true}" style="color: #fff;"   routerLink="about">about</a></li>
+                                  <li><a (click)="click4()"style="color: #fff;" [ngClass]="{ 'check-click' : check4 == true}" style="color: #fff;"  routerLink="contact">Contact</a></li>
                                   <li><a style="color: #fff;"  routerLink="contact">Blog</a></li>
                               </ul>
                           </nav>
@@ -31,10 +32,13 @@
                   </div>
                   
                     <div class="cart-home">
-                        <a style="color: #fff; "  routerLink="login">Login</a>
-                        <a style="color: #fff; display: inline;"  routerLink="cart">Cart <i class="fab fa-opencart"></i></a>
+                        <ng-template #popContent><app-login></app-login></ng-template>
+                        <ng-template #popTitle>Login now</ng-template>
+                        <button style="color: #fff; border : none " type="button"  placement="bottom"  [autoClose]="'outside'" class="btn btn-outline-secondary" [ngbPopover]="popContent" [popoverTitle]="popTitle">
+                            <a>Login</a>
+                        </button>
+                        <a (click)="click6()" [ngClass]="{ 'check-click-button' : check6 == true}" style="color: #fff; display: inline;"  routerLink="cart">Cart <i class="fab fa-opencart"></i></a>
                     </div>
-                
               </div>
 
           </div>

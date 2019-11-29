@@ -17,13 +17,19 @@
 <div class="recepie_area plus_padding">
     <div class="container">
         <div class="row">
-            <div  *ngFor="let item of items" class="col-xl-4 col-lg-4 col-md-6">
+            <div  *ngFor="let item of list" class="col-xl-4 col-lg-4 col-md-6">
                 <div class="single_recepie text-center">
                     <div class="recepie_thumb">
-                        <img src="{{item.country}}" alt="">
+                        <!-- <img src="{{item.country}}" alt=""> -->
+                        <img src="assets/dog1.jpg" alt="">
                     </div>
                     <h3>{{item.name}}</h3>
-                    <a href="#" class="line_btn">Add Cart</a>
+                    <ng-template #popContent><app-item-quick-view></app-item-quick-view></ng-template>
+                    <ng-template #popTitle>{{item.name}}</ng-template>
+                    <button style="color: #000; border :none " type="button"  placement="bottom"  [autoClose]="'outside'" class="btn btn-outline-secondary" [ngbPopover]="popContent" [popoverTitle]="popTitle">
+                        <a class="line_btn">Xem nhanh</a>
+                    </button>
+                    <a href="#" class="line_btn">Chi tiết</a>
                 </div>
             </div>
         </div>

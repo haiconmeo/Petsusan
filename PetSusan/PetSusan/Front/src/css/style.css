@@ -14,6 +14,9 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff008c', endColorstr='#ff6357',GradientType=1 );
   /* IE6-9 */
 }
+.full {
+  color: red;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -31,6 +34,14 @@ body {
   transition: 0.3s;
 }
 /* line 16, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/theme-default.scss */
+
+.check-click{
+  border-bottom: 5px solid #fff;
+}
+.check-click-button{
+  background: #fdcb6e ;
+  border: 3px solid #fdcb6e;
+}
 a,
 .button {
   -webkit-transition: 0.3s;
@@ -56,11 +67,23 @@ a:focus,
   text-decoration: none;
   outline: none;
 }
-
+.cart-home button:hover {
+  background:none;
+  border: none;
+}
+.cart-home button::after{
+  background:none;
+  border: none;
+}
+.cart-home button:target{
+  background:none;
+  border: none;
+}
 /* line 25, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/theme-default.scss */
 a:focus {
   text-decoration: none;
 }
+
 
 /* line 28, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/theme-default.scss */
 a:focus,
@@ -2761,7 +2784,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/_bradcam.scss */
 .bradcam_bg_1 {
-  background-image: url(./../img/banner/bradcam.png);
+  background-image: url("./../assets/rat.jpg");
 }
 
 /* line 4, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/_bradcam.scss */

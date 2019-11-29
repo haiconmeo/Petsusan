@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,7 +17,17 @@ import { PetListComponent } from './pet/pet-list/pet-list.component';
 import { PetDetailComponent } from './pet/pet-detail/pet-detail.component';
 import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
-import { HttpClientModule } from '@angular/common/http';
+
+
+
+import { ItemQuickViewComponent } from './items/item-quick-view/item-quick-view.component';
+import { ItemDetailComponent } from './items/item-detail/item-detail.component';
+
+import { ListItemsService } from './_services/list-items.service';
+import { NotFoundComponent } from './not-found/not-found.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,18 +40,24 @@ import { HttpClientModule } from '@angular/common/http';
     PetListComponent,
     PetDetailComponent,
     LoginComponent,
-    CartComponent
+    CartComponent,
+    ItemQuickViewComponent,
+    ItemDetailComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     Ng2SearchPipeModule,
-    HttpClientModule,
 
+    NgbModule,
+    HttpClientModule,
+  ],
+  providers: [
+    ListItemsService,
 
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

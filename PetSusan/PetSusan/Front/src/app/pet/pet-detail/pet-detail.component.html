@@ -1,1 +1,104 @@
-<p>pet-detail works!</p>
+
+<!-- bradcam_area  -->
+<div class="bradcam_area bradcam_bg_1">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="bradcam_text text-center">
+                    <h3>Recipe Details</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /bradcam_area  -->
+
+<div style=" margin-bottom: 10%;" class="recepie_details_area">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-md-6">
+                <div class="recepies_thumb">
+                    <img src="assets/dog5.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-xl-6 col-md-6">
+                <div class="recepies_info">
+                    <h3>Husky</h3>
+                    <p>I’m happy to fly interstate at buyers expense
+                        I’m located in east kurrajong
+                        
+                        I have 4 beautiful husky pups for sale, 3 boys 1 girl</p>
+
+                    <div class="resepies_details">
+                        <ul>
+                            <!-- <li><p><strong>Rating</strong> :<ngb-rating [rate]="3"></ngb-rating></li> -->
+                            <ng-template #t let-fill="fill">
+                                <span style="position: relative;display: inline-block;font-size: 3rem;color: #d3d3d3;" [class.full]="fill === 100">
+                                    <span style="position: absolute;display: inline-block;overflow: hidden;font-size: 3rem;color:#f1c40f;" [style.width.%]="fill">&#9733;</span>&#9733;
+                                </span>
+                                </ng-template>
+                                
+                                <ngb-rating [(rate)]="currentRate" [starTemplate]="t" [readonly]="true" max="5"></ngb-rating>
+                                
+                                <!-- <hr> -->
+                            <pre>Rate: <b>{{currentRate}}</b></pre>
+                            <li><p><strong>Price</strong> : $1,800 </p></li>
+                            <li><p><strong>Sex</strong> : male and female </p></li>
+                            <li><p><strong>Size</strong> : large </p></li><br>
+                            <li><a style="color: #fff; boder-radius: 10px" class="check-click-button" href="cart">Add to Cart<i class="fab fa-opencart"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="recepies_text">
+                    <p>I’m happy to fly interstate at buyers expense
+                        I’m located in east kurrajong
+                        
+                        I have 4 beautiful husky pups for sale, 3 boys 1 girl
+                        
+                        They were born on the 19th February, they have grown up as part of the family and great with kids
+                        There is
+
+                        A black and white boy – (has parti eyes, 1 half brown half blue, the other blue) – microchip # is 900164001655684
+                        
+                        A copper boy with white tipped fur – has green eyes – microchip # is 900164001655694
+                        
+                        1 dilute red male – (has parti eyes, 1 had green half blue, the other blue) – microchip # is 900164001655681
+                        
+                        They are handled daily and socialised with a range of pets, including small dogs, larger dogs and cats. They are a great breed of dog for children as they love the attention and are so gentle with people.
+                        
+                        I am a full breeder with aapdb.
+                        My breeders number is 16644
+                        
+                        If you have any questions etc don’t hesitate to call or text me on 0405528585 or message me 🙂</p>
+
+                    <ngb-tabset [justify]="currentJustify">
+                        <ngb-tab title="Thông tin chi tiết">
+                            <ng-template ngbTabContent>
+                            <p>Đéo có cc gì hết</p>
+                            </ng-template>
+                        </ngb-tab>
+                        <ngb-tab title="Bình luận">
+                            <ng-template ngbTabContent>
+                                <p><strong>Rating</strong> :<ngb-rating [rate]="3"></ngb-rating>
+                                <input id="typeahead-basic" type="text" class="form-control"/>
+                            </ng-template>
+                        </ngb-tab>
+                        <ngb-tab title="Thông số kỹ thuật">
+                            <ng-template ngbTabContent>
+                                <p>Đây là con chó</p>
+                            </ng-template>
+                        </ngb-tab>
+                    </ngb-tabset>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+      
+
+<app-footer><app-footer>
