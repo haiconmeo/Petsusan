@@ -5,7 +5,7 @@ from .serializers import Province_citySerializer,RegisterSerializer,UserSerializ
 from rest_framework import status
 from rest_framework.decorators import api_view
 from knox.models import AuthToken
-
+from rest_framework import  permissions
 @api_view(['GET', 'POST'])
 def Province_cityList(request):
 
@@ -114,3 +114,10 @@ def item_detail(request, pk):
     elif request.method == 'DELETE':
         item.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+class UserAPI(generics.RetrieveAPIView):
+    permission_classes = [permissions.IsAuthenticated, ]
+    serializer_class = UserSerializer
+   
+    def get_object(self):
+        return self.request.user

@@ -25,6 +25,8 @@ import { ItemDetailComponent } from './items/item-detail/item-detail.component';
 
 import { ListItemsService } from './_services/list-items.service';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { EffectsModule } from '@ngrx/effects';
+import { AuthEffects } from './store/effects/auth.effects';
 
 
 
@@ -53,6 +55,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
     NgbModule,
     HttpClientModule,
+    // EffectsModule.forRoot([AuthEffects]),
   ],
   providers: [
     ListItemsService,

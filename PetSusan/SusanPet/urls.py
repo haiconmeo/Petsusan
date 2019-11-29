@@ -1,5 +1,5 @@
 from django.urls import path,include
-from .api import Province_cityList,RegisterAPI,LoginAPI,contact_list,contact_detail,item_list,item_detail
+from .api import Province_cityList,RegisterAPI,LoginAPI,contact_list,contact_detail,item_list,item_detail,UserAPI
 
 
 urlpatterns = [
@@ -10,5 +10,6 @@ urlpatterns = [
     path('item/<int:pk>',item_detail),
     path('auth/register/', RegisterAPI.as_view()),
     path('auth/login/',LoginAPI.as_view()),
+    path('auth/user/', UserAPI.as_view()),
     path('auth/', include('knox.urls')),
 ]
