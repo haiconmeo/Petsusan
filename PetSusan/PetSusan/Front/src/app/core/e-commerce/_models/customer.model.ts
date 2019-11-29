@@ -11,7 +11,7 @@ export class CustomerModel  extends BaseModel {
 	dateOfBbirth: string;
 	dob: Date;
 	ipAddress: string;
-	type: number; // 0 = Business | 1 = Individual
+	// type: number; // 0 = Business | 1 = Individual
 
 	clear() {
 		this.dob = new Date();
@@ -21,7 +21,7 @@ export class CustomerModel  extends BaseModel {
 		this.userName = '';
 		this.gender = 'Female';
 		this.ipAddress = '';
-		this.type = 1;
+		// this.type = 1;
 		this.status = 1;
 	}
 }

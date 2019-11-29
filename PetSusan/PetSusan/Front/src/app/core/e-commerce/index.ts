@@ -3,6 +3,7 @@ export { ECommerceDataContext } from './_server/_e-commerce.data-context';
 
 // Models and Consts
 export { CustomerModel } from './_models/customer.model';
+export { MailModel } from './_models/mail.model';
 export { ProductRemarkModel } from './_models/product-remark.model';
 export { ProductSpecificationModel } from './_models/product-specification.model';
 export { ProductModel } from './_models/product.model';
@@ -10,6 +11,7 @@ export { SPECIFICATIONS_DICTIONARY } from './_consts/specification.dictionary';
 
 // DataSources
 export { CustomersDataSource } from './_data-sources/customers.datasource';
+export { MailsDataSource } from './_data-sources/mails.datasource';
 export { ProductRemarksDataSource } from './_data-sources/product-remarks.datasource';
 export { ProductSpecificationsDataSource } from './_data-sources/product-specifications.datasource';
 export { ProductsDataSource } from './_data-sources/products.datasource';
@@ -30,6 +32,21 @@ export {
     CustomersPageCancelled,
     CustomersPageToggleLoading
 } from './_actions/customer.actions';
+// Mail Actions =>
+export {
+    MailActionTypes,
+    MailActions,
+    // MailOnServerCreated,
+    // MailCreated,
+    MailUpdated,
+    MailsStatusUpdated,
+    OneMailDeleted,
+    ManyMailsDeleted,
+    MailsPageRequested,
+    MailsPageLoaded,
+    MailsPageCancelled,
+    MailsPageToggleLoading
+} from './_actions/mail.action';
 // Product actions =>
 export {
     ProductActionTypes,
@@ -79,12 +96,14 @@ export {
 
 // Effects
 export { CustomerEffects } from './_effects/customer.effects';
+export { MailEffects } from './_effects/mail.effects';
 export { ProductEffects } from './_effects/product.effects';
 export { ProductRemarkEffects } from './_effects/product-remark.effects';
 export { ProductSpecificationEffects } from './_effects/product-specification.effects';
 
 // Reducers
 export { customersReducer } from './_reducers/customer.reducers';
+export { mailsReducer } from './_reducers/mail.reducers';
 export { productsReducer } from './_reducers/product.reducers';
 export { productRemarksReducer } from './_reducers/product-remark.reducers';
 export { productSpecificationsReducer } from './_reducers/product-specification.reducers';
@@ -99,6 +118,15 @@ export {
     selectCustomersActionLoading,
     selectCustomersShowInitWaitingMessage
 } from './_selectors/customer.selectors';
+// Mail selectors =>
+export {
+    selectMailById,
+    selectMailsInStore,
+    selectMailsPageLoading,
+    selectLastCreatedMailId,
+    selectMailsActionLoading,
+    selectMailsShowInitWaitingMessage
+} from './_selectors/mail.selectors';
 // Product selectors
 export {
     selectProductById,
@@ -132,6 +160,7 @@ export {
 
 // Services
 export { CustomersService } from './_services/';
+export { MailsService } from './_services/';
 export { ProductsService } from './_services/';
 export { ProductRemarksService } from './_services/';
 export { ProductSpecificationsService } from './_services/';

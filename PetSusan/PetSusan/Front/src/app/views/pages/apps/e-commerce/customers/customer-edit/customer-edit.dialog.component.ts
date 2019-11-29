@@ -79,7 +79,7 @@ export class CustomerEditDialogComponent implements OnInit, OnDestroy {
 			userName: [this.customer.userName, Validators.compose([Validators.required])],
 			gender: [this.customer.gender, Validators.compose([Validators.required])],
 			ipAddress: [this.customer.ipAddress, Validators.compose([Validators.required])],
-			type: [this.customer.type.toString(), Validators.compose([Validators.required])]
+			//type: [this.customer.type.toString(), Validators.compose([Validators.required])]
 		});
 	}
 
@@ -127,7 +127,7 @@ export class CustomerEditDialogComponent implements OnInit, OnDestroy {
 		_customer.userName = controls['userName'].value;
 		_customer.gender = controls['gender'].value;
 		_customer.ipAddress = controls['ipAddress'].value;
-		_customer.type = +controls['type'].value;
+		//_customer.type = +controls['type'].value;
 		_customer.status = this.customer.status;
 		return _customer;
 	}
