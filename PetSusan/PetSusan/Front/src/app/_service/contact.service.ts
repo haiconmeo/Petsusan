@@ -19,19 +19,19 @@ export class ContactService {
     private http:HttpClient
   ) { }
 
-  // addContact(contact:Contact){
-  //    alert(JSON.stringify(contact))
-  //    let httpOptons = {
-  //     headers: new HttpHeaders({
-  //       'Content-Type': 'application/json',
+  addContact(contact:Contact){
+     alert(JSON.stringify(contact))
+     let httpOptons = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
        
-  //     })
-  //   };
+      })
+    };
 
-  //   return this.http.post("http://localhost:8000/api/contact/",JSON.stringify(contact),httpOptons)
+    return this.http.post("http://localhost:8000/api/contact/",JSON.stringify(contact),httpOptons)
   
-  // }
-  addContact():Observable<Contact[]>{
-    return this.http.get<Contact[]>(URL);
   }
+  // addContact():Observable<Contact[]>{
+  //   return this.http.get<Contact[]>(URL);
+  // }
 }
