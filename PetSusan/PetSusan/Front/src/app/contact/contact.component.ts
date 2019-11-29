@@ -25,10 +25,15 @@ export class ContactComponent implements OnInit {
 
   Submit_message(){
     // console.log(this.contact.Message)
-    this.contactservice.addContact(this.contact).subscribe( result=> {
-      this.router.navigate(['/']);
-    }
-      )
+    // this.contactservice.addContact(this.contact).subscribe( result=> {
+    //   this.router.navigate(['/']);
+    // }
+    //   )
+
+      this.contactservice.addContact().subscribe( result=> {
+        this.router.navigate(['/']);
+      }
+        )
   }
 }
 
