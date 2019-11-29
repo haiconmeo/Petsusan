@@ -8,14 +8,17 @@ import { Observable } from 'rxjs';
 })
 export class ListItemsService {
 
-  public API_ITEMS : string = '../../assets/test.json';
+  public API_ITEMS : string = 'http://127.0.0.1:8000/api/item/';
 
   constructor(private http : HttpClient
     ) {}
 
   getAllItems() : Observable<List[]>{
     return this.http.get<List[]>(this.API_ITEMS);
-    console.log("hel");
+  }
+
+  getDetails(id) : Observable<List[]>{
+    return this.http.get<List[]>(this.API_ITEMS + id);
   }
 
 }
