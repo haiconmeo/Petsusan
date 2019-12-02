@@ -95,22 +95,23 @@ def item_list(request):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-@api_view(['GET', 'PUT', 'DELETE'])
-def item_detail(request, pk):
-    """
-    Retrieve, update or delete a Rap instance.
-    """
-    try:
-        item = Item.objects.get(pk=pk)
-    except item.DoesNotExist:
-        return Response(status=status.HTTP_404_NOT_FOUND)
+# @api_view(['GET', 'PUT', 'DELETE'])
+# def contact_detail(request, pk):
+#     """
+#     Retrieve, update or delete a Rap instance.
+#     """
+#     try:
+#         contact = Contact.objects.get(pk=pk)
+#     except contact.DoesNotExist:
+#         return Response(status=status.HTTP_404_NOT_FOUND)
 
-    if request.method == 'GET':
-        serializer = ItemSerializer(item,context={'request': request})
-        return Response(serializer.data)
+#     if request.method == 'GET':
+#         serializer = ContactSerializer(contact,context={'request': request})
+#         return Response(serializer.data)
 
 
 
+<<<<<<< HEAD
     elif request.method == 'DELETE':
         item.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
@@ -121,3 +122,8 @@ class UserAPI(generics.RetrieveAPIView):
    
     def get_object(self):
         return self.request.user
+=======
+#     elif request.method == 'DELETE':
+#         contact.delete()
+#         return Response(status=status.HTTP_204_NO_CONTENT)
+>>>>>>> parent of 3e1b430... login+get id item

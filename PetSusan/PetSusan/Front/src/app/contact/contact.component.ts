@@ -21,11 +21,10 @@ export class ContactComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    
   }
 
   Submit_message(){
-    //console.log(this.contact.Message)
+    console.log(this.contact.Message)
     this.contactservice.addContact(this.contact).subscribe( result=> {
       this.router.navigate(['/']);
     }
