@@ -11,7 +11,9 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 export class CartComponent implements OnInit {
 
   public carts : Cart[] =[];
-  public total: number = 0;
+  public cart : Cart = null;
+  
+
   constructor(
     public cartService : ListCartService,
     private route: ActivatedRoute,
@@ -37,6 +39,19 @@ export class CartComponent implements OnInit {
 
     });
   }
+
+  edit(cart: Cart){
+    this.cart = cart;
+    // console.log(this.cart)
+  }
+
+  plusQunatity(){
+    console.log(this.cart)
+    this.cartService.update(this.cart).subscribe(data =>{
+    console.log(data)
+    })
+  }
+
   updateDelete(id: number) : number{
    let resul =0;
   this.carts.forEach((cart, index) =>{

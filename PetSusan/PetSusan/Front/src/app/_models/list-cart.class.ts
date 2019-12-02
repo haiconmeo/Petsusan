@@ -16,12 +16,14 @@ export class Cart{
     public price: string;
     public img: string;
     public quantity: number;
+    public age: number
 
-    constructor(id : number, name: string, price : string,  img: string, quantity: number){
+    constructor(id : number, name: string, price : string,  img: string, quantity: number, age: number){
         this.name = name;
         this.price = price;
         this.img = img;
         this.quantity = quantity;
-        this.id =id
+        this.id =id;
+        this.age = age;
     }
 }
