@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-xl-6 col-md-6">
                     <div class="recepies_info">
-                        <h3>{{list.name}}</h3>
+                        <h3 > {{list.name}} </h3>
                         <div class="resepies_details">
                             <ul>
                                 <ng-template #t let-fill="fill">
@@ -37,7 +37,7 @@
                                     <!-- <hr> -->
                                 <pre>Rate: <b>{{list.age}}</b></pre>
                                 <li><p><strong>Price</strong> : ${{list.price}} </p></li>
-                                <li><a style="color: #fff; " class="check-click-button" href="cart">Add to Cart<i class="fab fa-opencart"></i></a></li>
+                                <li><a (onclick)="onSend()" style="color: #fff; " class="check-click-button" href="cart">Add to Cart<i class="fab fa-opencart"></i></a></li>
                             </ul>
                         </div>
                     </div>

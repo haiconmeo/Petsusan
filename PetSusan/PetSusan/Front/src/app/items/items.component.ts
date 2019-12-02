@@ -8,7 +8,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 @Component({
   selector: 'app-items',
   templateUrl: './items.component.html',
-  styleUrls: ['.././../css/style.css', '.././../css/bootstrap.min.css', ]
+  styleUrls: ['.././../css/style.css',  ]
 })
 export class ItemsComponent implements OnInit{
 

@@ -7,29 +7,38 @@ import { List } from '../../_models/list-item.class';
 @Component({
   selector: 'app-item-detail',
   templateUrl: './item-detail.component.html',
-  styleUrls: ['.././../../css/style.css', '.././../../css/bootstrap.min.css','./item-detail.component.css']
+  styleUrls: ['.././../../css/style.css','./item-detail.component.css']
 })
 export class ItemDetailComponent implements OnInit {
 
   public list : List[] =[];
 
+  public message:string;
   constructor(
     private route: ActivatedRoute,
     private router: Router,
     public detail : ListItemsService,
   ) { }
 
-  ngOnInit() {
-    this.showDetail();
-  }
+  
+  
 
-  currentRate = 3.6;
+  public onSend(){
+    this.detail.currentMessage.subscribe(message => this.message = message);
+  }
   
   showDetail(){
     const layid = this.route.snapshot.paramMap.get('id');
     this.detail.getDetails(layid).subscribe((detail) =>{
-     this.list =detail
+      this.list =detail
     })
+  }
+
+
+  ngOnInit() {
+    this.showDetail();
+    this.onSend();
+    console.log(this.showDetail())
   }
   
 }
