@@ -13,7 +13,6 @@ export class ItemDetailComponent implements OnInit {
 
   public list : List[] =[];
 
-  public message:string;
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -23,10 +22,6 @@ export class ItemDetailComponent implements OnInit {
   
   
 
-  public onSend(){
-    this.detail.currentMessage.subscribe(message => this.message = message);
-  }
-  
   showDetail(){
     const layid = this.route.snapshot.paramMap.get('id');
     this.detail.getDetails(layid).subscribe((detail) =>{
@@ -37,7 +32,6 @@ export class ItemDetailComponent implements OnInit {
 
   ngOnInit() {
     this.showDetail();
-    this.onSend();
     console.log(this.showDetail())
   }
   

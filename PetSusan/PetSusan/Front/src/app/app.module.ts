@@ -21,6 +21,7 @@ import { ItemQuickViewComponent } from './items/item-quick-view/item-quick-view.
 import { ItemDetailComponent } from './items/item-detail/item-detail.component';
 
 import { ListItemsService } from './_services/list-items.service';
+import { ListCartService } from './_services/list-cart.service';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 
@@ -51,6 +52,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
   ],
   providers: [
     ListItemsService,
+    ListCartService,
   ],
   bootstrap: [AppComponent]
 })

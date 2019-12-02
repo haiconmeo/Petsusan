@@ -10,19 +10,9 @@ export class ListItemsService {
 
   public API_ITEMS : string = 'http://127.0.0.1:8000/api/item/';
 
-  private messageSource = new BehaviorSubject('Default message');
-  currentMessage = this.messageSource.asObservable();
-
   constructor(private http : HttpClient
     ) {}
 
-  // public get Value(){
-  //   return this.countValue;
-  // }
-
-  changeMessage(message: string) {
-    this.messageSource.next(message);
-  }
   
   getAllItems() : Observable<List[]>{
     return this.http.get<List[]>(this.API_ITEMS);
