@@ -1,9 +1,6 @@
 from django.urls import path,include
-<<<<<<< HEAD
 from .api import Province_cityList,RegisterAPI,LoginAPI,contact_list,contact_detail,item_list,item_detail,UserAPI
-=======
-from .api import Province_cityList,RegisterAPI,LoginAPI,contact_list,contact_detail,item_list
->>>>>>> parent of 3e1b430... login+get id item
+
 
 
 urlpatterns = [
