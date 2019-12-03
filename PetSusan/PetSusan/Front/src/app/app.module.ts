@@ -28,6 +28,7 @@ import { ListItemsService } from './_services/list-items.service';
 import { ListCartService } from './_services/list-cart.service';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     ItemDetailComponent,
     NotFoundComponent,
     CarouselComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
