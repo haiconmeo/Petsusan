@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { HttpClientModule} from '@angular/common/http';
 
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -20,9 +22,12 @@ import { CartComponent } from './cart/cart.component';
 import { ItemQuickViewComponent } from './items/item-quick-view/item-quick-view.component';
 import { ItemDetailComponent } from './items/item-detail/item-detail.component';
 
+
+
 import { ListItemsService } from './_services/list-items.service';
 import { ListCartService } from './_services/list-cart.service';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 @NgModule({
@@ -41,6 +46,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ItemQuickViewComponent,
     ItemDetailComponent,
     NotFoundComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,

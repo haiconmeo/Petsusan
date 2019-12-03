@@ -13,12 +13,12 @@
 export class Cart{
     public id : number;
     public name: string;
-    public price: string;
+    public price: number;
     public img: string;
     public quantity: number;
     public age: number
 
-    constructor(id : number, name: string, price : string,  img: string, quantity: number, age: number){
+    constructor(id : number, name: string, price : number,  img: string, quantity: number, age: number){
         this.name = name;
         this.price = price;
         this.img = img;

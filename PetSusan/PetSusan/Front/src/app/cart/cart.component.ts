@@ -12,43 +12,40 @@ export class CartComponent implements OnInit {
 
   public carts : Cart[] =[];
   public cart : Cart = null;
-  
-
+  public total : number =0;
   constructor(
     public cartService : ListCartService,
     private route: ActivatedRoute,
   ) { }
 
   ngOnInit() {
-   this.showCart();
-  // console.log(this.delete(2))
+    this.showCart();
   }
 
   showCart(){
     this.cartService.getAllCart().subscribe((cart) =>{
-      this.carts = cart
+      this.carts = cart;
+      for( var i=0; i<this.carts.length; i++){
+            this.total += this.carts[i].price*this.carts[i].age  ;   
+          }
+      return this.total;  
     });
   }
 
   delete(id: number){
     this.cartService.delete(id).subscribe((data)=>{
-        // this.updateDelete(id);
-        // console.log(data)
         let index = this.updateDelete(id);
         this.carts.splice(index, 1);
-
     });
   }
 
   edit(cart: Cart){
     this.cart = cart;
-    // console.log(this.cart)
   }
 
   plusQunatity(){
     console.log(this.cart)
     this.cartService.update(this.cart).subscribe(data =>{
-    console.log(data)
     })
   }
 
@@ -61,6 +58,5 @@ export class CartComponent implements OnInit {
   })
    return resul;
   }
-
 
 }
