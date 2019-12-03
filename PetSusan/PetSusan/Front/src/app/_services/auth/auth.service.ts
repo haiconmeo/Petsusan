@@ -16,27 +16,19 @@ const httpOptions = {
 export class AuthService {
   public errors: any = [];
   constructor(private http:HttpClient) { }
-  loadUser() :Observable<any> {
+  loadUser(){
     var token = localStorage.getItem('token');
-    var manh = 'Token '+ token;
-    // alert(manh);
-    const httpOptions2 = {
-      headers: new HttpHeaders({
-        'Content-Type':  'application/json',
-        'Authorization' : 'Token '+ token
-        
-      })
-      
+    if (token){
+      this.http.post(URL,JSON.stringify({token}),httpOptions).subscribe(
+        data => {
+          
+        },
+        err => {
+          this.errors = err['error'];
+        }
+      );
     }
-    
-   
-    // console.log("token:"+token)
-   
-     return  this.http.get(URL_load,httpOptions2)
-    
- 
   }
-
   login(log:loginClass){
     this.http.post(URL,JSON.stringify(log),httpOptions).subscribe(
       data => {

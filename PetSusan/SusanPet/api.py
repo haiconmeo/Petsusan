@@ -1,7 +1,7 @@
 from rest_framework import generics
-from .models import Province_city,Contact,Item
+from .models import Province_city,Contact,Item,Category_loai,Category_giong,Rate
 from rest_framework.response import Response
-from .serializers import Province_citySerializer,RegisterSerializer,UserSerializer,LoginSerializer,ContactSerializer,ItemSerializer
+from .serializers import Province_citySerializer,RegisterSerializer,UserSerializer,LoginSerializer,ContactSerializer,ItemSerializer,CateroriLoaiSerializer,CateroriGiongSerializer,RateSerializer
 from rest_framework import status
 from rest_framework.decorators import api_view
 from knox.models import AuthToken
@@ -119,3 +119,99 @@ class UserAPI(generics.RetrieveAPIView):
     def get_object(self):
         return self.request.user
 
+
+
+@api_view(['GET', 'POST'])
+def categori_loai_list(request):
+    """
+    List all Raps, or create a new Rap.
+    """
+    if request.method == 'GET':
+        items = Category_loai.objects.all()
+        serializer = CateroriLoaiSerializer(items,context={'request': request} ,many=True)
+        return Response(serializer.data)
+    elif request.method == 'POST':
+        serializer = CateroriLoaiSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+@api_view(['GET', 'PUT', 'DELETE'])
+def category_loai_detail(request, pk):
+    """
+    Retrieve, update or delete a Rap instance.
+    """
+    try:
+        items = Category_loai.objects.get(pk=pk)
+    except items.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
+    if request.method == 'GET':
+        serializer = CateroriLoaiSerializer(items,context={'request': request})
+        return Response(serializer.data)
+    elif request.method == 'DELETE':
+        items.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+@api_view(['GET', 'POST'])
+def categori_giong_list(request):
+    """
+    List all Raps, or create a new Rap.
+    """
+    if request.method == 'GET':
+        items = Category_giong.objects.all()
+        serializer = CateroriGiongSerializer(items,context={'request': request} ,many=True)
+        return Response(serializer.data)
+    elif request.method == 'POST':
+        serializer = CateroriGiongSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+@api_view(['GET', 'PUT', 'DELETE'])
+def category_loai_detail(request, pk):
+    """
+    Retrieve, update or delete a Rap instance.
+    """
+    try:
+        items = Category_loai.objects.get(pk=pk)
+    except items.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
+    if request.method == 'GET':
+        serializer = CateroriLoaiSerializer(items,context={'request': request})
+        return Response(serializer.data)
+    elif request.method == 'DELETE':
+        items.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+@api_view(['GET', 'POST'])
+def ratelist(request):
+    """
+    List all Raps, or create a new Rap.
+    """
+    if request.method == 'GET':
+        items = Rate.objects.all()
+        serializer = RateSerializer(items,context={'request': request} ,many=True)
+        return Response(serializer.data)
+    elif request.method == 'POST':
+        serializer = RateSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+@api_view(['GET', 'PUT', 'DELETE'])
+def rate_detail(request, pk):
+    """
+    Retrieve, update or delete a Rap instance.
+    """
+    try:
+        items = Rate.objects.get(pk=pk)
+    except items.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
+    if request.method == 'GET':
+        serializer = RateSerializer(items,context={'request': request})
+        return Response(serializer.data)
+    elif request.method == 'DELETE':
+        items.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
