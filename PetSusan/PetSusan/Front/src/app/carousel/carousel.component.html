@@ -1,52 +1,109 @@
-<!-- <div class="col-md-12 text-center"><h3>Product Carousel</h3></div>
-<div class="col-md-6 col-md-offset-3">
-<div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
-  <div class="carousel-inner">
-    <div class="item active">
-      <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="http://placehold.it/500/e499e4/fff&amp;text=1" class="img-responsive"></a></div>
-    </div>
-    <div class="item">
-      <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="http://placehold.it/500/e477e4/fff&amp;text=2" class="img-responsive"></a></div>
-    </div>
-    <div class="item">
-      <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="http://placehold.it/500/eeeeee&amp;text=3" class="img-responsive"></a></div>
-    </div>
-    <div class="item">
-      <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="http://placehold.it/500/f4f4f4&amp;text=4" class="img-responsive"></a></div>
-    </div>
-    <div class="item">
-      <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="http://placehold.it/500/f566f5/333&amp;text=5" class="img-responsive"></a></div>
-    </div>
-    <div class="item">
-      <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="http://placehold.it/500/f477f4/fff&amp;text=6" class="img-responsive"></a></div>
-    </div>
-    <div class="item">
-      <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="http://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a></div>
-    </div>
-    <div class="item">
-      <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="http://placehold.it/500/fcfcfc/333&amp;text=8" class="img-responsive"></a></div>
-    </div>
-  </div>
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-</div>
-</div>
+<div id="demo" class="carousel slide" data-ride="carousel">
 
-<script>
-    $('.carousel[data-type="multi"] .item').each(function(){
-  var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
-  
-  for (var i=0;i<2;i++) {
-    next=next.next();
-    if (!next.length) {
-    	next = $(this).siblings(':first');
-  	}
-    
-    next.children(':first-child').clone().appendTo($(this));
-  }
-});
-</script> -->
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single_recepie text-center">
+                            <div class="recepie_thumb">
+                                <img style="border-radius: 50%;" src="assets/cat1.jpg" alt="">
+                            </div>
+                            <h3>Cat</h3>
+                            <a href="#" class="line_btn">View Full Cat</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="single_recepie text-center">
+                                <div class="recepie_thumb">
+                                    <img src="assets/cat1.jpg" alt="">
+                                </div>
+                                <h3>Cat</h3>
+                                <a href="#" class="line_btn">View Full Cat</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single_recepie text-center">
+                                    <div class="recepie_thumb">
+                                        <img src="assets/cat1.jpg" alt="">
+                                    </div>
+                                    <h3>Cat</h3>
+                                    <a href="#" class="line_btn">View Full Cat</a>
+                                </div>
+                            </div>
+          </div>
+          <div class="carousel-item">
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single_recepie text-center">
+                            <div class="recepie_thumb">
+                                <img src="assets/dog1.jpg" alt="">
+                            </div>
+                            <h3>Cat</h3>
+                            <a href="#" class="line_btn">View Full Cat</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="single_recepie text-center">
+                                <div class="recepie_thumb">
+                                    <img src="assets/dog1.jpg" alt="">
+                                </div>
+                                <h3>Cat</h3>
+                                <a href="#" class="line_btn">View Full Cat</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single_recepie text-center">
+                                    <div class="recepie_thumb">
+                                        <img src="assets/dog1.jpg" alt="">
+                                    </div>
+                                    <h3>Cat</h3>
+                                    <a href="#" class="line_btn">View Full Cat</a>
+                                </div>
+                            </div>
+          </div>
+          <div class="carousel-item">
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single_recepie text-center">
+                            <div class="recepie_thumb">
+                                <img src="assets/fox1.jpg" alt="">
+                            </div>
+                            <h3>Cat</h3>
+                            <a href="#" class="line_btn">View Full Cat</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="single_recepie text-center">
+                                <div class="recepie_thumb">
+                                    <img src="assets/fox1.jpg" alt="">
+                                </div>
+                                <h3>Cat</h3>
+                                <a href="#" class="line_btn">View Full Cat</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single_recepie text-center">
+                                    <div class="recepie_thumb">
+                                        <img src="assets/fox1.jpg" alt="">
+                                    </div>
+                                    <h3>Cat</h3>
+                                    <a href="#" class="line_btn">View Full Cat</a>
+                                </div>
+                            </div>
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      
+      </div>
