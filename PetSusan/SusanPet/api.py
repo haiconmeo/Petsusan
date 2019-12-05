@@ -1,8 +1,9 @@
 from rest_framework import generics
-from .models import Province_city,Contact,Item,Category_loai,Category_giong,Rate
+from .models import Province_city,Contact,Item,Category_loai,Category_giong,Rate,District,Commune
 from rest_framework.response import Response
 from .serializers import Province_citySerializer,RegisterSerializer,UserSerializer,LoginSerializer,ContactSerializer,ItemSerializer,CateroriLoaiSerializer,CateroriGiongSerializer,RateSerializer
 from rest_framework import status
+from .serializers import DistrictSerializer,CommuneSerializer
 from rest_framework.decorators import api_view
 from knox.models import AuthToken
 from rest_framework import  permissions
@@ -20,6 +21,33 @@ def Province_cityList(request):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+@api_view(['GET', 'POST'])
+def District_List(request):
+
+    if request.method == 'GET':
+        Districts = District.objects.all()
+        serializer = DistrictSerializer(Districts,context={'request': request} ,many=True)
+        return Response(serializer.data)
+    elif request.method == 'POST':
+        serializer = DistrictSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['GET', 'POST'])
+def CommuneList(request):
+
+    if request.method == 'GET':
+        Province_citys = Commune.objects.all()
+        serializer = CommuneSerializer(Province_citys,context={'request': request} ,many=True)
+        return Response(serializer.data)
+    elif request.method == 'POST':
+        serializer = CommuneSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 class RegisterAPI(generics.GenericAPIView):
     serializer_class = RegisterSerializer
 

@@ -1,5 +1,5 @@
 from rest_framework import serializers 
-from .models import Province_city,Profile,Contact,Item,Category_loai,Category_giong,Rate
+from .models import Province_city,Profile,Contact,Item,Category_loai,Category_giong,Rate,District,Commune
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from drf_extra_fields.fields import Base64ImageField
@@ -7,6 +7,17 @@ class Province_citySerializer(serializers.ModelSerializer):
     class Meta:
         model =  Province_city
         fields = '__all__'
+
+class DistrictSerializer(serializers.ModelSerializer):
+    class Meta:
+        model =  District
+        fields = '__all__'
+
+class CommuneSerializer(serializers.ModelSerializer):
+    class Meta:
+        model =  Commune
+        fields = '__all__'
+
 class RateSerializer(serializers.ModelSerializer):
     class Meta:
         model =  Rate
