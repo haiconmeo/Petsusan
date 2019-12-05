@@ -5,7 +5,7 @@ import { Route, Router } from '@angular/router';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['.././../css/style.css', '.././../css/bootstrap.min.css',]
+  styleUrls: ['.././../css/style.css', ]
 })
 export class ContactComponent implements OnInit {
   contact :Contact={

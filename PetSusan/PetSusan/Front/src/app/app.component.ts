@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Cart } from './_models/list-cart.class';
+import { ListCartService } from './_services/list-cart.service';
 
 @Component({
   selector: 'app-root',
@@ -6,12 +8,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./../css/style.css', './../css/bootstrap.min.css', ]
 })
 export class AppComponent {
+  public soluong : number =0;
+  public carts : Cart[] =[];
 
   public check1 : boolean = false;
   public check2 : boolean = false;
   public check3 : boolean = false;
   public check4 : boolean = false;
   public check6 : boolean = false;
+
+
+  constructor(
+    public cartService : ListCartService,
+  ) { }
+
 
   click1(){
     this.check1 = true;
@@ -49,6 +59,29 @@ export class AppComponent {
     this.check3 = false;
     this.check4 = false;
     this.check6 = true;
+  }
+
+  showCart(){
+    this.cartService.getAllCart().subscribe((cart) =>{
+      this.carts = cart;
+      this.soluong = this.carts.length; 
+      console.log(this.soluong)
+
+    });
+  }
+
+  update(id: number) : number{
+  let resul =0;
+  this.carts.forEach((cart, index) =>{
+    if(cart.id == id){
+      resul = index;
+    }
+  })
+   return resul;
+  }
+
+  ngOnInit() {
+    this.showCart();
   }
 
 

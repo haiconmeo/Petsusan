@@ -1,0 +1,34 @@
+<!-- bradcam_area  -->
+<div class="bradcam_area bradcam_bg_1">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="bradcam_text text-center">
+                    <h3>Payment</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="recepie_header_area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-10">
+                <div class="recepie_text text-center">
+                    <div *ngIf="!paidFor">
+                        <h1>Buy this Couch - ${{ total}} OBO</h1>
+                    </div>
+                      
+                    <div *ngIf=paidFor>
+                        <h1>Yay, you bought a sweet couch!</h1>
+                    </div>
+                      
+                      
+                    <div #paypal></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

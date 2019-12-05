@@ -11,6 +11,8 @@ import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
 import { ItemDetailComponent } from './items/item-detail/item-detail.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ProfileComponent } from './profile/profile.component';
+import { PaymentComponent } from './cart/payment/payment.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -24,7 +26,10 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'login', component: LoginComponent},
   {path: 'cart', component: CartComponent},
-  {path: '**', component: NotFoundComponent}
+  {path: 'cart/payment', component: PaymentComponent},
+  {path: 'profile', component: ProfileComponent},
+  {path: '**', component: NotFoundComponent},
+
 
 ];
 

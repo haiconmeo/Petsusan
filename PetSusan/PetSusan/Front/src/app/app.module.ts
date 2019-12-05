@@ -4,6 +4,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { HttpClientModule} from '@angular/common/http';
+import {NgxPaginationModule} from 'ngx-pagination';
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,8 +26,14 @@ import { CartComponent } from './cart/cart.component';
 import { ItemQuickViewComponent } from './items/item-quick-view/item-quick-view.component';
 import { ItemDetailComponent } from './items/item-detail/item-detail.component';
 
+
+
 import { ListItemsService } from './_services/list-items.service';
+import { ListCartService } from './_services/list-cart.service';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { ProfileComponent } from './profile/profile.component';
+import { PaymentComponent } from './cart/payment/payment.component';
 
 
 
@@ -44,6 +53,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ItemQuickViewComponent,
     ItemDetailComponent,
     NotFoundComponent,
+    CarouselComponent,
+    ProfileComponent,
+    PaymentComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +65,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
     NgbModule,
     HttpClientModule,
+    NgxPaginationModule,
   ],
   providers: [
     ListItemsService,
