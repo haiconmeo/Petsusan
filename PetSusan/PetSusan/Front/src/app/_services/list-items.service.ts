@@ -12,7 +12,9 @@ export class ListItemsService {
 
   constructor(private http : HttpClient
     ) {}
-
+  
+    p: number = 1;
+    // collection: any[] = someArrayOfThings;  
   
   getAllItems() : Observable<List[]>{
     return this.http.get<List[]>(this.API_ITEMS);

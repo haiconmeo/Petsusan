@@ -4,6 +4,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { HttpClientModule} from '@angular/common/http';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 
@@ -29,6 +30,7 @@ import { ListCartService } from './_services/list-cart.service';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ProfileComponent } from './profile/profile.component';
+import { PaymentComponent } from './cart/payment/payment.component';
 
 
 @NgModule({
@@ -49,6 +51,7 @@ import { ProfileComponent } from './profile/profile.component';
     NotFoundComponent,
     CarouselComponent,
     ProfileComponent,
+    PaymentComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,6 +60,7 @@ import { ProfileComponent } from './profile/profile.component';
     Ng2SearchPipeModule,
     NgbModule,
     HttpClientModule,
+    NgxPaginationModule,
   ],
   providers: [
     ListItemsService,

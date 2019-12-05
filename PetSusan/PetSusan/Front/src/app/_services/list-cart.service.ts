@@ -22,8 +22,6 @@ export class ListCartService {
     return  this.http.put<Cart[]>(`${this.API_ITEMS}${cart.id}`, cart);
   }
 
- 
-
   delete(id): Observable<Cart[]>{
     return  this.http.delete<Cart[]>(this.API_ITEMS + id);
   }

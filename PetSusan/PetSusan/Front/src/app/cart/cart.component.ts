@@ -20,22 +20,37 @@ export class CartComponent implements OnInit {
 
   ngOnInit() {
     this.showCart();
+    this.tinhtien();
   }
 
   showCart(){
     this.cartService.getAllCart().subscribe((cart) =>{
       this.carts = cart;
-      for( var i=0; i<this.carts.length; i++){
-            this.total += this.carts[i].price*this.carts[i].age  ;   
-          }
-      return this.total;  
+      this.tinhtien();
     });
+  }
+  tinhtien(){
+    console.log(this.carts)
+    if(this.total == 0){
+      for( var i=0; i<this.carts.length; i++){
+        this.total += this.carts[i].price*this.carts[i].age;   
+      }
+    }
+    else{
+      this.total =0;
+      for( var i=0; i<this.carts.length; i++){
+        this.total += this.carts[i].price*this.carts[i].age;   
+      }
+    }
+    
+    return this.total;
   }
 
   delete(id: number){
     this.cartService.delete(id).subscribe((data)=>{
         let index = this.updateDelete(id);
         this.carts.splice(index, 1);
+        this.tinhtien();
     });
   }
 
@@ -50,7 +65,7 @@ export class CartComponent implements OnInit {
   }
 
   updateDelete(id: number) : number{
-   let resul =0;
+  let resul =0;
   this.carts.forEach((cart, index) =>{
     if(cart.id == id){
       resul = index;
