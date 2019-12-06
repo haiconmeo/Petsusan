@@ -34,6 +34,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PaymentComponent } from './cart/payment/payment.component';
+import { AvatarModule } from 'ngx-avatar';
 
 
 
@@ -62,7 +63,7 @@ import { PaymentComponent } from './cart/payment/payment.component';
     AppRoutingModule,
     FormsModule,
     Ng2SearchPipeModule,
-
+    AvatarModule,
     NgbModule,
     HttpClientModule,
     NgxPaginationModule,

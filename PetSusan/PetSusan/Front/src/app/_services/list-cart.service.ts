@@ -15,7 +15,7 @@ export class ListCartService {
   ) { }
 
   getAllCart() : Observable<Cart[]>{
-    return this.http.get<Cart[]>(this.API_ITEMS);
+    return //this.http.get<Cart[]>(this.API_ITEMS);
   }
 
   update(cart: Cart): Observable<Cart[]>{
