@@ -28,10 +28,10 @@ export class ItemsComponent implements OnInit{
   showItem(){
      this.listItem.getAllItems().subscribe((data) => {
        for(var i=0; i<data.length; i++){
-        if(data[i].pet == false){
+        // if(data[i].pet == false){
           this.list = data
         }
-       }
+      //  }
      });
   }
 

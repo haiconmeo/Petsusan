@@ -20,6 +20,10 @@ export class ManageItemsService {
     return this.http.get<List[]>(this.API_ITEMS);
   }
 
+  getAdd(list : List): Observable<List[]>{
+    return this.http.post<List[]>(this.API_ITEMS, list)
+  }
+
   getDelete(id) : Observable<List[]>{
     return this.http.delete<List[]>(this.API_ITEMS + id);
   }

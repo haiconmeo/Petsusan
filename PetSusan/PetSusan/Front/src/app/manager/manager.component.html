@@ -144,31 +144,31 @@
                         <ul class="vertical-nav-menu">
                             <li class="app-sidebar__heading">Dashboards</li>
                             <li>
-                                <a href="manager/pet" class="mm-active">
+                                <a (click)="checkPet()"  [ngClass]="{ 'check-manager' : check1 == true }" class="mm-active">
                                     <i class="metismenu-icon pe-7s-rocket"></i>
                                     Pet
                                 </a>
                             </li>
                             <li>
-                                <a href="manager/item" class="mm-active">
+                                <a (click)="checkItem()"  [ngClass]="{ 'check-manager' : check2 == true}" class="mm-active">
                                     <i class="metismenu-icon pe-7s-rocket"></i>
                                     Phu kien
                                 </a>
                             </li>
                             <li>
-                                <a href="/manager/doanh-thu" class="mm-active">
+                                <a (click)=" checkDoanhThu()" [ngClass]="{ 'check-manager' : check3 == true}" class="mm-active">
                                     <i class="metismenu-icon pe-7s-rocket"></i>
                                     Doanh thu
                                 </a>
                             </li>
                             <li>
-                                <a href="/manager/user" class="mm-active">
+                                <a (click)=" checkUser()" [ngClass]="{ 'check-manager' : check4 == true}" class="mm-active">
                                     <i class="metismenu-icon pe-7s-rocket"></i>
                                     User
                                 </a>
                             </li>
                             <li>
-                                <a href="manager/contact" class="mm-active">
+                                <a (click)="checkContact()" [ngClass]="{ 'check-manager' : check5 == true}" class="mm-active">
                                     <i class="metismenu-icon pe-7s-rocket"></i>
                                     Contact
                                 </a>
@@ -178,4 +178,35 @@
                     </div>
                 </div>
             </div>   
+
+
+                   
+                    <div *ngIf="check1 === true">
+                        <app-pets></app-pets>
+                    </div>
+
+                    <div *ngIf="check2 === true">
+                        <app-item></app-item>
+                    </div>
+
+                    <div *ngIf="check3 === true">
+                        <app-revenue></app-revenue>
+                    </div>
+
+                    <div *ngIf="check4 === true">
+                        <app-user></app-user>
+                    </div>
+
+                    <div *ngIf="check5 === true">
+                        <app-contacts></app-contacts>
+                    </div>
+                    
+                  
+
+                    
+                </div>
+            </div>
+            <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    </div>
+</div>
 

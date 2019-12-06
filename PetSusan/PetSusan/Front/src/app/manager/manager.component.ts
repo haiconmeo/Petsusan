@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { List } from '../_models/list-item.class';
-import { ManageItemsService } from '../_services/manage-items.service';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { from } from 'rxjs';
+
 
 @Component({
   selector: 'app-manager',
@@ -11,27 +8,54 @@ import { from } from 'rxjs';
 })
 export class ManagerComponent implements OnInit {
   
-  public items : List[] = [];
+  public check1 : boolean = true;
+  public check2 : boolean = false;
+  public check3 : boolean = false;
+  public check4 : boolean = false;
+  public check5 : boolean = false;
+  
 
-  constructor(
-    private route: ActivatedRoute,
-    private router: Router,
-    public listItem : ManageItemsService,
-  ) { }
+  constructor() { }
 
   ngOnInit() {
-    this.showItem();
+
   }
 
-  showItem(){
-    this.listItem.getAllItems().subscribe((data) => {
-      // for(var i=0; i<data.length; i++){
-      //  if(data[i].pet == false){
-         this.items = data
-         console.log(this.items)
-      //  }
-      // }
-    });
- }
+  checkPet(){
+    this.check1 = true;
+    this.check2 = false;
+    this.check3 = false;
+    this.check4 = false;
+    this.check5 = false;
+  }
+
+  checkItem(){
+    this.check1 = false;
+    this.check2 = true;
+    this.check3 = false;
+    this.check4 = false;
+    this.check5 = false;
+  }
+  checkDoanhThu(){
+    this.check1 = false;
+    this.check2 = false;
+    this.check3 = true;
+    this.check4 = false;
+    this.check5 = false;
+  }
+  checkUser(){
+    this.check1 = false;
+    this.check2 = false;
+    this.check3 = false;
+    this.check4 = true;
+    this.check5 = false;
+  }
+  checkContact(){
+    this.check1 = false;
+    this.check2 = false;
+    this.check3 = false;
+    this.check4 = false;
+    this.check5 = true;
+  }
 
 }

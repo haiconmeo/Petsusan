@@ -3,7 +3,7 @@ import { Contact } from 'src/app/_entities/contact';
 import { ContactService } from 'src/app/_service/contact.service';
 
 @Component({
-  selector: 'app-contact',
+  selector: 'app-contacts',
   templateUrl: './contact.component.html',
   styleUrls: ['../manager.component.css', '../../../css/style.css']
 })
