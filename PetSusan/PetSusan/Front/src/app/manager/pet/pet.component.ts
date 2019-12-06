@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-pet',
+  selector: 'app-pets',
   templateUrl: './pet.component.html',
   styleUrls: ['../manager.component.css', '../../../css/style.css']
 })

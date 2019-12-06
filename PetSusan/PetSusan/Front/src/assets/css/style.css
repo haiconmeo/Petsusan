@@ -38,6 +38,11 @@ body {
 .check-click{
   border-bottom: 5px solid #fff;
 }
+
+.check-manager{
+  background: #70a1ff;
+  color: #fff;
+}
 .check-click-button{
   background: #fdcb6e ;
   border: 3px solid #fdcb6e;

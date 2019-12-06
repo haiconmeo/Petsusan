@@ -14,11 +14,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PaymentComponent } from './cart/payment/payment.component';
 import { ManagerComponent } from './manager/manager.component';
-import { ItemComponent } from './manager/items/items.component';
-import { PetsComponent } from './manager/pet/pet.component';
-import { ContactsComponent } from './manager/contact/contact.component';
-import { RevenueComponent } from './manager/revenue/revenue.component';
-import { UserComponent } from './manager/user/user.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -34,13 +29,8 @@ const routes: Routes = [
   {path: 'cart', component: CartComponent},
   {path: 'cart/payment', component: PaymentComponent},
   {path: 'profile', component: ProfileComponent},
-
   {path: 'manager', component: ManagerComponent},
-  {path: 'manager/item', component: ItemComponent},
-  {path: 'manager/pet', component: PetsComponent},
-  {path: 'manager/contact', component: ContactsComponent},
-  {path: 'manager/doanh-thu', component: RevenueComponent},
-  {path: 'manager/user', component: UserComponent},
+
   {path: '**', component: NotFoundComponent},
 
 
