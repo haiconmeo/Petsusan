@@ -34,6 +34,12 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PaymentComponent } from './cart/payment/payment.component';
+import { ManagerComponent } from './manager/manager.component';
+import { UserComponent } from './manager/user/user.component';
+import { RevenueComponent } from './manager/revenue/revenue.component';
+import { ItemComponent } from './manager/items/items.component';
+import { PetsComponent } from './manager/pet/pet.component';
+import { ContactsComponent } from './manager/contact/contact.component';
 
 
 
@@ -56,6 +62,12 @@ import { PaymentComponent } from './cart/payment/payment.component';
     CarouselComponent,
     ProfileComponent,
     PaymentComponent,
+    ManagerComponent,
+    UserComponent,
+    RevenueComponent,
+    ItemComponent,
+    PetsComponent,
+    ContactsComponent,
   ],
   imports: [
     BrowserModule,
