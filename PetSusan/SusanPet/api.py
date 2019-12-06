@@ -3,7 +3,7 @@ from .models import Province_city,Contact,Item,Category_loai,Category_giong,Rate
 from rest_framework.response import Response
 from .serializers import Province_citySerializer,RegisterSerializer,UserSerializer,LoginSerializer,ContactSerializer,ItemSerializer,CateroriLoaiSerializer,CateroriGiongSerializer,RateSerializer,profileSerializer
 from rest_framework import status
-from .serializers import DistrictSerializer,CommuneSerializer
+from .serializers import DistrictSerializer,CommuneSerializer,RepSerializer
 from rest_framework.decorators import api_view
 from knox.models import AuthToken
 from rest_framework import  permissions
@@ -275,3 +275,44 @@ def profile_detail(request, pk):
     elif request.method == 'DELETE':
         items.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+
+
+import sys
+from smtplib import SMTP_SSL as SMTP      
+
+from email.mime.text import MIMEText
+def sendmail(receivers,context,subject):
+    SMTP_Host = 'smtp.gmail.com'
+    sender = 'testmail@vinasupport.com'
+    receivers = [receivers]
+    username = "hoanghuumanht4.com"
+    password = "Manhlaix14"
+
+    text_subtype = 'plain'
+    content = context
+    subject = "Sent from vinasupport.com"
+    try:
+        msg = MIMEText(content, text_subtype)
+        msg['Subject'] = subject
+        msg['From'] = sender  
+        conn = SMTP(SMTP_Host)
+        conn.set_debuglevel(False)
+        conn.login(username, password)
+        try:
+            conn.sendmail(sender, receivers, msg.as_string())
+        finally:
+            conn.quit()
+    except Exception as error:
+        raise("sai roi")
+
+class RepAPI(generics.GenericAPIView):
+    serializer_class = RepSerializer
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        print ("manh",serializer['Name'].value)
+        sendmail(serializer['Email'],"manh pro vip 123",serializer['Message'])
+        return Response(status=status.HTTP_201_CREATED)

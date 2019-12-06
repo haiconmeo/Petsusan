@@ -19,6 +19,8 @@ import { PetsComponent } from './manager/pet/pet.component';
 import { ContactsComponent } from './manager/contact/contact.component';
 import { RevenueComponent } from './manager/revenue/revenue.component';
 import { UserComponent } from './manager/user/user.component';
+import { RepContact } from './_entities/Repcontact';
+import { ContactRepComponent } from './manager/contact-rep/contact-rep.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -39,6 +41,7 @@ const routes: Routes = [
   {path: 'manager/item', component: ItemComponent},
   {path: 'manager/pet', component: PetsComponent},
   {path: 'manager/contact', component: ContactsComponent},
+  // {path: 'manager/contact/rep', component: ContactRepComponent},
   {path: 'manager/doanh-thu', component: RevenueComponent},
   {path: 'manager/user', component: UserComponent},
   {path: '**', component: NotFoundComponent},

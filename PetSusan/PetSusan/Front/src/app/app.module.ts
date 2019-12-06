@@ -40,7 +40,8 @@ import { RevenueComponent } from './manager/revenue/revenue.component';
 import { ItemComponent } from './manager/items/items.component';
 import { PetsComponent } from './manager/pet/pet.component';
 import { ContactsComponent } from './manager/contact/contact.component';
-
+// import { ContactRepComponent } from './src/app/manager/contact-rep/contact-rep.component';
+import { AvatarModule } from 'ngx-avatar';
 
 
 @NgModule({
@@ -68,6 +69,8 @@ import { ContactsComponent } from './manager/contact/contact.component';
     ItemComponent,
     PetsComponent,
     ContactsComponent,
+    // ContactRepComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -78,6 +81,7 @@ import { ContactsComponent } from './manager/contact/contact.component';
     NgbModule,
     HttpClientModule,
     NgxPaginationModule,
+    AvatarModule
   ],
   providers: [
     ListItemsService,
