@@ -61,12 +61,18 @@ class LoginSerializer(serializers.Serializer):
 
 
 class profileSerializer(serializers.ModelSerializer):
-#   user=UserSerializer( read_only=True)
-  class Meta:
-    model= Profile
-    fields = '__all__'
+    user = UserSerializer()
+    class Meta:
+        model= Profile
+        fields = '__all__'
 class ItemSerializer(serializers.ModelSerializer):
     image = Base64ImageField()
     class Meta:
         model =  Item
         fields = '__all__'
+
+class RepSerializer(serializers.Serializer):
+    Name = serializers.CharField(max_length=200)
+    Email = serializers.EmailField()
+    Message = serializers.CharField(max_length=200)
+    

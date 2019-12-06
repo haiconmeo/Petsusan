@@ -1,0 +1,32 @@
+
+
+
+<a class="btn btn-primary" routerLink="/" role="button">ADD</a>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Subject</th>
+            <th>Email</th>
+            <th>Name</th>
+            <th>Message</th>
+            <th>delete</th>
+            <th>Rep</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let con of contacs">
+            <td>{{con.id}}</td>
+            <td>{{con.Name}}</td>
+            <td>{{con.Subject}}</td>
+            <td>{{con.Email}}</td>
+            <td>{{con.Message}}</td>
+            <td><a class="btn btn-primary" href="" >Delete</a></td>
+            <td><a class="btn btn-primary" href="" >Rep</a></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>                   
+
+

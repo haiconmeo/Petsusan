@@ -34,6 +34,14 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PaymentComponent } from './cart/payment/payment.component';
+
+import { ManagerComponent } from './manager/manager.component';
+import { UserComponent } from './manager/user/user.component';
+import { RevenueComponent } from './manager/revenue/revenue.component';
+import { ItemComponent } from './manager/items/items.component';
+import { PetsComponent } from './manager/pet/pet.component';
+import { ContactsComponent } from './manager/contact/contact.component';
+// import { ContactRepComponent } from './src/app/manager/contact-rep/contact-rep.component';
 import { AvatarModule } from 'ngx-avatar';
 
 
@@ -57,6 +65,14 @@ import { AvatarModule } from 'ngx-avatar';
     CarouselComponent,
     ProfileComponent,
     PaymentComponent,
+    ManagerComponent,
+    UserComponent,
+    RevenueComponent,
+    ItemComponent,
+    PetsComponent,
+    ContactsComponent,
+    // ContactRepComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -67,6 +83,7 @@ import { AvatarModule } from 'ngx-avatar';
     NgbModule,
     HttpClientModule,
     NgxPaginationModule,
+    AvatarModule
   ],
   providers: [
     ListItemsService,

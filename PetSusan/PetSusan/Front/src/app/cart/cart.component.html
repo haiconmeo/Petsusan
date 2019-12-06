@@ -30,11 +30,11 @@
                                         <div class="cart_item_text">{{cart.name}}</div>
                                     </div>
                                     <div class="cart_item_quantity cart_info_col">
-                                        <div class="cart_item_title"><b>Quantity</b></div>
+                                        <div class="cart_item_title"><b>Quantity {{cart.age}}</b></div>
                                         <div class="cart_item_text">
                                             <!-- <button (click)="plusQunatity()" style="background: none; border: none;"><i class="fas fa-minus-circle"></i></button> -->
                                             <input style="width: 30px;" type="text" [(ngModel)]="cart.age">
-                                            <button  (click)="tinhtien()" (click)="edit(cart)" (click)="plusQunatity()" style="background: none; border: none;"><i class="fas fa-check-circle"></i></button>
+                                            <button (click)="tinhtien()" (click)="edit(cart)" (click)="plusQunatity()" style="background: none; border: none;"><i class="fas fa-check-circle"></i></button>
                                         </div>
                                     </div>
                                     <div class="cart_item_price cart_info_col">

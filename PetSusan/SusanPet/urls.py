@@ -1,6 +1,6 @@
 from django.urls import path,include
 from .api import Province_cityList,RegisterAPI,LoginAPI,contact_list,contact_detail,item_list,item_detail,UserAPI,categori_loai_list,category_loai_detail,categori_loai_list,ratelist,rate_detail
-from .api import District_List,CommuneList,profile_list
+from .api import District_List,CommuneList,profile_list,RepAPI
 
 
 urlpatterns = [
@@ -16,6 +16,7 @@ urlpatterns = [
     path('categori_giong/',categori_loai_list),
     path('categori_giong/<int:pk>',category_loai_detail),
     path('item/',item_list),
+    path('Rep/',RepAPI.as_view()),
     path('auth/register/', RegisterAPI.as_view()),
     path('auth/login/',LoginAPI.as_view()),
     path('auth/profile/',profile_list),
