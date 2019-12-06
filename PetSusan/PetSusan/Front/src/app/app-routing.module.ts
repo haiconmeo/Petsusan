@@ -13,6 +13,7 @@ import { ItemDetailComponent } from './items/item-detail/item-detail.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PaymentComponent } from './cart/payment/payment.component';
+import { ManagerComponent } from './manager/manager.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -28,6 +29,7 @@ const routes: Routes = [
   {path: 'cart', component: CartComponent},
   {path: 'cart/payment', component: PaymentComponent},
   {path: 'profile', component: ProfileComponent},
+  {path: 'manager', component: ManagerComponent},
   {path: '**', component: NotFoundComponent},
 
 

@@ -31,6 +31,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PaymentComponent } from './cart/payment/payment.component';
+import { ManagerComponent } from './manager/manager.component';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { PaymentComponent } from './cart/payment/payment.component';
     CarouselComponent,
     ProfileComponent,
     PaymentComponent,
+    ManagerComponent,
   ],
   imports: [
     BrowserModule,
