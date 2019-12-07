@@ -1,6 +1,6 @@
 from django.urls import path,include
 from .api import Province_cityList,RegisterAPI,LoginAPI,contact_list,contact_detail,item_list,item_detail,UserAPI,categori_loai_list,category_loai_detail,categori_loai_list,ratelist,rate_detail
-from .api import District_List,CommuneList,profile_list,RepAPI
+from .api import District_List,CommuneList,profile_list,RepAPI,item_detail,profile_detail
 
 
 urlpatterns = [
@@ -16,10 +16,12 @@ urlpatterns = [
     path('categori_giong/',categori_loai_list),
     path('categori_giong/<int:pk>',category_loai_detail),
     path('item/',item_list),
+    path('item/<int:pk>/',item_detail),
     path('Rep/',RepAPI.as_view()),
     path('auth/register/', RegisterAPI.as_view()),
     path('auth/login/',LoginAPI.as_view()),
     path('auth/profile/',profile_list),
+    path('auth/profile/<int:pk>/',profile_detail),
     path('auth/user/', UserAPI.as_view()),
     path('auth/', include('knox.urls')),
 ]
