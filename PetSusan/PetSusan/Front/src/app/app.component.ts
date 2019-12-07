@@ -1,76 +1,106 @@
-import { Subscription } from 'rxjs';
-// Angular
-import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
-// Layout
-import { LayoutConfigService, SplashScreenService } from './core/_base/layout';
-// Layout
-import { TranslationService } from './core/_base/layout';
-// language list
-import { locale as enLang } from './core/_config/i18n/en';
-import { locale as chLang } from './core/_config/i18n/ch';
-import { locale as esLang } from './core/_config/i18n/es';
-import { locale as jpLang } from './core/_config/i18n/jp';
-import { locale as deLang } from './core/_config/i18n/de';
-import { locale as frLang } from './core/_config/i18n/fr';
-
+import { Component, OnInit } from '@angular/core';
+import { Cart } from './_models/list-cart.class';
+import { ListCartService } from './_services/list-cart.service';
+import { AvatarModule } from 'ngx-avatar';
+import { AuthService } from './_services/auth/auth.service';
+import { Router } from '@angular/router';
 @Component({
-	// tslint:disable-next-line:component-selector
-	selector: 'body[kt-root]',
-	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.scss'],
-	changeDetection: ChangeDetectionStrategy.OnPush
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./../css/style.css', './../css/bootstrap.min.css', ]
 })
-export class AppComponent implements OnInit, OnDestroy {
-	// Public properties
-	title = 'Metronic';
-	loader: boolean;
-	private unsubscribe: Subscription[] = []; // Read more: => https://brianflove.com/2016/12/11/anguar-2-unsubscribe-observables/
+export class AppComponent {
+  public soluong : number =0;
+  public carts : Cart[] =[];
+  public username:string;
+  public check1 : boolean = false;
+  public check2 : boolean = false;
+  public check3 : boolean = false;
+  public check4 : boolean = false;
+  public check6 : boolean = false;
+  public avatar:string= 'http://localhost:8000/img/no-img.jpg';
 
-	/**
-	 * Component constructor
-	 *
-	 * @param translationService: TranslationService
-	 * @param router: Router
-	 * @param layoutConfigService: LayoutCongifService
-	 * @param splashScreenService: SplashScreenService
-	 */
-	constructor(private translationService: TranslationService,
-				private router: Router,
-				private layoutConfigService: LayoutConfigService,
-				private splashScreenService: SplashScreenService) {
+  constructor(
+    public cartService : ListCartService,
+    private stdservice : AuthService,
+    private router :Router
+  ) { 
+    this.checkLogin();
+  }
 
-		// register translations
-		this.translationService.loadTranslations(enLang, chLang, esLang, jpLang, deLang, frLang);
-	}
 
-	/**
-	 * @ Lifecycle sequences => https://angular.io/guide/lifecycle-hooks
-	 */
+  click1(){
+    this.check1 = true;
+    this.check2 = false;
+    this.check3 = false;
+    this.check4 = false;
+    this.check6 = false;
+  }
+  click2(){
+    this.check1 = false;
+    this.check2 = true;
+    this.check3 = false;
+    this.check4 = false;
+    this.check6 = false;
+  }
 
-	/**
-	 * On init
-	 */
-	ngOnInit(): void {
-		// enable/disable loader
-		this.loader = this.layoutConfigService.getConfig('loader.enabled');
+  click3(){
+    this.check1 = false;
+    this.check2 = false;
+    this.check3 = true;
+    this.check4 = false;
+    this.check6 = false;
+  }
 
-		const routerSubscription = this.router.events.subscribe(event => {
-			if (event instanceof NavigationEnd) {
-				// hide splash screen
-				this.splashScreenService.hide();
+  click4(){
+    this.check1 = false;
+    this.check2 = false;
+    this.check3 = false;
+    this.check4 = true;
+    this.check6 = false;
+  }
+  click6(){
+    this.check1 = false;
+    this.check2 = false;
+    this.check3 = false;
+    this.check4 = false;
+    this.check6 = true;
+  }
+  click7(){
+    this.username=null;
+    localStorage.removeItem('token');
+    this.router.navigate(['/']);
 
-				// scroll to top on every route change
-				window.scrollTo(0, 0);
-			}
-		});
-		this.unsubscribe.push(routerSubscription);
-	}
+  }
+  showCart(){
+    this.cartService.getAllCart().subscribe((cart) =>{
+      this.carts = cart;
+      this.soluong = this.carts.length; 
+      console.log(this.soluong)
 
-	/**
-	 * On Destroy
-	 */
-	ngOnDestroy() {
-		this.unsubscribe.forEach(sb => sb.unsubscribe());
-	}
+    });
+  }
+  checkLogin(){
+     this.stdservice.loadUser().subscribe(
+       re=> this.username=re["username"]
+     );
+    //  console.log(this.username)
+  }
+  update(id: number) : number{
+  let resul =0;
+  this.carts.forEach((cart, index) =>{
+    if(cart.id == id){
+      resul = index;
+    }
+  })
+   return resul;
+  }
+
+  ngOnInit() {
+    this.showCart();
+   
+  }
+
+
+  title = 'Front';
 }

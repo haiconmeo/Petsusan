@@ -1,0 +1,8 @@
+.body-notfound {
+    background-image: url('http://2.bp.blogspot.com/-brCYrJg8cgo/UzvKPvd8v0I/AAAAAAAANb0/DtZvdJF2cTw/s1600/Yasuo-League-of-Legends-Wallpaper-full-HD-2.jpg');
+    height: 100%;
+    color: #fff;
+}
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }

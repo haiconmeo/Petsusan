@@ -12,6 +12,7 @@ import { CoreModule } from '../../core/core.module';
 import { MailModule } from './apps/mail/mail.module';
 import { ECommerceModule } from './apps/e-commerce/e-commerce.module';
 import { UserManagementModule } from './user-management/user-management.module';
+import { FeedbackComponent } from './feedback/feedback.component';
 // import { MyPageComponent } from './my-page/my-page.component';
 
 @NgModule({
@@ -28,7 +29,8 @@ import { UserManagementModule } from './user-management/user-management.module';
 		ECommerceModule,
 		UserManagementModule,
 	],
-	providers: []
+	providers: [],
+	declarations: [FeedbackComponent]
 })
 export class PagesModule {
 }

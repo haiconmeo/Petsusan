@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "tiểu cường",
+        "age": 1,
+        "price": "20.00",
+        "weight": 50,
+        "color": "vàng",
+        "amounts": 20,
+        "sex": false,
+        "description": "không có miêu tả gì đâu , viets cho vui thôi",
+        "image": 1,
+        "cat_giong": 1,
+        "cat_loai": 1
+    },
+    {
+        "id": 2,
+        "name": "hổ giống mèo",
+        "age": 2,
+        "price": "232.00",
+        "weight": 60,
+        "color": "đỏ",
+        "amounts": 30,
+        "sex": false,
+        "description": "không có miêu tả gì đâu , viets cho vui thôi",
+        "image": 2,
+        "cat_giong": 2,
+        "cat_loai": 2
+    },
+    {
+        "id": 3,
+        "name": "mèo giống chó",
+        "age": 1,
+        "price": "121.00",
+        "weight": 12,
+        "color": "tím",
+        "amounts": 40,
+        "sex": false,
+        "description": "không có miêu tả gì đâu , viets cho vui thôi",
+        "image": 3,
+        "cat_giong": 3,
+        "cat_loai": 3
+    }
+]

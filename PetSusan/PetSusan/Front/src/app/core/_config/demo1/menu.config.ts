@@ -40,7 +40,7 @@ export class MenuConfig {
 					title: 'Quản lý phản hồi',
 					root: true,
 					icon: 'flaticon2-list-3',
-					page: 'user-management/roles'
+					page: 'mail'
 				},
 
 				{

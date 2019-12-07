@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "chó",
+        "price": "20.00",
+        "image": "dog1.jpg",
+        "quantity": 0
+    },
+    {
+        "id": 2,
+        "name": "mèo",
+        "price": "50.00",
+        "image": "cat1.jpg",
+        "quantity": 0
+    },
+    {
+        "id": 3,
+        "name": "cáo",
+        "price": "900.00",
+        "image": "fox1.jpg",
+        "quantity": 1
+    }
+]
