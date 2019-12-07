@@ -84,7 +84,7 @@ export class AppComponent {
      this.stdservice.loadUser().subscribe(
        re=> this.username=re["username"]
      );
-    //  console.log(this.username)
+     
   }
   update(id: number) : number{
   let resul =0;

@@ -1,4 +1,5 @@
 import { User } from './user';
+import { Address } from './Address';
 
 export class Profile{
     
@@ -6,7 +7,8 @@ export class Profile{
     phonenum: string;
     birth_date: Date;
     cmmd: string;
-    user:User
+    user:User;
+    address:Address;
   
 
   }

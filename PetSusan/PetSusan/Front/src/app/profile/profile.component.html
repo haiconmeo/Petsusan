@@ -4,11 +4,12 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="bradcam_text text-center">
-                    <img style="border: 10px solid #ecf0f1; border-radius: 50%;" src="assets/dog1.jpg">
-                    <h3>xin chao thang mat lone</h3>
+                    <img style="border: 10px solid #ecf0f1; border-radius: 50%;" *ngIf="imageSrc===''" src="{{profile.avatar}}">
+                    <img style="border: 10px solid #ecf0f1; border-radius: 50%;" *ngIf="imageSrc" src="{{imageSrc}}">
+                    <h3>{{profile.user.username}}</h3>
                     <h6 class="m-t-2">Upload a different photo</h6>
                     <label class="custom-file">
-                        <input type="file" id="file" class="custom-file-input">
+                        <input type="file" id="file" class="custom-file-input" (change)="handleInputChange($event)"> >
                         <span class="custom-file-control">Choose file</span>
                     </label>
                 </div>
@@ -132,34 +133,29 @@
                 <div  class="tab-pane" id="edit">
                     <h4 class="m-y-2">Edit Profile</h4>
                     <form role="form">
+                      
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                            <label class="col-lg-3 col-form-label form-control-label"> name</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" value="Jane">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Last name</label>
-                            <div class="col-lg-9">
-                                <input class="form-control" type="text" value="Bishop">
+                                <input class="form-control" type="text" name ="username" [(ngModel)]="profile.user.username">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Email</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="email" value="email@gmail.com">
+                                <input class="form-control" type="email" readonly value="{{profile.user.email}}">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Company</label>
+                            <label class="col-lg-3 col-form-label form-control-label">Chứng minh nhân dân</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" value="">
+                                <input class="form-control" type="text" value="{{profile.cmmd}}">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Website</label>
+                            <label class="col-lg-3 col-form-label form-control-label">Birtday</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="url" value="">
+                                <input class="form-control" type="date" value="">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -168,15 +164,7 @@
                                 <input class="form-control" type="text" value="" placeholder="Street">
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label"></label>
-                            <div class="col-lg-6">
-                                <input class="form-control" type="text" value="" placeholder="City">
-                            </div>
-                            <div class="col-lg-3">
-                                <input class="form-control" type="text" value="" placeholder="State">
-                            </div>
-                        </div>
+                    
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Tỉnh</label>
                             <div class="col-lg-9">
@@ -222,29 +210,12 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Username</label>
-                            <div class="col-lg-9">
-                                <input class="form-control" type="text" value="janeuser">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Password</label>
-                            <div class="col-lg-9">
-                                <input class="form-control" type="password" value="11111122333">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
-                            <div class="col-lg-9">
-                                <input class="form-control" type="password" value="11111122333">
-                            </div>
-                        </div>
+
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label"></label>
                             <div class="col-lg-9">
                                 <input type="reset" class="btn btn-secondary" value="Cancel">
-                                <input type="button" class="btn btn-primary" value="Save Changes">
+                                <input type="button" class="btn btn-primary" (click)="add()" value="Save Changes">
                             </div>
                         </div>
                     </form>

@@ -42,9 +42,9 @@
                             <a>Login</a>
                         </button>
 
-                        <ngx-avatar *ngIf="username" [src]="avatar"></ngx-avatar>
+                        <ngx-avatar *ngIf="username" [src]="avatar" ></ngx-avatar>
                         <h3 *ngIf="username">{{username}}</h3>
-                        <a *ngIf="username" (click)="click7()">logout</a>
+                        <a *ngIf="username" (click)="click7()" >logout</a>
 
                         <a (click)="click6()" [ngClass]="{ 'check-click-button' : check6 == true}" style="color: #fff; display: inline;" routerLink="cart">Cart <i class="fab fa-opencart"></i>{{soluong}}</a>
                     </div>

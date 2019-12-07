@@ -52,6 +52,16 @@ export class AuthService {
       return this.http.get<Profile[]>(URL_profile,httpOptons);
     }
   
+    loadprofile_user(id):Observable<Profile>{
+      console.log("ok")
+      let httpOptons = {
+        headers: new HttpHeaders({
+          'Content-Type': 'application/json',
+         
+        })
+      };
+      return this.http.get<Profile>(URL_profile+id+'/',httpOptons);
+    }
   
   login(log:loginClass){
     this.http.post(URL,JSON.stringify(log),httpOptions).subscribe(
