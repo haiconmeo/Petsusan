@@ -1,3 +1,5 @@
+
+<input style="margin-bottom: 10px; background: #fff; color: #000; border: 1px solid #f1c40f; width: 30%; padding: 10px;"  type="text" name="search" [(ngModel)]="term" placeholder="Search Accessories">
 <div class="row">
     <div class="col-md-12">
         <div class="main-card mb-3 card">
@@ -21,7 +23,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr *ngFor ="let item of items">
+                    <tr *ngFor ="let item of items | filter:term ">
                         <td class="text-center text-muted">{{item.id}}</td>
                         <td>
                             <div class="widget-content p-0">
@@ -52,7 +54,7 @@
                 </table>
             </div>
             <div class="d-block text-center card-footer">
-                <button (click)="edit(item)" class="btn-wide btn btn-success">Them item</button>
+                <button (click)="check()" class="btn-wide btn btn-success">Add</button>
             </div>
         </div>
     </div>
@@ -60,136 +62,172 @@
 
 
 
-<form class="needs-validation" novalidate>
+
+<form *ngIf="them == true" style="margin-bottom: 50px;" class="needs-validation" novalidate>
     <div class="form-row">
         <div class="col-md-4 mb-3">
-            <label for="validationCustom01">Name</label>
-            <input [(ngModel)] = "name" type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
-            <div class="valid-feedback">
-                Looks good!
-            </div>
+            <label for="validationCustom01">Image</label>
+            <input [(ngModel)] = "image" type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
         </div>
     </div>
     <div class="form-row">
         <div class="col-md-6 mb-3">
-            <label for="validationCustom03">image</label>
-            <input  [(ngModel)] = "image" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-            <div class="invalid-feedback">
-                Please provide a valid city.
-            </div>
+            <label for="validationCustom03">name</label>
+            <input  [(ngModel)] = "name" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
         </div>
-
     </div>
     <div class="form-row">
         <div class="col-md-6 mb-3">
-            <label for="validationCustom03">image</label>
-            <input  [(ngModel)] = "image" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-            <div class="invalid-feedback">
-                Please provide a valid city.
-            </div>
+            <label for="validationCustom03">age</label>
+            <input  [(ngModel)] = "age" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
         </div>
-
     </div>
     <div class="form-row">
         <div class="col-md-6 mb-3">
-            <label for="validationCustom03">image</label>
-            <input  [(ngModel)] = "image" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-            <div class="invalid-feedback">
-                Please provide a valid city.
-            </div>
+            <label for="validationCustom03">price</label>
+            <input  [(ngModel)] = "price" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
         </div>
-
     </div>
     <div class="form-row">
         <div class="col-md-6 mb-3">
-            <label for="validationCustom03">image</label>
-            <input  [(ngModel)] = "image" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-            <div class="invalid-feedback">
-                Please provide a valid city.
-            </div>
+            <label for="validationCustom03">weight</label>
+            <input  [(ngModel)] = "weight" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
         </div>
-
     </div>
     <div class="form-row">
         <div class="col-md-6 mb-3">
-            <label for="validationCustom03">image</label>
-            <input  [(ngModel)] = "image" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-            <div class="invalid-feedback">
-                Please provide a valid city.
-            </div>
+            <label for="validationCustom03">color</label>
+            <input  [(ngModel)] = "color" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
         </div>
-
     </div>
     <div class="form-row">
         <div class="col-md-6 mb-3">
-            <label for="validationCustom03">image</label>
-            <input  [(ngModel)] = "image" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-            <div class="invalid-feedback">
-                Please provide a valid city.
-            </div>
+            <label for="validationCustom03">amounts</label>
+            <input  [(ngModel)] = "amounts" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
         </div>
-
     </div>
     <div class="form-row">
         <div class="col-md-6 mb-3">
-            <label for="validationCustom03">image</label>
-            <input  [(ngModel)] = "image" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-            <div class="invalid-feedback">
-                Please provide a valid city.
-            </div>
+            <label for="validationCustom03">pet</label>
+            <input  [(ngModel)] = "pet" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
         </div>
-
     </div>
     <div class="form-row">
         <div class="col-md-6 mb-3">
-            <label for="validationCustom03">image</label>
-            <input  [(ngModel)] = "image" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-            <div class="invalid-feedback">
-                Please provide a valid city.
-            </div>
+            <label for="validationCustom03">sex</label>
+            <input  [(ngModel)] = "sex" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
         </div>
-
     </div>
     <div class="form-row">
         <div class="col-md-6 mb-3">
-            <label for="validationCustom03">image</label>
-            <input  [(ngModel)] = "image" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-            <div class="invalid-feedback">
-                Please provide a valid city.
-            </div>
+            <label for="validationCustom03">description</label>
+            <input  [(ngModel)] = "description" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
         </div>
-
     </div>
     <div class="form-row">
         <div class="col-md-6 mb-3">
-            <label for="validationCustom03">image</label>
-            <input  [(ngModel)] = "image" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-            <div class="invalid-feedback">
-                Please provide a valid city.
-            </div>
+            <label for="validationCustom03">rate_tb</label>
+            <input  [(ngModel)] = "rate_tb" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
         </div>
-
     </div>
     <div class="form-row">
         <div class="col-md-6 mb-3">
-            <label for="validationCustom03">image</label>
-            <input  [(ngModel)] = "image" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-            <div class="invalid-feedback">
-                Please provide a valid city.
-            </div>
+            <label for="validationCustom03">cat_giong</label>
+            <input  [(ngModel)] = "cat_giong" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
         </div>
-
     </div>
-    <!-- <div class="form-group">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">
-                Agree to terms and conditions
-            </label>
-            <div class="invalid-feedback">
-                You must agree before submitting.
-            </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom03">cat_loai</label>
+            <input  [(ngModel)] = "cat_loai" type="text" class="form-control" id="validationCustom03" placeholder="City" required>
         </div>
-    </div> -->
-    <button (click)="add()" class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+    <button (click)="add()" class="btn btn-primary" type="submit">Add Item</button>
+</form> 
+
+
+<form *ngIf="item" class="needs-validation"  style="margin-bottom: 50px;" novalidate>
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="validationCustom01">Image</label>
+            <label class="custom-file">
+                <img style="border: 10px solid #ecf0f1; border-radius: 50%;" *ngIf="imageSrc" src="{{imageSrc}}">
+                <input type="file" id="file" class="custom-file-input" (change)="handleInputChange($event)"> </label>
+                        <!-- <span class="custom-file-control">Choose file</span> -->
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom03">name</label>
+            <input  [(ngModel)] = "item.name" [ngModelOptions]="{standalone: true}"  type="text" class="form-control" id="validationCustom03"  required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom03">age</label>
+            <input  [(ngModel)] = "item.age" [ngModelOptions]="{standalone: true}"  type="text" class="form-control" id="validationCustom03" required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom03">price</label>
+            <input  [(ngModel)] = "item.price" [ngModelOptions]="{standalone: true}"  type="text" class="form-control" id="validationCustom03"  required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom03">weight</label>
+            <input  [(ngModel)] = "item.weight" [ngModelOptions]="{standalone: true}"  type="text" class="form-control" id="validationCustom03"  required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom03">color</label>
+            <input  [(ngModel)] = "item.color" [ngModelOptions]="{standalone: true}"  type="text" class="form-control" id="validationCustom03"  required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom03">amounts</label>
+            <input  [(ngModel)] = "item.amounts" [ngModelOptions]="{standalone: true}"  type="text" class="form-control" id="validationCustom03"  required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom03">pet</label>
+            <input  [(ngModel)] = "item.pet" [ngModelOptions]="{standalone: true}"  type="text" class="form-control" id="validationCustom03" required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom03">sex</label>
+            <input  [(ngModel)] = "item.sex" [ngModelOptions]="{standalone: true}"  type="text" class="form-control" id="validationCustom03" required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom03">description</label>
+            <input  [(ngModel)] = "item.description" [ngModelOptions]="{standalone: true}"  type="text" class="form-control" id="validationCustom03"  required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom03">rate_tb</label>
+            <input  [(ngModel)] = "item.rate_tb" [ngModelOptions]="{standalone: true}"  type="text" class="form-control" id="validationCustom03"required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom03">cat_giong</label>
+            <input  [(ngModel)] = "item.cat_giong" [ngModelOptions]="{standalone: true}"  type="text" class="form-control" id="validationCustom03" required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom03">cat_loai</label>
+            <input  [(ngModel)] = "item.cat_loai" [ngModelOptions]="{standalone: true}"  type="text" class="form-control" id="validationCustom03"  required>
+        </div>
+    </div>
+
+    <button (click)="update()" class="btn btn-primary" type="submit">Edit Item</button>
 </form>

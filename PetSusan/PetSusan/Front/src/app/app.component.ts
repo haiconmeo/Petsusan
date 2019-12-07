@@ -65,8 +65,6 @@ export class AppComponent {
     this.cartService.getAllCart().subscribe((cart) =>{
       this.carts = cart;
       this.soluong = this.carts.length; 
-      console.log(this.soluong)
-
     });
   }
 

@@ -12,7 +12,10 @@
     </div>
 </div>
 
-<div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+
+
+<div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header " >
+       
     <div class="app-header header-shadow">
         <div class="app-header__logo">
             <div class="logo-src"></div>
@@ -43,7 +46,8 @@
                     </span>
                 </button>
             </span>
-        </div>    <div class="app-header__content">
+        </div>    
+        <div class="app-header__content">
             <div class="app-header-left">
                 <div class="search-wrapper">
                     <div class="input-holder">
@@ -71,45 +75,12 @@
                             Settings
                         </a>
                     </li>
-                </ul>        </div>
-            <div class="app-header-right">
-                <div class="header-btn-lg pr-0">
-                    <div class="widget-content p-0">
-                        <div class="widget-content-wrapper">
-                            <div class="widget-content-left">
-                                <div class="btn-group">
-                                    <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-                                        <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
-                                        <i class="fa fa-angle-down ml-2 opacity-8"></i>
-                                    </a>
-                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
-                                        <button type="button" tabindex="0" class="dropdown-item">User Account</button>
-                                        <button type="button" tabindex="0" class="dropdown-item">Settings</button>
-                                        <h6 tabindex="-1" class="dropdown-header">Header</h6>
-                                        <button type="button" tabindex="0" class="dropdown-item">Actions</button>
-                                        <div tabindex="-1" class="dropdown-divider"></div>
-                                        <button type="button" tabindex="0" class="dropdown-item">Dividers</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-content-left  ml-3 header-user-info">
-                                <div class="widget-heading">
-                                    Alina Mclourd
-                                </div>
-                                <div class="widget-subheading">
-                                    VP People Manager
-                                </div>
-                            </div>
-                            <div class="widget-content-right header-user-info ml-3">
-                                <button type="button" class="btn-shadow p-1 btn btn-primary btn-sm show-toastr-example">
-                                    <i class="fa text-white fa-calendar pr-1 pl-1"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>        </div>
+                </ul>        
+            </div>
+          
         </div>
-    </div>                <div class="app-main">
+    </div>                
+    <div class="app-main">
             <div class="app-sidebar sidebar-shadow">
                 <div class="app-header__logo">
                     <div class="logo-src"></div>
@@ -146,31 +117,31 @@
                         <ul class="vertical-nav-menu">
                             <li class="app-sidebar__heading">Dashboards</li>
                             <li>
-                                <a (click)="checkPet()"  [ngClass]="{ 'check-manager' : check1 == true }" class="mm-active">
+                                <a (click)="checkPet()" style="cursor: grab;" [ngClass]="{ 'check-manager' : check1 == true}" class="mm-active">
                                     <i class="metismenu-icon pe-7s-rocket"></i>
                                     Pet
                                 </a>
                             </li>
                             <li>
-                                <a (click)="checkItem()"  [ngClass]="{ 'check-manager' : check2 == true}" class="mm-active">
+                                <a (click)="checkItem()" style="cursor: grab;" [ngClass]="{ 'check-manager' : check2 == true}" class="mm-active">
                                     <i class="metismenu-icon pe-7s-rocket"></i>
                                     Phu kien
                                 </a>
                             </li>
                             <li>
-                                <a (click)=" checkDoanhThu()" [ngClass]="{ 'check-manager' : check3 == true}" class="mm-active">
+                                <a (click)=" checkDoanhThu()" style="cursor: grab;" [ngClass]="{ 'check-manager' : check3 == true}" class="mm-active">
                                     <i class="metismenu-icon pe-7s-rocket"></i>
                                     Doanh thu
                                 </a>
                             </li>
                             <li>
-                                <a (click)=" checkUser()" [ngClass]="{ 'check-manager' : check4 == true}" class="mm-active">
+                                <a (click)=" checkUser()" style="cursor: grab;" [ngClass]="{ 'check-manager' : check4 == true}" class="mm-active">
                                     <i class="metismenu-icon pe-7s-rocket"></i>
                                     User
                                 </a>
                             </li>
                             <li>
-                                <a (click)="checkContact()" [ngClass]="{ 'check-manager' : check5 == true}" class="mm-active">
+                                <a (click)="checkContact()" style="cursor: grab;" [ngClass]="{ 'check-manager' : check5 == true}" class="mm-active">
                                     <i class="metismenu-icon pe-7s-rocket"></i>
                                     Contact
                                 </a>
@@ -225,5 +196,18 @@
                 </div>
             </div>
             <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+          
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn btn-warning">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

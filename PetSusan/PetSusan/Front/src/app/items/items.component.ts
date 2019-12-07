@@ -13,7 +13,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 export class ItemsComponent implements OnInit{
 
   public list : List[] =[];
-
+  public count :  number = 0;
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -22,16 +22,17 @@ export class ItemsComponent implements OnInit{
 
   ngOnInit() {
     this.showItem();
-    this.listItem.getAllItems();
   }
   
   showItem(){
      this.listItem.getAllItems().subscribe((data) => {
        for(var i=0; i<data.length; i++){
-        // if(data[i].pet == false){
-          this.list = data
+        if(data[i].pet == false){
+          this.list[this.count] = data[i];
+          this.count ++;
         }
-      //  }
+       }
+       return this.list
      });
   }
 

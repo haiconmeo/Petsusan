@@ -24,8 +24,12 @@ export class ManageItemsService {
     return this.http.post<List[]>(this.API_ITEMS, list)
   }
 
+  getUpdate(list: List): Observable<List[]>{
+    return this.http.put<List[]>(`${this.API_ITEMS}${list.id}/`, list);
+  }
+
   getDelete(id) : Observable<List[]>{
-    return this.http.delete<List[]>(this.API_ITEMS + id);
+    return this.http.delete<List[]>(this.API_ITEMS + id + '/');
   }
 
 }
