@@ -3,7 +3,7 @@ import pandas  as pd
 import json
 import requests
 # from django.db import models
-from SusanPet.models import Commune
+from models import Commune
 URL = 'http://localhost:8000/api/xa/'
 data = pd.read_excel("./file/tinhhuyenxa.xlsx",encoding='utf8',sheet_name='xa')
 a = np.asarray(data['code'])
