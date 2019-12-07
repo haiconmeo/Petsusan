@@ -14,32 +14,32 @@ export class List{
     public cat_loai : string;
 
 
-    constructor( 
-        image: string,
-        name: string,
-        price: number,
-        weight: number,
-        color: string,
-        amounts: number,
-        pet: boolean,
-        sex: boolean,
-        description : string,
-        rate_tb: number,
-        cat_giong : string,
-        cat_loai : string)
-        {
+    // constructor( 
+    //     image: string,
+    //     name: string,
+    //     price: number,
+    //     weight: number,
+    //     color: string,
+    //     amounts: number,
+    //     pet: boolean,
+    //     sex: boolean,
+    //     description : string,
+    //     rate_tb: number,
+    //     cat_giong : string,
+    //     cat_loai : string)
+    //     {
 
-        this.image = image;
-        this.name = name;
-        this.price = price;
-        this.weight = weight;
-        this.color = color;
-        this.amounts = amounts;
-        this.pet = pet;
-        this.sex = sex;
-        this.description = description;
-        this.rate_tb = rate_tb;
-        this.cat_giong = cat_giong;
-        this.cat_loai = cat_loai;
-    }
+    //     this.image = image;
+    //     this.name = name;
+    //     this.price = price;
+    //     this.weight = weight;
+    //     this.color = color;
+    //     this.amounts = amounts;
+    //     this.pet = pet;
+    //     this.sex = sex;
+    //     this.description = description;
+    //     this.rate_tb = rate_tb;
+    //     this.cat_giong = cat_giong;
+    //     this.cat_loai = cat_loai;
+    // }
 }
