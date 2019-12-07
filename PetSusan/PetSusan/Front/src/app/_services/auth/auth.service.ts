@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { loginClass } from './../../_entities/login';
 import { Profile } from 'src/app/_entities/profile';
+import { Profile2 } from 'src/app/_entities/profile2';
 const URL:string       ="http://localhost:8000/api/auth/login/";
 const URL_load :string ="http://localhost:8000/api/auth/user/"
 var token = localStorage.getItem('token');
@@ -72,6 +73,26 @@ export class AuthService {
         this.errors = err['error'];
       }
     );
+    
+  }
+
+  putProfile(log:Profile2,id:number){
+    
+    return this.http.put(URL_profile+id+'/',JSON.stringify(log),httpOptions).subscribe(
+
+      data  => {
+      
+      console.log("PUT Request is successful ", data);
+      
+      },
+      
+      error  => {
+      
+      console.log("Rrror", error);
+      
+      }
+      
+      );
     
   }
 }

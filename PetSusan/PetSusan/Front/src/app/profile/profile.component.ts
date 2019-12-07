@@ -2,14 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import {Profile} from './../_entities/profile';
 import { AuthService } from '../_services/auth/auth.service';
 import { User } from '../_entities/user';
-
+import {Profile2} from './../_entities/profile2';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['.././../css/style.css', '.././../css/bootstrap.min.css',]
 })
+
+
 export class ProfileComponent implements OnInit {
   profile : Profile
+
   public id: number;
   checkLogin(){
     this.stdservice.loadUser().subscribe(
@@ -74,6 +77,19 @@ _handleReaderLoaded(e) {
      
   }
   add(){
-    console.log("profile:")
+    
+    var profile2 : Profile2={
+      id:this.id,
+      avatar: this.imageSrc,
+      phonenum: this.profile.phonenum,
+      birth_date: null,
+      cmmd: this.profile.cmmd,
+      user: this.id,
+      address: null
+    }
+    console.log("profile:",profile2)
+    console.log("profile:",this.id)
+    this.stdservice.putProfile(profile2,this.id);
+  
   }
 }

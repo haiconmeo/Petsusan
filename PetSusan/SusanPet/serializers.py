@@ -62,6 +62,13 @@ class LoginSerializer(serializers.Serializer):
 
 class profileSerializer(serializers.ModelSerializer):
     user = UserSerializer()
+    avatar = Base64ImageField()
+    class Meta:
+        model= Profile
+        fields = '__all__'
+        
+class profile2Serializer(serializers.ModelSerializer):
+    avatar = Base64ImageField()
     class Meta:
         model= Profile
         fields = '__all__'

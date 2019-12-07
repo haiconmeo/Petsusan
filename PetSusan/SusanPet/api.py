@@ -3,7 +3,7 @@ from .models import Province_city,Contact,Item,Category_loai,Category_giong,Rate
 from rest_framework.response import Response
 from .serializers import Province_citySerializer,RegisterSerializer,UserSerializer,LoginSerializer,ContactSerializer,ItemSerializer,CateroriLoaiSerializer,CateroriGiongSerializer,RateSerializer,profileSerializer
 from rest_framework import status
-from .serializers import DistrictSerializer,CommuneSerializer,RepSerializer
+from .serializers import DistrictSerializer,CommuneSerializer,RepSerializer,profile2Serializer
 from rest_framework.decorators import api_view
 from knox.models import AuthToken
 from rest_framework import  permissions
@@ -285,7 +285,7 @@ def profile_detail(request, pk):
         serializer = profileSerializer(items,context={'request': request})
         return Response(serializer.data)
     elif request.method == 'PUT':
-        serializer = profileSerializer(items, data=request.data,context={'request': request})
+        serializer = profile2Serializer(items, data=request.data,context={'request': request})
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
