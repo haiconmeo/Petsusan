@@ -21,4 +21,4 @@ for p in a:
     }
         
     print (data_request)
-    # r = requests.post(url = URL, data = data_request)
+    r = requests.post(url = URL, data = data_request)

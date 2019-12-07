@@ -183,6 +183,11 @@ def category_loai_detail(request, pk):
     if request.method == 'GET':
         serializer = CateroriLoaiSerializer(items,context={'request': request})
         return Response(serializer.data)
+    elif request.method == 'PUT':
+        serializer = CateroriLoaiSerializer(items, data=request.data,context={'request': request})
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
     elif request.method == 'DELETE':
         items.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
@@ -202,18 +207,24 @@ def categori_giong_list(request):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 @api_view(['GET', 'PUT', 'DELETE'])
-def category_loai_detail(request, pk):
+def category_giong_detail(request, pk):
     """
     Retrieve, update or delete a Rap instance.
     """
     try:
-        items = Category_loai.objects.get(pk=pk)
+        items = Category_giong.objects.get(pk=pk)
     except items.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
 
     if request.method == 'GET':
-        serializer = CateroriLoaiSerializer(items,context={'request': request})
+        serializer = CateroriGiongSerializer(items,context={'request': request})
         return Response(serializer.data)
+    elif request.method == 'PUT':
+        serializer = CateroriGiongSerializer(items, data=request.data,context={'request': request})
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     elif request.method == 'DELETE':
         items.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
