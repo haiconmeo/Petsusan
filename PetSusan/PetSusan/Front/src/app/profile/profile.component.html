@@ -188,8 +188,8 @@
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Xã</label>
                             <div class="col-lg-9">
-                                <select id="user_time_zone" class="form-control" size="0" name="xa_select" (change)="onChange3($event)">
-                                    <option *ngFor="let t of xa" [value]="t.code"  >
+                                <select id="user_time_zone" class="form-control" size="0" name="xa_select" (change)="onChange($event)">
+                                    <option *ngFor="let t of xa" [value]="t.code" >
                                         {{t.name}}
                                     </option>
                                 </select>

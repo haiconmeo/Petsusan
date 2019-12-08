@@ -202,7 +202,7 @@ def category_loai_detail(request, pk):
     Retrieve, update or delete a Rap instance.
     """
     try:
-        items = Category_loai.objects.get(pk=pk)
+        items = Category_loai.objects.get(name=pk)
     except items.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
 
@@ -238,7 +238,7 @@ def category_giong_detail(request, pk):
     Retrieve, update or delete a Rap instance.
     """
     try:
-        items = Category_giong.objects.get(pk=pk)
+        items = Category_giong.objects.get(name=pk)
     except items.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
 
