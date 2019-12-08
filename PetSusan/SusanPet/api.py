@@ -315,6 +315,8 @@ def profile_detail(request, pk):
     """
     try:
         items = Profile.objects.get(pk=pk)
+        
+
     except items.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
 
@@ -322,6 +324,7 @@ def profile_detail(request, pk):
         serializer = profileSerializer(items,context={'request': request})
         return Response(serializer.data)
     elif request.method == 'PUT':
+        
         serializer = profile2Serializer(items, data=request.data,context={'request': request})
         if serializer.is_valid():
             serializer.save()
