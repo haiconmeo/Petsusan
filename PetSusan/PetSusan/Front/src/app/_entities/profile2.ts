@@ -7,6 +7,10 @@ export class Profile2{
     birth_date: Date;
     cmmd: string;
     user: number;
-    address: Address;
+    
+    stress :string;
+    tinh :string;
+    huyen :string;
+    xa :string;
   
   }

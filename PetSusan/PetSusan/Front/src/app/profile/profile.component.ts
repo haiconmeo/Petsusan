@@ -3,6 +3,9 @@ import {Profile} from './../_entities/profile';
 import { AuthService } from '../_services/auth/auth.service';
 import { User } from '../_entities/user';
 import {Profile2} from './../_entities/profile2';
+import { Tinh } from '../_entities/Tinh';
+import { Huyen } from '../_entities/huyen';
+import { Xa } from '../_entities/xa';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -12,8 +15,10 @@ import {Profile2} from './../_entities/profile2';
 
 export class ProfileComponent implements OnInit {
   profile : Profile
-
+  tinh :Tinh[]=[];
   public id: number;
+  huyen: Huyen[]=[];
+  xa :Xa[]=[];
   checkLogin(){
     this.stdservice.loadUser().subscribe(
       re=>{this.id=re["id"],
@@ -23,12 +28,15 @@ export class ProfileComponent implements OnInit {
     
     
  }
-
+birth_day:Date;
  activeColor: string = 'green';
  borderColor: string = '';
  baseColor: string = '#ccc';
  overlayColor: string = 'rgba(255,255,255,0.5)';
-
+ tinh_select:string="";
+ huyen_select:string="";
+ xa_select:string="";
+ stress_select:string ="";
  dragging: boolean = false;
  loaded: boolean = false;
  imageLoaded: boolean = false;
@@ -71,9 +79,40 @@ _handleReaderLoaded(e) {
     console.log("Base64_@@:",this.imageSrc)
 }
 
+  load_tinh(){
+    this.stdservice.load_tinh().subscribe(
+      a=>this.tinh=a
+    );
+  }
+  load_huyen(id){
+    this.stdservice.load_huyen(id).subscribe(
+      b=>this.huyen=b
+    );
+  }
+
+  load_xa(id){
+    this.stdservice.load_xa(id).subscribe(
+      b=>this.xa=b
+    );
+  }
+  onChange(e){
+    this.load_huyen(e.target.value);
+    this.tinh_select=this.tinh.find(code=>code.code===e.target.value).name;
+  }
+  onChange3(e){
+    // var x :Xa=e.target.value
+    
+    this.xa_select=this.xa.find(code=>code.code===e.target.value).name;
+  }
+
+  onChange2(e){
+    this.load_xa(e.target.value);
+    this.huyen_select=this.huyen.find(code=>code.code===e.target.value).name;
+  }
   ngOnInit() {
     
-     this.checkLogin()
+     this.checkLogin();
+     this.load_tinh();
      
   }
   add(){
@@ -82,10 +121,13 @@ _handleReaderLoaded(e) {
       id:this.id,
       avatar: this.imageSrc,
       phonenum: this.profile.phonenum,
-      birth_date: null,
+      birth_date: this.birth_day,
       cmmd: this.profile.cmmd,
       user: this.id,
-      address: null
+      stress: this.stress_select,
+      xa :this.xa_select,
+      huyen:this.huyen_select,
+      tinh :this.tinh_select
     }
     console.log("profile:",profile2)
     console.log("profile:",this.id)

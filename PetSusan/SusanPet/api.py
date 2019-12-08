@@ -34,7 +34,20 @@ def District_List(request):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
+@api_view(['GET', 'PUT', 'DELETE'])
+def Dis_detail(request, pk):
+    """
+    Retrieve, update or delete a Rap instance.
+    """
+    try:
+        items = District.objects.filter(code_tinh=pk)
+    except items.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+    
+    if request.method == 'GET':
+        serializer = DistrictSerializer(items,context={'request': request} ,many=True)
+        return Response(serializer.data)
+    
 @api_view(['GET', 'POST'])
 def CommuneList(request):
 
@@ -48,6 +61,19 @@ def CommuneList(request):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+@api_view(['GET', 'PUT', 'DELETE'])
+def Com_detail(request, pk):
+    """
+    Retrieve, update or delete a Rap instance.
+    """
+    try:
+        items = Commune.objects.filter(code_huyen=pk)
+    except items.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+    
+    if request.method == 'GET':
+        serializer = CommuneSerializer(items,context={'request': request} ,many=True)
+        return Response(serializer.data)
 class RegisterAPI(generics.GenericAPIView):
     serializer_class = RegisterSerializer
 

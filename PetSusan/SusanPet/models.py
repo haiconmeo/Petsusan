@@ -2,17 +2,17 @@ from django.db import models
 from django.contrib.auth.models import User 
 #
 class Province_city(models.Model):#tỉnh
-    code=models.CharField(max_length=2)
+    code=models.CharField(max_length=2, primary_key=True)
     name=models.CharField(max_length=50)
 
 class District(models.Model):
     code_tinh =models.CharField(max_length=2)
-    code =  models.CharField(max_length=3)
+    code =  models.CharField(max_length=3, primary_key=True)
     name = models.CharField(max_length=50)
 
 class Commune(models.Model):
     code_huyen = models.CharField(max_length=3)
-    code       = models.CharField(max_length=5)
+    code       = models.CharField(max_length=5, primary_key=True)
     name       = models.CharField(max_length=50)
     
 # lưu địa chỉ người dùng
@@ -27,10 +27,13 @@ class Profile(models.Model):
     avatar = models.FileField(upload_to='img/',default = 'img/no-img.jpg') 
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     phonenum = models.CharField(max_length=30, blank=True)
-    address = models.ForeignKey(Address, on_delete=models.CASCADE,blank=True,null=True)
+    # address = models.ForeignKey(Address, on_delete=models.CASCADE,blank=True,null=True)
     birth_date = models.DateField(null=True, blank=True)
     cmmd = models.CharField(max_length=30, blank=True)
-
+    stress =   models.CharField(max_length=60, blank=True)
+    tinh  = models.CharField(max_length=30, blank=True)
+    huyen = models.CharField(max_length=30, blank=True)
+    xa = models.CharField(max_length=30, blank=True)
 
 class Category_giong(models.Model):
     name=models.CharField(max_length=30,blank=True)

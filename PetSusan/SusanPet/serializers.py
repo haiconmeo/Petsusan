@@ -68,6 +68,7 @@ class profileSerializer(serializers.ModelSerializer):
         fields = '__all__'
         
 class profile2Serializer(serializers.ModelSerializer):
+    # if (avatar == None)
     avatar = Base64ImageField()
     class Meta:
         model= Profile
