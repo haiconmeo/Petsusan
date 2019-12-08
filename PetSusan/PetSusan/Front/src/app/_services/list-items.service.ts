@@ -21,7 +21,7 @@ export class ListItemsService {
   }
 
   getDetails(id) : Observable<List[]>{
-    return this.http.get<List[]>(this.API_ITEMS + id);
+    return this.http.get<List[]>(this.API_ITEMS + id + '/');
   }
 
 }

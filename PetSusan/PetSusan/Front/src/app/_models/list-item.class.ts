@@ -4,6 +4,7 @@ export class List{
     public name: string;
     public price: number;
     public weight: number;
+    public age: number;
     public color: string;
     public amounts: number;
     public pet: boolean ;

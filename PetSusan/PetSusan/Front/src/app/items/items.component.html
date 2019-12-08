@@ -40,7 +40,7 @@
                     <button style="color: #000; border :none " type="button"  placement="bottom"  [autoClose]="'outside'" class="btn btn-outline-secondary" [ngbPopover]="popContent" [popoverTitle]="popTitle">
                         <a class="line_btn">Xem nhanh</a>
                     </button>
-                    <a href="items/{{item.id}}" class="line_btn">Chi tiết</a>
+                    <a target="_top" routerLink="{{item.id}}" class="line_btn">Chi tiết</a>
                 </div>
             </div>
         </div>

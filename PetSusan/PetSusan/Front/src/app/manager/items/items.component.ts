@@ -16,19 +16,20 @@ export class ItemComponent implements OnInit {
   public item : List = null;
   public them : boolean = false;
 
-
-  public image: string ='';
-  // public name: string ='';
-  // public price: number ;
-  // public weight: number ;
-  // public color: string ='';
-  // public amounts: number;
-  // public pet: boolean ;
-  // public sex: boolean;
-  // public description : string ='';
-  // public rate_tb: number;
-  // public cat_giong : string ='';
-  // public cat_loai : string ='';
+  public id: number;
+  public image: string;
+  public name: string;
+  public price: number;
+  public age: number;
+  public weight: number;
+  public color: string;
+  public amounts: number;
+  public pet: boolean = false ;
+  public sex: boolean = false;
+  public description : string;
+  public rate_tb: number;
+  public cat_giong : string;
+  public cat_loai : string;
 
   activeColor: string = 'green';
   borderColor: string = '';
@@ -67,10 +68,10 @@ export class ItemComponent implements OnInit {
   _handleReaderLoaded(e) {
     
     var reader = e.target;
-    this.image = reader.result;
+    this.imageSrc = reader.result;
     this.loaded = true;
 
-    console.log("Base64_@@:",this.image)
+    console.log("Base64_@@:",this.imageSrc)
   }
 
   constructor(
@@ -91,38 +92,40 @@ export class ItemComponent implements OnInit {
          this.count ++;
        }
       }
-      console.log(this.items)
       return this.items
-      
     });
  }
 
-  // add(){
-  //   let list : List = {
-  //     id : this.item.id,
-  //     image: this.item.image,
-  //     name: this.item.name,
-  //     price: this.item.price,
-  //     weight: this.item.weight,
-  //     color: this.item.color,
-  //     amounts: this.item.amounts,
-  //     pet: this.item.pet,
-  //     sex: this.item.sex,
-  //     description: this.item.description,
-  //     rate_tb: this.item.rate_tb,
-  //     cat_giong: this.item.cat_giong,
-  //     cat_loai: this.item.cat_loai,
-  //   };
+  add(){
+    let listadd : List = {
+      id : this.id,
+      image: this.imageSrc,
+      age: this.age,
+      name: this.name,
+      price: this.price,
+      weight: this.weight,
+      color: this.color,
+      amounts: this.amounts,
+      pet: this.pet,
+      sex: this.sex,
+      description: this.description,
+      rate_tb: this.rate_tb,
+      cat_giong: this.cat_giong,
+      cat_loai: this.cat_loai
+    };
     
-  //   this.listItem.getAdd(list).subscribe(data =>{
-  //     console.log(data)
-  //   });
-  // }
+    this.listItem.getAdd(listadd).subscribe(data =>{
+      // this.items.push(data);
+      console.log(data)
+      alert("Add thành công")
+    });
+  }
 
   update(){
     let list : List = {
       id : this.item.id,
-      image: this.item.image,
+      image: this.imageSrc,
+      age: this.item.age,
       name: this.item.name,
       price: this.item.price,
       weight: this.item.weight,
@@ -138,6 +141,7 @@ export class ItemComponent implements OnInit {
   
     console.log(list)
     this.listItem.getUpdate(list).subscribe();
+    alert("Edit thành công")
   }
 
   delete(id: number){
@@ -149,7 +153,6 @@ export class ItemComponent implements OnInit {
 
   edit(item: List){
     this.item = item;
-    console.log(this.item)
     this.them = false;
   }
 

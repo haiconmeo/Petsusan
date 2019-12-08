@@ -10,15 +10,15 @@ export class PetComponent implements OnInit {
   constructor() { }
 
   pets = [
-    {  name: 'Dog', country: "assets/dog1.jpg" },
-    {  name: 'Cat' , country: "assets/cat1.jpg"},
-    {  name: 'Fox' , country: "assets/fox1.jpg"},
-    {  name: 'Snake', country: "" },
-    {  name: 'House' , country: ""},
-    {  name: 'Fish' , country: ""},
-    {  name: 'Sheep', country: "" },
-    {  name: 'Hamter' , country: ""},
-    {  name: 'Dragon' , country: ""},
+    {  name: 'Dog', image: "assets/dog1.jpg" },
+    {  name: 'Cat' , image: "assets/cat1.jpg"},
+    {  name: 'Fox' , image: "assets/fox1.jpg"},
+    {  name: 'Snake', image: "assets/snake2.jpg" },
+    {  name: 'House' , image: "assets/house1.jpg"},
+    {  name: 'Fish' , image: "assets/fish1.jpg"},
+    {  name: 'Rabbit', image: "assets/rabbit1.jpg" },
+    {  name: 'Mouse' , image: "assets/mouse1.jpg"},
+    {  name: 'Dragon' , image: "assets/dragon1.jpg"},
    
   ];
  

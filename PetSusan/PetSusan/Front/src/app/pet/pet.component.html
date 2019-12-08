@@ -5,7 +5,6 @@
             <div class="col-xl-12">
                 <div class="bradcam_text text-center">
                     <h3>All Pet for you</h3>
-                    <input style="background: none; color: #fff; border: 1px solid #f1c40f; width: 30%; padding: 10px;"  type="text" name="search" [(ngModel)]="term" placeholder="Search Pet">
                 </div>
             </div>
         </div>
@@ -17,13 +16,13 @@
 <div style="margin-top: -5%;" class="recepie_area plus_padding">
     <div class="container">
         <div class="row">
-            <div  *ngFor="let pet of pets |filter:term " class="col-xl-4 col-lg-4 col-md-6">
+            <div  *ngFor="let pet of pets " class="col-xl-4 col-lg-4 col-md-6">
                 <div class="single_recepie text-center">
                     <div class="recepie_thumb">
-                        <img src="{{pet.country}}" alt="">
+                        <img src="{{pet.image}}" alt="">
                     </div>
                     <h3>{{pet.name}}</h3>
-                    <a routerLink="pet/:dogs" class="line_btn">View Full {{pet.name}}</a>
+                    <a target="_top" routerLink="{{pet.name}}" class="line_btn">View Full {{pet.name}}</a>
                 </div>
             </div>
         </div>
