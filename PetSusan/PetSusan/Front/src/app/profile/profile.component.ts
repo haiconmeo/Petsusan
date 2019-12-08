@@ -96,16 +96,17 @@ _handleReaderLoaded(e) {
     );
   }
   onChange(e){
-    this.load_huyen(e);
+    this.load_huyen(e.target.value);
     this.tinh_select=this.tinh.find(code=>code.code===e.target.value).name;
   }
-  onChange3(e){   
+  onChange3(e){
+    // var x :Xa=e.target.value
     
     this.xa_select=this.xa.find(code=>code.code===e.target.value).name;
   }
 
   onChange2(e){
-    this.load_xa(e);
+    this.load_xa(e.target.value);
     this.huyen_select=this.huyen.find(code=>code.code===e.target.value).name;
   }
   ngOnInit() {
