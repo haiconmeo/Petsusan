@@ -86,6 +86,10 @@ class Contact(models.Model):
     Message = models.TextField(blank = True)
 
  
+class Rate_rs(models.Model):
+    item = models.ForeignKey(Item,  on_delete=models.CASCADE)
+    profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
+    rate = models.FloatField()
 
 
 

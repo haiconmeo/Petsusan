@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ListCartService } from '../_services/list-cart.service';
 import { Cart } from '../_models/list-cart.class';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { AuthService } from '../_services/auth/auth.service';
 
 @Component({
   selector: 'app-cart',
@@ -16,19 +17,24 @@ export class CartComponent implements OnInit {
   constructor(
     public cartService : ListCartService,
     private route: ActivatedRoute,
+    private stdservice : AuthService,
   ) { }
-
+    id:number
   ngOnInit() {
     this.showCart();
-    this.tinhtien();
+    // this.tinhtien();
   }
 
   showCart(){
-    this.cartService.getAllCart().subscribe((cart) =>{
-      this.carts = cart;
-      this.tinhtien();
-    });
+    this.stdservice.loadUser().subscribe(
+      re=>{
+        this.id=re["id"],
+      this.cartService.getAllCart(this.id).subscribe((cart) =>this.carts = cart)
+      
+    
   }
+  );
+}
   tinhtien(){
     console.log(this.carts)
     if(this.total == 0){

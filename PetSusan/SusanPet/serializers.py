@@ -3,6 +3,8 @@ from .models import Province_city,Profile,Contact,Item,Category_loai,Category_gi
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from drf_extra_fields.fields import Base64ImageField
+from .models import Rate_rs,Order
+
 class Province_citySerializer(serializers.ModelSerializer):
     class Meta:
         model =  Province_city
@@ -83,4 +85,14 @@ class RepSerializer(serializers.Serializer):
     Name = serializers.CharField(max_length=200)
     Email = serializers.EmailField()
     Message = serializers.CharField(max_length=200)
+
+class Rate_rsSerializer(serializers.ModelSerializer):
+    item =ItemSerializer()
+    class Meta:
+        model =  Rate_rs
+        fields = ('item','profile')
     
+class OrderSerializer(serializers.ModelSerializer):
+    class Meta:
+        model =  Order
+        fields = '__all__'
