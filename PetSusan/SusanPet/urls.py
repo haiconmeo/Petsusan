@@ -1,6 +1,6 @@
 from django.urls import path,include
 from .api import Province_cityList,RegisterAPI,LoginAPI,contact_list,contact_detail,item_list,item_detail,UserAPI,categori_loai_list,category_loai_detail,categori_giong_list,ratelist,rate_detail
-from .api import District_List,CommuneList,profile_list,RepAPI,item_detail,profile_detail,category_giong_detail,Dis_detail,Com_detail,rate_rslist,rate_rs_detail,orderlist,order_detail
+from .api import District_List,CommuneList,profile_list,RepAPI,item_detail,profile_detail,category_giong_detail,Dis_detail,Com_detail,rate_rslist,rate_rs_detail,orderlist,order_detail,order_edit_detail
 from .views import create,recommendation
 
 urlpatterns = [
@@ -31,6 +31,7 @@ urlpatterns = [
     path('train/',recommendation),
     path('cart/',orderlist),
     path('cart/<int:pk>',order_detail),
+    path('cartedit/<int:pk>',order_edit_detail),
     path('auth/', include('knox.urls')),
 
 ]

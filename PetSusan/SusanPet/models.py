@@ -66,7 +66,7 @@ class Order(models.Model):
     quantity = models.IntegerField()
     date = models.DateTimeField(auto_now_add=True, blank=True)
     status = models.BooleanField()
-    note = models.TextField()
+    note = models.TextField(blank=True)
 
 class Comment(models.Model):
 

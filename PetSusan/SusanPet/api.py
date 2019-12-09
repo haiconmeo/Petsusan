@@ -3,7 +3,7 @@ from .models import Province_city,Contact,Item,Category_loai,Category_giong,Rate
 from rest_framework.response import Response
 from .serializers import Province_citySerializer,RegisterSerializer,UserSerializer,LoginSerializer,ContactSerializer,ItemSerializer,CateroriLoaiSerializer,CateroriGiongSerializer,RateSerializer,profileSerializer
 from rest_framework import status
-from .serializers import DistrictSerializer,CommuneSerializer,RepSerializer,profile2Serializer,Rate_rsSerializer,OrderSerializer
+from .serializers import DistrictSerializer,CommuneSerializer,RepSerializer,profile2Serializer,Rate_rsSerializer,OrderSerializer,Order2Serializer
 from rest_framework.decorators import api_view
 from knox.models import AuthToken
 from rest_framework import  permissions
@@ -424,7 +424,7 @@ def orderlist(request):
         serializer = OrderSerializer(items,context={'request': request} ,many=True)
         return Response(serializer.data)
     elif request.method == 'POST':
-        serializer = OrderSerializer(data=request.data)
+        serializer = Order2Serializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -435,7 +435,7 @@ def order_detail(request, pk):
     Retrieve, update or delete a Rap instance.
     """
     try:
-        items = order.objects.filter(user=pk)
+        items = Order.objects.filter(user=pk)
     except items.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
    
@@ -444,6 +444,29 @@ def order_detail(request, pk):
         return Response(serializer.data)
     elif request.method == 'PUT':
         serializer = OrderSerializer(items, data=request.data,context={'request': request})
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    elif request.method == 'DELETE':
+        items.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+@api_view(['GET', 'PUT', 'DELETE'])
+def order_edit_detail(request, pk):
+    """
+    Retrieve, update or delete a Rap instance.
+    """
+    try:
+        items = Order.objects.get(pk=pk)
+    except items.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+   
+    if request.method == 'GET':
+        serializer = Order2Serializer(items,context={'request': request})
+        return Response(serializer.data)
+    elif request.method == 'PUT':
+        serializer = Order2Serializer(items, data=request.data,context={'request': request})
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)

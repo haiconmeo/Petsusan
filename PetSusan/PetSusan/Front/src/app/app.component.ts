@@ -72,14 +72,14 @@ export class AppComponent {
     this.router.navigate(['/']);
 
   }
-  showCart(){
-    this.cartService.getAllCart().subscribe((cart) =>{
-      this.carts = cart;
-      this.soluong = this.carts.length; 
-      console.log(this.soluong)
+  // showCart(){
+  //   this.cartService.getAllCart().subscribe((cart) =>{
+  //     this.carts = cart;
+  //     this.soluong = this.carts.length; 
+  //     console.log(this.soluong)
 
-    });
-  }
+  //   });
+  // }
   checkLogin(){
      this.stdservice.loadUser().subscribe(
        re=> this.username=re["username"]
@@ -97,7 +97,7 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    this.showCart();
+    // this.showCart();
    
   }
 

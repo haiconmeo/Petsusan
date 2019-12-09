@@ -1,7 +1,8 @@
 import { Component, Input, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { ListCartService } from '../../_services/list-cart.service';
 import { Cart } from '../../_models/list-cart.class';
-
+import { AuthService } from 'src/app/_services/auth/auth.service';
+import { Cart_item } from '../../_models/cart_Item';
 declare var paypal;
 
 @Component({
@@ -14,10 +15,12 @@ export class PaymentComponent implements OnInit {
   @ViewChild('paypal', { static: true }) paypalElement: ElementRef;
 
   public carts : Cart[] =[];
+  public carts_manh : Cart_item[] =[];
   public total : number =0;
 
   constructor(
     public cartService : ListCartService,
+    private stdservice : AuthService,
   ) { }
 
   paidFor = false;
@@ -51,12 +54,14 @@ export class PaymentComponent implements OnInit {
       .render(this.paypalElement.nativeElement);
   }
    showCart(){
-    this.cartService.getAllCart().subscribe((cart) =>{
-      this.carts = cart;
-      console.log(this.carts)
-      for( var i=0; i<this.carts.length; i++){
-        this.total += this.carts[i].price*this.carts[i].age;   
-      }
+    this.stdservice.loadUser().subscribe(
+      re=>{  var id=re["id"]
+    this.cartService.getAllCart(id).subscribe((cart) =>{
+      this.carts_manh = cart;
+      console.log(this.carts_manh)
+      for( var i=0; i<this.carts_manh.length; i++){
+        this.total += this.carts_manh[i].item.price*this.carts_manh[i].quantity;   
+      }});
       return this.total;
     });
   }

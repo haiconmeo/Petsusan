@@ -93,6 +93,13 @@ class Rate_rsSerializer(serializers.ModelSerializer):
         fields = ('item','profile')
     
 class OrderSerializer(serializers.ModelSerializer):
+    item=ItemSerializer()
+    class Meta:
+        model =  Order
+        fields = '__all__'
+
+class Order2Serializer(serializers.ModelSerializer):
+    
     class Meta:
         model =  Order
         fields = '__all__'

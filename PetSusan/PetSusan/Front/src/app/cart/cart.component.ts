@@ -3,6 +3,9 @@ import { ListCartService } from '../_services/list-cart.service';
 import { Cart } from '../_models/list-cart.class';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { AuthService } from '../_services/auth/auth.service';
+import { Cart_item } from '../_models/cart_Item';
+import { GioiHang } from '../_entities/gioihang';
+import { GioiHang2 } from '../_entities/giohang2';
 
 @Component({
   selector: 'app-cart',
@@ -12,40 +15,47 @@ import { AuthService } from '../_services/auth/auth.service';
 export class CartComponent implements OnInit {
 
   public carts : Cart[] =[];
-  public cart : Cart = null;
+  public carts_manh : Cart_item[] =[];
+  public cart : GioiHang2;
   public total : number =0;
   constructor(
     public cartService : ListCartService,
     private route: ActivatedRoute,
     private stdservice : AuthService,
-  ) { }
+  ) {
+    
+   }
     id:number
   ngOnInit() {
     this.showCart();
-    // this.tinhtien();
+    
   }
 
   showCart(){
     this.stdservice.loadUser().subscribe(
       re=>{
         this.id=re["id"],
-      this.cartService.getAllCart(this.id).subscribe((cart) =>this.carts = cart)
-      
+      this.cartService.getAllCart(this.id).subscribe(a=>{this.carts_manh = a;
+      for( var i=0; i<this.carts_manh.length; i++){
+        this.total += this.carts_manh[i].item.price*this.carts_manh[i].quantity;   
+      }}
+      );
     
   }
   );
+  
 }
   tinhtien(){
     console.log(this.carts)
     if(this.total == 0){
-      for( var i=0; i<this.carts.length; i++){
-        this.total += this.carts[i].price*this.carts[i].age;   
+      for( var i=0; i<this.carts_manh.length; i++){
+        this.total += this.carts_manh[i].item.price*this.carts_manh[i].quantity;   
       }
     }
     else{
       this.total =0;
-      for( var i=0; i<this.carts.length; i++){
-        this.total += this.carts[i].price*this.carts[i].age;   
+      for( var i=0; i<this.carts_manh.length; i++){
+        this.total += this.carts_manh[i].item.price*this.carts_manh[i].quantity;   
       }
     }
     
@@ -60,15 +70,33 @@ export class CartComponent implements OnInit {
     });
   }
 
-  edit(cart: Cart){
-    this.cart = cart;
-  }
-
-  plusQunatity(){
-    console.log(this.cart)
-    this.cartService.update(this.cart).subscribe(data =>{
+  edit(cart: Cart_item){
+    // this.cart.id =cart.id
+    // this.cart.item=cart.item.id;
+    // this.cart.note="";
+    // this.cart.quantity=cart.quantity;
+    // this.cart.user=cart.user;
+    // this.cart.status=cart.status;
+    console.log(cart.item.id)
+    // this.plusQunatity()
+    var x : GioiHang2={
+      item: cart.item.id,
+    quantity: cart.quantity,
+    id:cart.id,
+     status: false,
+    
+    user: cart.user,
+  note:""
+    }
+    this.cartService.update(x).subscribe(data =>{
     })
   }
+
+  // plusQunatity(){
+    
+  //   this.cartService.update(this.cart).subscribe(data =>{
+  //   })
+  // }
 
   updateDelete(id: number) : number{
   let resul =0;
