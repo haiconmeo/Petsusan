@@ -1,12 +1,16 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 import { loginClass } from './../../_entities/login';
 import { Profile } from 'src/app/_entities/profile';
 import { Profile2 } from 'src/app/_entities/profile2';
 import { Tinh } from 'src/app/_entities/Tinh';
 import { Huyen } from 'src/app/_entities/huyen';
 import { Xa } from 'src/app/_entities/xa';
+
+// 
+
 const URL:string       ="http://localhost:8000/api/auth/login/";
 const URL_load :string ="http://localhost:8000/api/auth/user/"
 var token = localStorage.getItem('token');
@@ -43,7 +47,6 @@ export class AuthService {
 
 
   loadUser():Observable<any>{
-    
 
     return this.http.get<any>(URL_load,httpOptions2)
   }          

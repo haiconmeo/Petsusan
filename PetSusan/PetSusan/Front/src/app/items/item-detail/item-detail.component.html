@@ -18,7 +18,7 @@
             <div class="row align-items-center">
                 <div class="col-xl-6 col-md-6">
                     <div class="recepies_thumb">
-                        <img src="assets/dog5.jpg" alt="">
+                        <img src="{{list.image}}" alt="">
                     </div>
                 </div>
                 <div class="col-xl-6 col-md-6">
@@ -32,10 +32,10 @@
                                     </span>
                                     </ng-template>
                                     
-                                    <ngb-rating rate="{{list.age}}" [starTemplate]="t" [readonly]="true" max="5"></ngb-rating>
+                                    <ngb-rating rate="{{list.rate_tb}}" [starTemplate]="t" [readonly]="true" max="5"></ngb-rating>
                                     
                                     <!-- <hr> -->
-                                <pre>Rate: <b>{{list.age}}</b></pre>
+                                <pre>Rate: <b>{{list.rate_tb}}</b></pre>
                                 <li><p><strong>Price</strong> : ${{list.price}} </p></li>
                                 <li><a  style="color: #fff; " class="check-click-button" [routerLink]="['cart']">Add to Cart<i class="fab fa-opencart"></i></a></li>
                             </ul>

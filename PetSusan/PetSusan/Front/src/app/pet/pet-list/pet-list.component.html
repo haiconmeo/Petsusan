@@ -18,52 +18,19 @@
         <div class="row">
             <div class="col-lg-8 mb-5 mb-lg-0">
                 <div class="blog_left_sidebar">
-                    <article class="blog_item">
+                    <article *ngFor ="let pet of listPet" class="blog_item">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="assets/dog3.jpg" alt="">
+                            <img class="card-img rounded-0" src= "{{pet.image}}" >
                             <a href="#" class="blog_item_date">
                                 <h3>15</h3>
                                 <p>Jan</p>
                             </a>
                         </div>
                         <div class="blog_details">
-                            <a class="d-inline-block" href="single-blog.html">
-                                <h2>Alaska</h2>
+                            <a target="_top" class="d-inline-block" routerLink="{{pet.id}}">
+                                <h2>{{pet.name}}</h2>
                             </a>
-                            <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                he earth it first without heaven in place seed it second morning saying.</p>
-                        </div>
-                    </article>
-                    <article class="blog_item">
-                        <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="assets/dog3.jpg" alt="">
-                            <a href="#" class="blog_item_date">
-                                <h3>15</h3>
-                                <p>Jan</p>
-                            </a>
-                        </div>
-                        <div class="blog_details">
-                            <a class="d-inline-block" href="single-blog.html">
-                                <h2>Alaska</h2>
-                            </a>
-                            <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                he earth it first without heaven in place seed it second morning saying.</p>
-                        </div>
-                    </article>
-                    <article class="blog_item">
-                        <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="assets/dog3.jpg" alt="">
-                            <a href="#" class="blog_item_date">
-                                <h3>15</h3>
-                                <p>Jan</p>
-                            </a>
-                        </div>
-                        <div class="blog_details">
-                            <a class="d-inline-block" href="single-blog.html">
-                                <h2>Alaska</h2>
-                            </a>
-                            <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                he earth it first without heaven in place seed it second morning saying.</p>
+                            <p>{{pet.description}}</p>
                         </div>
                     </article>
 

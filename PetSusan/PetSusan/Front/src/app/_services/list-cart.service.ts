@@ -8,8 +8,10 @@ import { Cart } from '../_models/list-cart.class';
 })
 export class ListCartService {
 
+
   public API_ITEMS : string = 'http://127.0.0.1:8000/api/item/';
   public API_Cart : string = 'http://127.0.0.1:8000/api/cart/';
+
   constructor(
     private http : HttpClient
   ) { }

@@ -11,6 +11,7 @@ export class ManageItemsService {
   public API_ITEMS : string = 'http://127.0.0.1:8000/api/item/';
 
   
+  
   constructor(private http : HttpClient
     ) {}
   
@@ -24,8 +25,17 @@ export class ManageItemsService {
     return this.http.post<List[]>(this.API_ITEMS, list)
   }
 
+  getUpdate(list: List): Observable<List[]>{
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json'
+      })
+    }
+    return this.http.put<List[]>(`${this.API_ITEMS}${list.id}/`, list, httpOptions);
+  }
+
   getDelete(id) : Observable<List[]>{
-    return this.http.delete<List[]>(this.API_ITEMS + id);
+    return this.http.delete<List[]>(this.API_ITEMS + id + '/');
   }
 
 }

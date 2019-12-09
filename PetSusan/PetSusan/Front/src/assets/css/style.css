@@ -40,8 +40,7 @@ body {
 }
 
 .check-manager{
-  background: #70a1ff;
-  color: #fff;
+  border-left: 5px solid #fff;
 }
 .check-click-button{
   background: #fdcb6e ;
