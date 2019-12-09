@@ -160,6 +160,8 @@ export class PetsComponent implements OnInit {
     };
 
     this.listItem.getUpdate(list).subscribe( data=>{
+      let index = this.updateDelete(this.item.id);
+      this.item[index] = data;
       alert("Edit thành công")
     }
      

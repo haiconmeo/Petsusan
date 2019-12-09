@@ -1,4 +1,4 @@
-<header >
+<header style="z-index:0" >
   <div class="header-area ">
       <div id="sticky-header" class="main-header-area ">
           <div class="container">
@@ -32,12 +32,11 @@
                   </div>
                   
                     <div class="cart-home">
-                        <ng-template #popContent><app-login></app-login></ng-template>
-                        <ng-template #popTitle>Login now</ng-template>
-                        <button style="color: #fff; border : none " type="button"  placement="bottom"  [autoClose]="'outside'" class="btn btn-outline-secondary" [ngbPopover]="popContent" [popoverTitle]="popTitle">
-                            <a>Login</a>
-                        </button>
-                        <a (click)="click6()" [ngClass]="{ 'check-click-button' : check6 == true}" style="color: #fff; display: inline;"  routerLink="cart">Cart <i class="fab fa-opencart"></i>{{soluong}}</a>
+                        <a *ngIf="!username" style="color: #fff; display: inline;"  href="login#view">Login</a>
+                        <img *ngIf="username" style="float: left; margin-right: 5px;"  width="20" class="rounded-circle" [src]='avatar'>
+                        <h5 *ngIf="username" style="border: none; color: #fff; float: left;  font-size: 100%" > {{username}} <p (click)="click7()" style="display: flex"><i class="fas fa-sign-out-alt"></i></p></h5>
+                        
+                        <a *ngIf="username" (click)="click6()" [ngClass]="{ 'check-click-button' : check6 == true}" style="color: #fff; display: inline;"  routerLink="cart">Cart <i class="fab fa-opencart"></i>{{soluong}}</a>
                     </div>
               </div>
 

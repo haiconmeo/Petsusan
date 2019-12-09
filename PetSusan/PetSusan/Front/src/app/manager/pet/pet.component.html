@@ -3,7 +3,7 @@
     <div class="card-body">
         <form class="">
             <select class="mb-2 form-control" (change)="addItem($event)" >     
-                <option [ngValue]="null">Select Category</option>
+                <option [ngValue]="1">Select Category</option>
                 <option *ngFor="let cate of cates" [value]="cate.name" >{{cate.name}}</option>
             </select>
         </form>

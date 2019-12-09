@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Cart } from './_models/list-cart.class';
 import { ListCartService } from './_services/list-cart.service';
-
+import { AvatarModule } from 'ngx-avatar';
+import { AuthService } from './_services/auth/auth.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,17 +12,21 @@ import { ListCartService } from './_services/list-cart.service';
 export class AppComponent {
   public soluong : number =0;
   public carts : Cart[] =[];
-
+  public username:string;
   public check1 : boolean = false;
   public check2 : boolean = false;
   public check3 : boolean = false;
   public check4 : boolean = false;
   public check6 : boolean = false;
-
+  public avatar:string= 'http://localhost:8000/img/no-img.jpg';
 
   constructor(
     public cartService : ListCartService,
-  ) { }
+    private stdservice : AuthService,
+    private router :Router
+  ) { 
+    this.checkLogin();
+  }
 
 
   click1(){
@@ -60,14 +66,26 @@ export class AppComponent {
     this.check4 = false;
     this.check6 = true;
   }
+  click7(){
+    this.username=null;
+    localStorage.removeItem('token');
+    this.router.navigate(['/']);
 
+  }
   showCart(){
     this.cartService.getAllCart().subscribe((cart) =>{
       this.carts = cart;
       this.soluong = this.carts.length; 
+      console.log(this.soluong)
+
     });
   }
-
+  checkLogin(){
+     this.stdservice.loadUser().subscribe(
+       re=> this.username=re["username"]
+     );
+     
+  }
   update(id: number) : number{
   let resul =0;
   this.carts.forEach((cart, index) =>{
@@ -80,6 +98,7 @@ export class AppComponent {
 
   ngOnInit() {
     this.showCart();
+   
   }
 
 
