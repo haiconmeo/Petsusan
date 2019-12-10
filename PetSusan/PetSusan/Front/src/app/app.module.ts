@@ -8,6 +8,7 @@ import {NgxPaginationModule} from 'ngx-pagination';
 
 
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -30,6 +31,7 @@ import { ItemDetailComponent } from './items/item-detail/item-detail.component';
 
 import { ListItemsService } from './_services/list-items.service';
 import { ListCartService } from './_services/list-cart.service';
+import { SignupService } from '../app/_services/signup.service'
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -41,9 +43,16 @@ import { RevenueComponent } from './manager/revenue/revenue.component';
 import { ItemComponent } from './manager/items/items.component';
 import { PetsComponent } from './manager/pet/pet.component';
 import { ContactsComponent } from './manager/contact/contact.component';
+
 // import { ContactRepComponent } from './src/app/manager/contact-rep/contact-rep.component';
 import { AvatarModule } from 'ngx-avatar';
 import { SettingComponent } from './manager/setting/setting.component';
+
+import { SignupComponent } from './login/signup/signup.component';
+import { SigninComponent } from './login/signin/signin.component';
+import { ExcelComponent } from './manager/excel/excel.component';
+
+
 
 
 
@@ -72,9 +81,16 @@ import { SettingComponent } from './manager/setting/setting.component';
     ItemComponent,
     PetsComponent,
     ContactsComponent,
+
     SettingComponent,
     // ContactRepComponent,
     
+
+    SignupComponent,
+    SigninComponent,
+    ExcelComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -85,10 +101,15 @@ import { SettingComponent } from './manager/setting/setting.component';
     NgbModule,
     HttpClientModule,
     NgxPaginationModule,
+
     AvatarModule
   ],
   providers: [
     ListItemsService,
+
+
+    ListCartService,
+    SignupService
 
   ],
   bootstrap: [AppComponent]

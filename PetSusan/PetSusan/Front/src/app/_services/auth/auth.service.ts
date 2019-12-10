@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-import { loginClass } from './../../_entities/login';
+
+// import { loginClass } from './../../_entities/login';
 import { Profile } from 'src/app/_entities/profile';
 import { Profile2 } from 'src/app/_entities/profile2';
 import { Tinh } from 'src/app/_entities/Tinh';
@@ -10,6 +11,14 @@ import { Huyen } from 'src/app/_entities/huyen';
 import { Xa } from 'src/app/_entities/xa';
 
 // 
+
+
+import { loginClass } from '../../_models/login.class';
+// import { Profile } from 'src/app/_entities/profile';
+// import { Profile2 } from 'src/app/_entities/profile2';
+// import { Tinh } from 'src/app/_entities/Tinh';
+// import { Huyen } from 'src/app/_entities/huyen';
+// import { Xa } from 'src/app/_entities/xa';
 
 const URL:string       ="http://localhost:8000/api/auth/login/";
 const URL_load :string ="http://localhost:8000/api/auth/user/"
@@ -50,60 +59,60 @@ export class AuthService {
 
     return this.http.get<any>(URL_load,httpOptions2)
   }          
-  loadprofile():Observable<Profile[]>{
-      console.log("ok")
-      let httpOptons = {
-        headers: new HttpHeaders({
-          'Content-Type': 'application/json',
+  // loadprofile():Observable<Profile[]>{
+  //     console.log("ok")
+  //     let httpOptons = {
+  //       headers: new HttpHeaders({
+  //         'Content-Type': 'application/json',
          
-        })
-      };
-      return this.http.get<Profile[]>(URL_profile,httpOptons);
-    }
+  //       })
+  //     };
+  //     return this.http.get<Profile[]>(URL_profile,httpOptons);
+  //   }
   
-    loadprofile_user(id):Observable<Profile>{
-      console.log("ok")
-      let httpOptons = {
-        headers: new HttpHeaders({
-          'Content-Type': 'application/json',
+    // loadprofile_user(id):Observable<Profile>{
+    //   console.log("ok")
+    //   let httpOptons = {
+    //     headers: new HttpHeaders({
+    //       'Content-Type': 'application/json',
          
-        })
-      };
-      return this.http.get<Profile>(URL_profile+id+'/',httpOptons);
-    }
-    load_tinh():Observable<Tinh[]>{
+    //     })
+    //   };
+    //   return this.http.get<Profile>(URL_profile+id+'/',httpOptons);
+    // }
+    // load_tinh():Observable<Tinh[]>{
       
-      let httpOptons = {
-        headers: new HttpHeaders({
-          'Content-Type': 'application/json',
+    //   let httpOptons = {
+    //     headers: new HttpHeaders({
+    //       'Content-Type': 'application/json',
          
-        })
-      };
-      return this.http.get<Tinh[]>(URL_tinh,httpOptons);
-    }
+    //     })
+    //   };
+    //   return this.http.get<Tinh[]>(URL_tinh,httpOptons);
+    // }
 
 
-    load_huyen(id):Observable<Huyen[]>{
+  //   load_huyen(id):Observable<Huyen[]>{
       
-      let httpOptons = {
-        headers: new HttpHeaders({
-          'Content-Type': 'application/json',
+  //     let httpOptons = {
+  //       headers: new HttpHeaders({
+  //         'Content-Type': 'application/json',
          
-        })
-      };
-      return this.http.get<Huyen[]>(URL_huyen+id,httpOptons);
-    }
+  //       })
+  //     };
+  //     return this.http.get<Huyen[]>(URL_huyen+id,httpOptons);
+  //   }
 
-    load_xa(id):Observable<Xa[]>{
+  //   load_xa(id):Observable<Xa[]>{
       
-      let httpOptons = {
-        headers: new HttpHeaders({
-          'Content-Type': 'application/json',
+  //     let httpOptons = {
+  //       headers: new HttpHeaders({
+  //         'Content-Type': 'application/json',
          
-        })
-      };
-      return this.http.get<Xa[]>(URL_xa+id,httpOptons);
-    }
+  //       })
+  //     };
+  //     return this.http.get<Xa[]>(URL_xa+id,httpOptons);
+  //   }
   login(log:loginClass){
     this.http.post(URL,JSON.stringify(log),httpOptions).subscribe(
       data => {
@@ -116,23 +125,23 @@ export class AuthService {
     
   }
 
-  putProfile(log:Profile2,id:number){
+  // putProfile(log:Profile2,id:number){
     
-    return this.http.put(URL_profile+id+'/',JSON.stringify(log),httpOptions).subscribe(
+  //   return this.http.put(URL_profile+id+'/',JSON.stringify(log),httpOptions).subscribe(
 
-      data  => {
+  //     data  => {
       
-      console.log("PUT Request is successful ", data);
+  //     console.log("PUT Request is successful ", data);
       
-      },
+  //     },
       
-      error  => {
+  //     error  => {
       
-      console.log("Rrror", error);
+  //     console.log("Rrror", error);
       
-      }
+  //     }
       
-      );
+  //     );
     
-  }
+  // }
 }

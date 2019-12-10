@@ -16,6 +16,21 @@
         </div>
     </div>
 
+    <div style="  margin-top: 0%; margin-bottom: -16%;" class="recepie_header_area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="recepie_text text-center">
+                        <h3>Cu? lon`</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: 0 10%;" class="recepie_area">
+        <app-carousel></app-carousel>
+    </div>
+
 
 <!-- /recepie_area_start  -->
  <!-- recepie_videos   -->
@@ -27,7 +42,7 @@
                     <h3>Find your happiness!</h3>
                 <p>Pets bring us joy, laughter and sometimes tears, but we wouldn’t have it any other way. They are the new addition to the family that you never knew you needed or that friend who is there in good times and in bad. But as much as we need pets, they need us too! So please help a pet find a home and start your friendship today.</p>
                 <div class="video_watch d-flex align-items-center">
-                    <a class="popup-video" href="https://www.youtube.com/watch?v=45i_bICGuIc"> <i class="ti-control-play"></i> </a>
+                    <a class="popup-video" target="_blank" href="https://www.youtube.com/watch?v=45i_bICGuIc"> <i class="ti-control-play"></i> </a>
                     <div class="watch_text" >
                         <h4>Watch Video</h4>
                         <p>You will love our execution</p>
@@ -44,7 +59,7 @@
                         <img src="assets/dog2.jpg" alt="">
                     </div>
                     <div class="small_thumb_2">
-                        <img src="assets/hamter1.jpg" alt="">
+                        <img src="assets/fish2.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -53,20 +68,7 @@
 </div>
 <!--/ recepie_videos   -->
 
-<div style="  margin-top: -10%; margin-bottom: -16%;" class="recepie_header_area">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-10">
-                <div class="recepie_text text-center">
-                    <h3>Cu? lon`</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div style="margin: 0 10%;" class="recepie_area">
-    <app-carousel></app-carousel>
-</div>
+
 
 
 <div style="  margin-top: -10%; margin-bottom: -16%;" class="recepie_header_area">
@@ -84,37 +86,13 @@
 <div class="recepie_area">
     <div class="container">
         <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-6">
+            <div *ngFor="let pet of pets" class="col-xl-4 col-lg-4 col-md-6">
                 <div class="single_recepie text-center">
                     <div class="recepie_thumb">
-                        <img src="assets/cat1.jpg" alt="">
+                        <img src="{{pet.image}}" alt="">
                     </div>
-                    <h3>Cat</h3>
-                    <span>Khôn mà hay chảnh mèo</span>
-                    <!-- <p>Time Needs: 30 Mins</p> -->
-                    <a href="#" class="line_btn">View Full Cat</a>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="single_recepie text-center">
-                    <div class="recepie_thumb">
-                        <img src="assets/dog1.jpg" alt="">
-                    </div>
-                    <h3>Dog</h3>
-                     <span>Ngu mà được cái trung thành</span>
-                   <!-- <p>Time Needs: 30 Mins</p> -->
-                    <a href="#" class="line_btn">View Full Dog</a>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="single_recepie text-center">
-                    <div class="recepie_thumb">
-                        <img src="assets/fox1.jpg" alt="">
-                    </div>
-                    <h3>Fox</h3>
-                     <span>Condilone này thì đéo biết</span>
-                   <!-- <p>Time Needs: 30 Mins</p> -->
-                    <a href="#" class="line_btn">View Full Fox</a>
+                    <h3>{{pet.name}}</h3>
+                    <a href="pet/{{pet.name}}" class="line_btn">View Full {{pet.name}}</a>
                 </div>
             </div>
         </div>
@@ -128,7 +106,7 @@
             <div class="col-xl-12">
                 <div class="trand_info text-center">
                 <h3 style="color: #fff" >Complete your family</h3>
-                <a style="background-color: #f1c40f; color: #fff;" href="pet" class="line_btn">View Full Pet</a>
+                <a style="background-color: #f1c40f; color: #fff;" routerLink="pet" class="line_btn">View Full Pet</a>
                 </div>
             </div>
         </div>
@@ -155,24 +133,24 @@
                 <div class="dish_wrap d-flex">
                     <div class="single_dish text-center">
                         <div class="thumb">
-                            <img style="border-radius: 50%;" src="assets/snake1.jpg" alt="">
+                            <img style="border-radius: 50%;" src="assets/home1.jpg" alt="">
                         </div>
                         <h3>Everything on one site!</h3>
-                        <p>SusanPet is a site dedicated to helping you find your new best friend, and helping pets find new homes. Search with our easy to use pet searcher to find pets in need of a new home near you, or place an advertisement to help your pet find a new home.</p>
+                        <p>SusanPet is a site dedicated to helping you find your new best friend, and helping pets find new homes. Search with our easy to use pet searcher .</p>
                     </div>
                     <div class="single_dish text-center">
                         <div class="thumb">
-                            <img style="border-radius: 50%;"  src="assets/snake1.jpg" alt="">
+                            <img style="border-radius: 50%;"  src="assets/home2.jpg" alt="">
                         </div>
                         <h3>Ethically Focused!</h3>
-                        <p>We follow the RSPCA’s Guidelines for the Online Advertising of Pets, helping pets find new homes in an ethical and responsible way. Certified listers are assessed on a case by case basis to ensure they are providing adequate care to their animals.</p>
+                        <p>We follow the RSPCA’s Guidelines for the Online Advertising of Pets, helping pets find new homes in an ethical and responsible way. Certified listers.</p>
                     </div>
                     <div class="single_dish text-center">
                         <div class="thumb">
                             <img style="border-radius: 50%;"  src="assets/snake1.jpg" alt="">
                         </div>
                         <h3>The Choice is Yours</h3>
-                        <p>Everyone has a right to decide which home their cherished family members go to. With SusanPet, you can chat with interested pet lovers and have the final say on who your pet’s next guardian is.</p>
+                        <p>Everyone has a right to decide which home their cherished family members go to. With SusanPet, you can chat with interested pet lovers.</p>
                     </div>
                 </div>
             </div>

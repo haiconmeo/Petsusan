@@ -10,6 +10,11 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  pets = [
+    {  name: 'Dog', image: "assets/dog1.jpg" },
+    {  name: 'Cat' , image: "assets/cat1.jpg"},
+    {  name: 'Mouse' , image: "assets/mouse1.jpg"},
+  ]
   ngOnInit() {
   }
 
