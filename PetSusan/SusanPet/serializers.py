@@ -90,7 +90,7 @@ class Rate_rsSerializer(serializers.ModelSerializer):
     item =ItemSerializer()
     class Meta:
         model =  Rate_rs
-        fields = ('item','profile')
+        fields = '__all__'
     
 class OrderSerializer(serializers.ModelSerializer):
     item=ItemSerializer()

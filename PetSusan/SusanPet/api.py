@@ -276,12 +276,12 @@ def rate_detail(request, pk):
     Retrieve, update or delete a Rap instance.
     """
     try:
-        items = Rate.objects.get(pk=pk)
+        items = Rate.objects.filter(item=pk)
     except items.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
    
     if request.method == 'GET':
-        serializer = RateSerializer(items,context={'request': request})
+        serializer = RateSerializer(items,context={'request': request},many=True)
         return Response(serializer.data)
     elif request.method == 'PUT':
         serializer = RateSerializer(items, data=request.data,context={'request': request})
@@ -484,3 +484,12 @@ def order_manager_list(request):
         items = Order.objects.all()
         serializer = Order3Serializer(items,context={'request': request} ,many=True)
         return Response(serializer.data)
+
+@api_view(['GET', 'PUT', 'DELETE'])
+def rate_ahihi_a(request, pk):
+    """
+    Retrieve, update or delete a Rap instance.
+    """
+    
+    items = Rate.objects.filter(item=pk)
+    

@@ -1,9 +1,9 @@
-from .models import Rate 
+from SusanPet.models import Rate 
 from django.core.management.base import BaseCommand
 
 import requests
-def get_list(requests):
-    list_post = Rate.Objects.filter(item = id_post)
+def get_list(id_post):
+    list_post = Rate.Objects.get(pk = id_post)
     print (list_post)
 
 

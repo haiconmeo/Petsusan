@@ -78,6 +78,7 @@ class Rate(models.Model):
     item = models.ForeignKey(Item,  on_delete=models.CASCADE)
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
     rate_u = models.IntegerField()
+    objects = models.Manager()
 
 class Contact(models.Model):
     Subject = models.CharField( max_length=50)

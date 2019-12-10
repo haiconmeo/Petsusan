@@ -214,7 +214,7 @@ def recommendation_1(requests):
         x= Rate_rs(profile=Profile.objects.get(pk=int(a[i])),item=Item.objects.get(pk=int(b[i])),rate=float(c[i]))
         x.save()
     
-    return  Response(status=status.HTTP_400_BAD_REQUEST)
+    
 # def recommendation(request):
     
 
