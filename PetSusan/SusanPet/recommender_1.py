@@ -214,15 +214,7 @@ def recommendation_1(requests):
         x= Rate_rs(profile=Profile.objects.get(pk=int(a[i])),item=Item.objects.get(pk=int(b[i])),rate=float(c[i]))
         x.save()
     
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    
-=======
-    return  Response(status=status.HTTP_400_BAD_REQUEST)
->>>>>>> Stashed changes
-=======
-    return  Response(status=status.HTTP_400_BAD_REQUEST)
->>>>>>> Stashed changes
+
 # def recommendation(request):
     
 

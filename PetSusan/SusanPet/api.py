@@ -483,21 +483,6 @@ def order_manager_list(request):
     if request.method == 'GET':
         items = Order.objects.all()
         serializer = Order3Serializer(items,context={'request': request} ,many=True)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
         return Response(serializer.data)
 
-@api_view(['GET', 'PUT', 'DELETE'])
-def rate_ahihi_a(request, pk):
-    """
-    Retrieve, update or delete a Rap instance.
-    """
-    
-    items = Rate.objects.filter(item=pk)
-    
-=======
-        return Response(serializer.data)
->>>>>>> Stashed changes
-=======
-        return Response(serializer.data)
->>>>>>> Stashed changes
