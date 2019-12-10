@@ -215,7 +215,11 @@ def recommendation_1(requests):
         x.save()
     
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     
+=======
+    return  Response(status=status.HTTP_400_BAD_REQUEST)
+>>>>>>> Stashed changes
 =======
     return  Response(status=status.HTTP_400_BAD_REQUEST)
 >>>>>>> Stashed changes

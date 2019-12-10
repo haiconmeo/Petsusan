@@ -484,6 +484,7 @@ def order_manager_list(request):
         items = Order.objects.all()
         serializer = Order3Serializer(items,context={'request': request} ,many=True)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         return Response(serializer.data)
 
 @api_view(['GET', 'PUT', 'DELETE'])
@@ -494,6 +495,9 @@ def rate_ahihi_a(request, pk):
     
     items = Rate.objects.filter(item=pk)
     
+=======
+        return Response(serializer.data)
+>>>>>>> Stashed changes
 =======
         return Response(serializer.data)
 >>>>>>> Stashed changes
