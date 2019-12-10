@@ -1,5 +1,4 @@
 {
-
     "name": "front",
     "version": "0.0.0",
     "scripts": {
@@ -24,6 +23,7 @@
         "@angular/router": "~8.2.13",
         "@fortawesome/fontawesome-free": "^5.11.2",
         "@ng-bootstrap/ng-bootstrap": "^5.1.4",
+        "@ngrx/effects": "^8.5.2",
         "@types/chart.js": "^2.9.3",
         "angular-bootstrap-md": "^8.7.0",
         "angularx-social-login": "^2.2.1",
@@ -36,6 +36,7 @@
         "material": "^0.4.3",
         "mdbootstrap": "^4.10.1",
         "ng2-search-filter": "^0.5.1",
+        "ngx-avatar": "^3.7.0",
         "ngx-bootstrap": "^5.2.0",
         "ngx-carousel-lib": "^0.1.2",
         "ngx-pagination": "^5.0.0",
@@ -66,5 +67,4 @@
         "tslint": "~5.15.0",
         "typescript": "~3.5.3"
     }
-
 }

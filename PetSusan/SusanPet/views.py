@@ -8,7 +8,7 @@ from rest_framework import status
 import requests
 from rest_framework.response import Response
 # from django.db import models
-from .models import District,Rate_rs,Profile,Item,Rate
+from .models import District,Rate_rs,Profile,Item,Rate,Order
 import os
 def create(request):
 
@@ -31,7 +31,7 @@ import djqscsv
 from django.http import HttpResponse
 
 def export_to_csv(request):
-    qs = Rate.objects.all()
+    qs = Order.objects.all()
     return djqscsv.render_to_csv_response(qs)
 
 

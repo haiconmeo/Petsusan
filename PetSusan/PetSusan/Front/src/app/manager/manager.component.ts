@@ -85,7 +85,13 @@ export class ManagerComponent implements OnInit {
     this.check6 = false;
   }
   checkSeting(){
+    this.check1 = false;
+    this.check2 = false;
+    this.check3 = false;
+    this.check4 = false;
+    this.check5 = false;
 
+    this.check6 = true;
     this.check7 = false;
   }
   checkExcel(){
@@ -96,7 +102,7 @@ export class ManagerComponent implements OnInit {
     this.check4 = false;
     this.check5 = false;
 
-    this.check6 = true;
+    this.check6 = false;
 
     this.check7 = true;
 

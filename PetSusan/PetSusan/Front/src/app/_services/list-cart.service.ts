@@ -18,6 +18,18 @@ export class ListCartService {
   constructor(
     private http : HttpClient
   ) { }
+  download(){
+    this.http.get("http://localhost:8000/api/to_csv/").subscribe(
+      data => {
+        
+      },
+      err => {
+       
+      }
+    );
+    
+  }
+  
   getCart():Observable<Cart_item_admin[]>{
     return this.http.get<Cart_item_admin[]>(this.API_Cart_ADMIN)
   }

@@ -20,7 +20,9 @@ export class RevenueComponent implements OnInit {
     private stdservice : AuthService,
     public cartService : ListCartService,
   ) { }
-
+  dowload(){
+    this.cartService.download()
+  }
   ngOnInit() {
     this. showCart();
   }
