@@ -13,7 +13,7 @@ export class ManagerComponent implements OnInit {
   public check3 : boolean = false;
   public check4 : boolean = false;
   public check5 : boolean = false;
-  
+  public check6 :boolean =false;
 
   constructor() { }
 
@@ -27,6 +27,7 @@ export class ManagerComponent implements OnInit {
     this.check3 = false;
     this.check4 = false;
     this.check5 = false;
+    this.check6 = false;
   }
 
   checkItem(){
@@ -35,6 +36,7 @@ export class ManagerComponent implements OnInit {
     this.check3 = false;
     this.check4 = false;
     this.check5 = false;
+    this.check6 = false;
   }
   checkDoanhThu(){
     this.check1 = false;
@@ -42,6 +44,7 @@ export class ManagerComponent implements OnInit {
     this.check3 = true;
     this.check4 = false;
     this.check5 = false;
+    this.check6 = false;
   }
   checkUser(){
     this.check1 = false;
@@ -49,6 +52,7 @@ export class ManagerComponent implements OnInit {
     this.check3 = false;
     this.check4 = true;
     this.check5 = false;
+    this.check6 = false;
   }
   checkContact(){
     this.check1 = false;
@@ -56,6 +60,15 @@ export class ManagerComponent implements OnInit {
     this.check3 = false;
     this.check4 = false;
     this.check5 = true;
+    this.check6 = false;
+  }
+  checkSeting(){
+    this.check1 = false;
+    this.check2 = false;
+    this.check3 = false;
+    this.check4 = false;
+    this.check5 = false;
+    this.check6 = true;
   }
 
 }

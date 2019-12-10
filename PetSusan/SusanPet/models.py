@@ -36,10 +36,10 @@ class Profile(models.Model):
     xa = models.CharField(max_length=30, blank=True)
 
 class Category_giong(models.Model):
-    name=models.CharField(max_length=30,blank=True)
+    name=models.CharField(max_length=30,blank=True,primary_key=True)
 
 class Category_loai(models.Model):
-    name=models.CharField(max_length=30,blank=True)
+    name=models.CharField(max_length=30,blank=True,primary_key=True)
 
 class Item(models.Model):
     name = models.CharField(max_length=60)

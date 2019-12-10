@@ -65,7 +65,7 @@ export class CartComponent implements OnInit {
   delete(id: number){
     this.cartService.delete(id).subscribe((data)=>{
         let index = this.updateDelete(id);
-        this.carts.splice(index, 1);
+        this.carts_manh.splice(index, 1);
         this.tinhtien();
     });
   }
@@ -100,7 +100,7 @@ export class CartComponent implements OnInit {
 
   updateDelete(id: number) : number{
   let resul =0;
-  this.carts.forEach((cart, index) =>{
+  this.carts_manh.forEach((cart, index) =>{
     if(cart.id == id){
       resul = index;
     }

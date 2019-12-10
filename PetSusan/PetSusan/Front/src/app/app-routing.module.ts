@@ -22,6 +22,7 @@ import { RevenueComponent } from './manager/revenue/revenue.component';
 import { UserComponent } from './manager/user/user.component';
 import { RepContact } from './_entities/Repcontact';
 import { ContactRepComponent } from './manager/contact-rep/contact-rep.component';
+import { SettingComponent } from './manager/setting/setting.component';
 
 
 const routes: Routes = [
@@ -39,7 +40,7 @@ const routes: Routes = [
   {path: 'cart/payment', component: PaymentComponent},
   {path: 'profile', component: ProfileComponent},
   {path: 'manager', component: ManagerComponent},
-
+  {path: 'manager/settin', component: SettingComponent},
   {path: 'manager/item', component: ItemComponent},
   {path: 'manager/pet', component: PetsComponent},
   {path: 'manager/contact', component: ContactsComponent},

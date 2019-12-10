@@ -1,7 +1,7 @@
 from rest_framework import generics
 from .models import Province_city,Contact,Item,Category_loai,Category_giong,Rate,District,Commune,Profile,Rate_rs,Order
 from rest_framework.response import Response
-from .serializers import Province_citySerializer,RegisterSerializer,UserSerializer,LoginSerializer,ContactSerializer,ItemSerializer,CateroriLoaiSerializer,CateroriGiongSerializer,RateSerializer,profileSerializer
+from .serializers import Province_citySerializer,RegisterSerializer,UserSerializer,LoginSerializer,ContactSerializer,ItemSerializer,CateroriLoaiSerializer,CateroriGiongSerializer,RateSerializer,profileSerializer,Order3Serializer
 from rest_framework import status
 from .serializers import DistrictSerializer,CommuneSerializer,RepSerializer,profile2Serializer,Rate_rsSerializer,OrderSerializer,Order2Serializer
 from rest_framework.decorators import api_view
@@ -474,3 +474,13 @@ def order_edit_detail(request, pk):
     elif request.method == 'DELETE':
         items.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+@api_view(['GET', 'POST'])
+def order_manager_list(request):
+    """
+    List all Raps, or create a new Rap.
+    """
+    if request.method == 'GET':
+        items = Order.objects.all()
+        serializer = Order3Serializer(items,context={'request': request} ,many=True)
+        return Response(serializer.data)

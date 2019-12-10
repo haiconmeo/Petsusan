@@ -43,6 +43,7 @@ import { PetsComponent } from './manager/pet/pet.component';
 import { ContactsComponent } from './manager/contact/contact.component';
 // import { ContactRepComponent } from './src/app/manager/contact-rep/contact-rep.component';
 import { AvatarModule } from 'ngx-avatar';
+import { SettingComponent } from './manager/setting/setting.component';
 
 
 
@@ -71,6 +72,7 @@ import { AvatarModule } from 'ngx-avatar';
     ItemComponent,
     PetsComponent,
     ContactsComponent,
+    SettingComponent,
     // ContactRepComponent,
     
   ],

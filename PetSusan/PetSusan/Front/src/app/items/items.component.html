@@ -31,7 +31,7 @@
                         <div style="float: right;margin-left: 10px">
                             <p><b>Price:</b> ${{item.price}}</p>
                             <p><b>Status:</b> còn hàng</p>
-                            <a href="#" class="line_btn">Hốt luôn</a>
+                            <a  (click)="add(item.id)" class="line_btn">Hốt luôn</a>
                         </div>
                     </ng-template>
                     <ng-template #popTitle>{{item.name}}</ng-template>

@@ -145,6 +145,12 @@
                                 </a>
                             </li>
                            
+                            <li>
+                                <a (click)="checkSeting()" style="cursor: grab;" [ngClass]="{ 'check-manager' : check6 == true}" class="mm-active">
+                                    <i class="metismenu-icon pe-7s-rocket"></i>
+                                    Setting
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -173,7 +179,9 @@
                     <div *ngIf="check5 === true">
                         <app-contacts></app-contacts>
                     </div>
-                    
+                    <div *ngIf="check6 === true" >
+                        <app-setting></app-setting>
+                    </div>
                   
 
                     

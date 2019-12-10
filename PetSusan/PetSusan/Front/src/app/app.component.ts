@@ -13,6 +13,7 @@ export class AppComponent {
   public soluong : number =0;
   public carts : Cart[] =[];
   public username:string;
+  public admin:boolean;
   public check1 : boolean = false;
   public check2 : boolean = false;
   public check3 : boolean = false;
@@ -82,7 +83,8 @@ export class AppComponent {
   // }
   checkLogin(){
      this.stdservice.loadUser().subscribe(
-       re=> this.username=re["username"]
+       re=> {this.username=re["username"],this.admin=re["is_superuser"]}
+       
      );
      
   }

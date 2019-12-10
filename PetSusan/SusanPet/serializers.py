@@ -103,3 +103,9 @@ class Order2Serializer(serializers.ModelSerializer):
     class Meta:
         model =  Order
         fields = '__all__'
+class Order3Serializer(serializers.ModelSerializer):
+    item=ItemSerializer()
+    user =profileSerializer()
+    class Meta:
+        model =  Order
+        fields = '__all__'
