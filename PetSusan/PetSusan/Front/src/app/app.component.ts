@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Cart } from './_models/list-cart.class';
 import { ListCartService } from './_services/list-cart.service';
-import { AvatarModule } from 'ngx-avatar';
 import { AuthService } from './_services/auth/auth.service';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./../css/style.css', './../css/bootstrap.min.css', ]
+  styleUrls: ['./../css/style.css', './../css/bootstrap.min.css', './app.component.css']
 })
 export class AppComponent {
   public soluong : number =0;

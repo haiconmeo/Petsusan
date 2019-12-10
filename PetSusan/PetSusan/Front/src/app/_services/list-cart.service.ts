@@ -23,6 +23,6 @@ export class ListCartService {
   }
 
   delete(id): Observable<Cart[]>{
-    return  this.http.delete<Cart[]>(this.API_ITEMS + id);
+    return  this.http.delete<Cart[]>(this.API_ITEMS + id +'/');
   }
 }

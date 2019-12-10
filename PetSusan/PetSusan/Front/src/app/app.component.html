@@ -17,7 +17,7 @@
                               <ul  id="navigation">
                                   <li><a (click)="click1()"style="color: #fff;" [ngClass]="{ 'check-click' : check1 == true}" routerLink="home">Home</a></li>
                                   <li><a style="color: #fff;" [ngClass]="{ 'check-click' : check2 == true}"  style="color: #fff;"  routerLink="pet">Shop <i class="fas fa-sort-down"></i></a>
-                                      <ul  class="submenu">
+                                      <ul  class="submenu" style="border-radius: 10px;">
                                           <li><a (click)="click2()" routerLink="pet">Pet</a></li>
                                           <li><a (click)="click2()" routerLink="items">Items</a></li>
                                       </ul>
@@ -32,11 +32,19 @@
                   </div>
                   
                     <div class="cart-home">
-                        <a *ngIf="!username" style="color: #fff; display: inline;"  href="login#view">Login</a>
-                        <img *ngIf="username" style="float: left; margin-right: 5px;"  width="20" class="rounded-circle" [src]='avatar'>
-                        <h5 *ngIf="username" style="border: none; color: #fff; float: left;  font-size: 100%" > {{username}} <p (click)="click7()" style="display: flex"><i class="fas fa-sign-out-alt"></i></p></h5>
-                        
-                        <a *ngIf="username" (click)="click6()" [ngClass]="{ 'check-click-button' : check6 == true}" style="color: #fff; display: inline;"  routerLink="cart">Cart <i class="fab fa-opencart"></i>{{soluong}}</a>
+                        <div class=hettendedat>
+                            <a *ngIf="!username" style="color: #fff; display: inline;"  href="login#view">Login</a>
+                            <div *ngIf="username" class="usn"> 
+                                <div class="tengigio">
+                                <img  style="float: left; margin-right: 5px;"  width="20" class="rounded-circle" [src]='avatar'>
+                                <h5   style="border: none; color: #fff; float: left;  font-size: 100%" > {{username}} </h5>
+                                    <ul class="drd">
+                                        <li><a style="margin-left:-18px; color: black;" routerLink="profile">Profile</a></li>
+                                        <li><p (click)="click7()" style="cursor: pointer; font-weight: bold; color: #e74c3c;">Logout  <i class="fas fa-sign-out-alt"></i></p></li>
+                                    </ul></div>  
+                                <a *ngIf="username" (click)="click6()" [ngClass]="{ 'check-click-button' : check6 == true}" style="color: #fff; display: inline;"  routerLink="cart">Cart <i class="fab fa-opencart"></i>{{soluong}}</a>
+                            </div>
+                        </div>
                     </div>
               </div>
 
@@ -46,6 +54,7 @@
 </header>
 <!-- header-end -->
 <!-- <app-login></app-login> -->
+<!--  -->
 
 <router-outlet></router-outlet>
   

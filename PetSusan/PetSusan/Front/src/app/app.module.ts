@@ -8,6 +8,7 @@ import {NgxPaginationModule} from 'ngx-pagination';
 
 
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -27,6 +28,7 @@ import { ItemDetailComponent } from './items/item-detail/item-detail.component';
 
 import { ListItemsService } from './_services/list-items.service';
 import { ListCartService } from './_services/list-cart.service';
+import { SignupService } from '../app/_services/signup.service'
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -37,6 +39,11 @@ import { RevenueComponent } from './manager/revenue/revenue.component';
 import { ItemComponent } from './manager/items/items.component';
 import { PetsComponent } from './manager/pet/pet.component';
 import { ContactsComponent } from './manager/contact/contact.component';
+import { SignupComponent } from './login/signup/signup.component';
+import { SigninComponent } from './login/signin/signin.component';
+import { ExcelComponent } from './manager/excel/excel.component';
+
+
 
 
 @NgModule({
@@ -64,6 +71,10 @@ import { ContactsComponent } from './manager/contact/contact.component';
     ItemComponent,
     PetsComponent,
     ContactsComponent,
+    SignupComponent,
+    SigninComponent,
+    ExcelComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -73,10 +84,12 @@ import { ContactsComponent } from './manager/contact/contact.component';
     NgbModule,
     HttpClientModule,
     NgxPaginationModule,
+ 
   ],
   providers: [
     ListItemsService,
     ListCartService,
+    SignupService
   ],
   bootstrap: [AppComponent]
 })

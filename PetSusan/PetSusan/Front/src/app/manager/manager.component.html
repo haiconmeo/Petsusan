@@ -146,6 +146,12 @@
                                     Contact
                                 </a>
                             </li>
+                            <li>
+                                <a (click)="checkExcel()" style="cursor: grab;" [ngClass]="{ 'check-manager' : check7 == true}" class="mm-active">
+                                    <i class="metismenu-icon pe-7s-rocket"></i>
+                                    Excel
+                                </a>
+                            </li>
                            
                         </ul>
                     </div>
@@ -175,6 +181,11 @@
                     <div *ngIf="check5 === true">
                         <app-contacts></app-contacts>
                     </div>
+
+                    <div *ngIf="check7 === true">
+                            <app-excel></app-excel>
+                    </div>
+                        
                     
                   
 

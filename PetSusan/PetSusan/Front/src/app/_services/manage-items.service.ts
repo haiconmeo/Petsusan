@@ -22,7 +22,12 @@ export class ManageItemsService {
   }
 
   getAdd(list : List): Observable<List[]>{
-    return this.http.post<List[]>(this.API_ITEMS, list)
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json'
+      })
+    }
+    return this.http.post<List[]>(this.API_ITEMS, list, httpOptions)
   }
 
   getUpdate(list: List): Observable<List[]>{
