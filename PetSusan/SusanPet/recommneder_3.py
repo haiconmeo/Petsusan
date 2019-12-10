@@ -13,7 +13,11 @@ import os
 def recommendation_3(request):
     
 
+<<<<<<< Updated upstream
     data = pd.read_csv(os.path.dirname(os.path.realpath(__file__)) +"/model_3.csv",encoding='utf8')
+=======
+    data = pd.read_csv(os.path.dirname(os.path.realpath(__file__)) +"/model.csv",encoding='utf8')
+>>>>>>> Stashed changes
     a = np.asarray(data['user'])
     b = np.asarray(data['item'])
     c = np.asarray(data['recommended'])
