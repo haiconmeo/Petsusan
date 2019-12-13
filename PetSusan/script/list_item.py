@@ -14,9 +14,9 @@ g = np.asarray(data['sex'])
 h = np.asarray(data['description'])
 j = np.asarray(data['image'])
 k = np.asarray(data['pet'])
-
-
-for i in range(len(a)):   
+# l = np.asarray(data['cat_loai'])
+x= int(len(a)/2)
+for i in range(x):   
    
     data_request={
 
@@ -29,7 +29,8 @@ for i in range(len(a)):
         'sex' :g[i],
         'description' : h[i],
         'image' :j[i],
-        'pet' : k[i]
+        'pet' : k[i],
+        # 'cat_loai':l[i]
             
     }
         

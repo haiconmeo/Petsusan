@@ -1,7 +1,7 @@
 from django.urls import path,include
 from .api import Province_cityList,RegisterAPI,LoginAPI,contact_list,contact_detail,item_list,item_detail,UserAPI,categori_loai_list,category_loai_detail,categori_giong_list,ratelist,rate_detail
 from .api import District_List,CommuneList,profile_list,RepAPI,item_detail,profile_detail,category_giong_detail,Dis_detail,Com_detail,rate_rslist,rate_rs_detail,orderlist,order_detail,order_edit_detail,order_manager_list
-from .views import create,export_to_csv
+from .views import create,export_to_csv,create2,create3
 from .recommender_1 import recommendation_1
 from .recommender_2 import recommendation_2
 urlpatterns = [
@@ -11,6 +11,8 @@ urlpatterns = [
     path('xa/',CommuneList),
     path('xa/<int:pk>',Com_detail),
     path('create',create),
+    path('create2',create2),
+    path('create3',create3),
     path('contact/',contact_list),
     path('contact/<int:pk>',contact_detail),
     path('rate/',ratelist),
