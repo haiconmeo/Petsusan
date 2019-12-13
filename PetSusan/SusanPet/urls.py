@@ -4,6 +4,7 @@ from .api import District_List,CommuneList,profile_list,RepAPI,item_detail,profi
 from .views import create,export_to_csv,create2,create3
 from .recommender_1 import recommendation_1
 from .recommender_2 import recommendation_2
+from .delete import delete
 urlpatterns = [
     path('city/',Province_cityList),
     path('huyen/',District_List),
@@ -24,6 +25,7 @@ urlpatterns = [
     path('categori_giong/',categori_giong_list),
     path('categori_giong/<int:pk>/',category_giong_detail),
     path('item/',item_list),
+    path('delete/',delete),
     path('item/<int:pk>/',item_detail),
     path('Rep/',RepAPI.as_view()),
     path('auth/register/', RegisterAPI.as_view()),

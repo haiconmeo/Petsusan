@@ -15,8 +15,8 @@ h = np.asarray(data['description'])
 j = np.asarray(data['image'])
 k = np.asarray(data['pet'])
 # l = np.asarray(data['cat_loai'])
-x= int(len(a)/2)
-for i in range(x):   
+# x= int(len(a)/2)
+for i in range(len(a)):   
    
     data_request={
 

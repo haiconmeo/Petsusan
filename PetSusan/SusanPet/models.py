@@ -36,18 +36,18 @@ class Profile(models.Model):
     xa = models.CharField(max_length=30, blank=True)
 
 class Category_giong(models.Model):
-    name=models.CharField(max_length=30,blank=True)
+    name=models.CharField(max_length=30,blank=True,primary_key=True)
     # ,primary_key=True
 
 class Category_loai(models.Model):
-    name=models.CharField(max_length=30,blank=True)
+    name=models.CharField(max_length=30,blank=True,primary_key=True)
 
 class Item(models.Model):
     name = models.CharField(max_length=60)
     image = models.FileField(upload_to='img/' ) 
     age=models.IntegerField()
-    cat_giong= models.ForeignKey(Category_giong, on_delete=models.CASCADE, null=True)
-    cat_loai = models.ForeignKey(Category_loai, on_delete=models.CASCADE,null=True)
+    cat_giong= models.OneToOneField(Category_giong, on_delete=models.CASCADE, null=True)
+    cat_loai = models.OneToOneField(Category_loai, on_delete=models.CASCADE,null=True)
     price =models.IntegerField()
     weight = models.IntegerField()
     color = models.CharField(max_length=30)
