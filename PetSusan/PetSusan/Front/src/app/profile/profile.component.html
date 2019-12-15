@@ -8,7 +8,7 @@
                     <img style="border: 10px solid #ecf0f1; border-radius: 50%;" *ngIf="imageSrc" src="{{imageSrc}}">
                     <h3>{{profile.user.username}}</h3>
                     <h6 class="m-t-2">Upload a different photo</h6>
-                    <label class="custom-file">
+                    <label style="width: 30%"  class="custom-file">
                         <input type="file" id="file" class="custom-file-input" (change)="handleInputChange($event)"> >
                         <span class="custom-file-control">Choose file</span>
                     </label>

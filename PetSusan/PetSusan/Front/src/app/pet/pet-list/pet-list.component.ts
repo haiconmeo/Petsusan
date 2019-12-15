@@ -12,6 +12,10 @@ export class PetListComponent implements OnInit {
 
   public listPet : List[] = [] ;
   public check : number =0;
+  public layname: string = "";
+  public term: string ='';
+
+
   constructor(
     private route: ActivatedRoute,
     public Petsv : ListItemsService
@@ -22,11 +26,10 @@ export class PetListComponent implements OnInit {
   }
 
   showPet(){
-    const layname = this.route.snapshot.paramMap.get('name');
-    console.log(layname)
+    this.layname = this.route.snapshot.paramMap.get('name');
     this.Petsv.getAllItems().subscribe(data=>{
       for(var i=0; i< data.length; i++){
-        if(data[i].cat_loai == layname ){
+        if(data[i].cat_loai == this.layname ){
           this.listPet[this.check] = data[i];
           this.check++;
         }

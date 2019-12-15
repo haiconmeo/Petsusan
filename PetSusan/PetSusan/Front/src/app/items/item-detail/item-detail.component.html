@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-xl-6 col-md-6">
                     <div class="recepies_info">
-                        <h3 > {{list.name}} </h3>
+                        <h3 style="font-family: 'Quicksand', sans-serif;"> {{list.name}} </h3>
                         <div class="resepies_details">
                             <ul>
                                 <ng-template #t let-fill="fill">
@@ -37,7 +37,7 @@
                                     <!-- <hr> -->
                                 <pre>Rate: <b>{{list.rate_tb}}</b></pre>
                                 <li><p><strong>Price</strong> : ${{list.price}} </p></li>
-                                <li><a name="" id="" class="btn btn-primary"  role="button" (click)="add(list.id)"></a></li>
+                                <li><a name="" id="" class="btn btn-primary"  role="button" (click)="add(list.id)" style="padding: 10px 20px; color: #fff;">Add Cart</a></li>
                             </ul>
                         </div>
                     </div>

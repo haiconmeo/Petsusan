@@ -1,5 +1,5 @@
 <!-- bradcam_area  -->
-<div class="bradcam_area bradcam_bg_1">
+<div style="background-image: url(assets/bannerItems.jpg); background-size: cover; background-position: center;" class="bradcam_area">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
@@ -24,14 +24,14 @@
                         <!-- <img src="{{item.country}}" alt=""> -->
                         <img style="object-fit: cover;" [src]="item.image" alt="">
                     </div>
-                    <h3>{{item.name}}</h3>
+                    <h3 style="font-family: 'Quicksand', sans-serif;">{{item.name}}</h3>
                     
                     <ng-template #popContent>
                         <img width="100px; padding: 50px; object-fit: cover;" [src]="item.image" alt="">
                         <div style="float: right;margin-left: 10px">
                             <p><b>Price:</b> ${{item.price}}</p>
                             <p><b>Status:</b> còn hàng</p>
-                            <a  (click)="add(item.id)" class="line_btn">Hốt luôn</a>
+                            <a  (click)="add(item.id)" class="line_btn" >Hốt luôn</a>
                         </div>
                     </ng-template>
                     <ng-template #popTitle>{{item.name}}</ng-template>

@@ -37,13 +37,12 @@ export class ItemsComponent implements OnInit{
     var   buy :GioiHang={
       item: id_item ,
       quantity: 1,
-      
       status: false,
       note:"haizz",
       user: this.id
     }
     this.detail.put_item(buy);
-    console.log("ma item:",buy)
+    alert("Đã thêm vào giỏ hàng!!!");
   }
   showItem(){
      this.listItem.getAllItems().subscribe((data) => {

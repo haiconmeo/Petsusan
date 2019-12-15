@@ -1512,7 +1512,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url("https://images.wallpaperscraft.com/image/australian_shepherd_dog_aussie_dog_grass_sunset_95327_1920x1080.jpg");
+  background-image: url("/assets/home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

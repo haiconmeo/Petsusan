@@ -23,7 +23,7 @@
             </div>
             <div class="col-xl-6 col-md-6">
                 <div class="recepies_info">
-                    <h3>{{list.name}}</h3>
+                    <h3 style="font-family: 'Quicksand', sans-serif;">{{list.name}}</h3>
                     <p>{{list.description}}</p>
 
                     <div class="resepies_details">
@@ -42,7 +42,7 @@
                             <li><p><strong>Price</strong> : ${{list.price}} </p></li>
                             <li><p><strong>Sex</strong> : {{list.sex}} </p></li>
                             <li><p><strong>Size</strong> : {{list.weight}} </p></li><br>
-                            <li><a style="color: #fff; " class="check-click-button" href="cart">Add to Cart<i class="fab fa-opencart"></i></a></li>
+                            <li><a style="color: #fff; cursor: pointer; " class="check-click-button" (click)="add(list.id)">Add to Cart<i class="fab fa-opencart"></i></a></li>
                         </ul>
                     </div>
                 </div>

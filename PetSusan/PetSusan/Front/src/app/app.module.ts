@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { HttpClientModule} from '@angular/common/http';
 import {NgxPaginationModule} from 'ngx-pagination';
-
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 
 
 
@@ -101,8 +101,8 @@ import { ExcelComponent } from './manager/excel/excel.component';
     NgbModule,
     HttpClientModule,
     NgxPaginationModule,
-
-    AvatarModule
+    AvatarModule,
+    Ng2CarouselamosModule
   ],
   providers: [
     ListItemsService,

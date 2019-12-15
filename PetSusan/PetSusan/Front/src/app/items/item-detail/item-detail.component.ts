@@ -24,8 +24,10 @@ export class ItemDetailComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     public detail : ListItemsService,
-    private stdservice : AuthService,
-  ) {this.checkLogin()}
+    private stdservice : AuthService,) 
+    {
+      this.checkLogin()
+    }
 
   
   
@@ -41,13 +43,12 @@ export class ItemDetailComponent implements OnInit {
     var   buy :GioiHang={
       item: id_item ,
       quantity: 1,
-      
       status: false,
       note:"haizz",
       user: this.id
     }
     this.detail.put_item(buy);
-    console.log("ma item:",buy)
+    alert("Đã thêm vào giỏ hàng!!!");
   }
   ngOnInit() {
     this.showDetail();

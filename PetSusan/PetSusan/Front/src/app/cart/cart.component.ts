@@ -18,6 +18,10 @@ export class CartComponent implements OnInit {
   public carts_manh : Cart_item[] =[];
   public cart : GioiHang2;
   public total : number =0;
+  public total_pet : number =0;
+  public total_item : number =0;
+
+
   constructor(
     public cartService : ListCartService,
     private route: ActivatedRoute,
@@ -37,7 +41,14 @@ export class CartComponent implements OnInit {
         this.id=re["id"],
       this.cartService.getAllCart(this.id).subscribe(a=>{this.carts_manh = a;
       for( var i=0; i<this.carts_manh.length; i++){
-        this.total += this.carts_manh[i].item.price*this.carts_manh[i].quantity;   
+        this.total += this.carts_manh[i].item.price*this.carts_manh[i].quantity;
+        if(this.carts_manh[i].item.pet === true){
+          this.total_pet += this.carts_manh[i].item.price*this.carts_manh[i].quantity;
+        }
+        else{
+          this.total_item += this.carts_manh[i].item.price*this.carts_manh[i].quantity;
+        }
+          
       }}
       );
     
@@ -49,16 +60,29 @@ export class CartComponent implements OnInit {
     console.log(this.carts)
     if(this.total == 0){
       for( var i=0; i<this.carts_manh.length; i++){
-        this.total += this.carts_manh[i].item.price*this.carts_manh[i].quantity;   
+        this.total += this.carts_manh[i].item.price*this.carts_manh[i].quantity;
+        if(this.carts_manh[i].item.pet === true){
+          this.total_pet += this.carts_manh[i].item.price*this.carts_manh[i].quantity;
+        }
+        else{
+          this.total_item += this.carts_manh[i].item.price*this.carts_manh[i].quantity;
+        }   
       }
     }
     else{
       this.total =0;
+      this.total_pet =0;
+      this.total_item =0;
       for( var i=0; i<this.carts_manh.length; i++){
         this.total += this.carts_manh[i].item.price*this.carts_manh[i].quantity;   
+        if(this.carts_manh[i].item.pet === true){
+          this.total_pet += this.carts_manh[i].item.price*this.carts_manh[i].quantity;
+        }
+        else{
+          this.total_item += this.carts_manh[i].item.price*this.carts_manh[i].quantity;
+        }
       }
     }
-    
     return this.total;
   }
 
@@ -92,11 +116,6 @@ export class CartComponent implements OnInit {
     })
   }
 
-  // plusQunatity(){
-    
-  //   this.cartService.update(this.cart).subscribe(data =>{
-  //   })
-  // }
 
   updateDelete(id: number) : number{
   let resul =0;

@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="bradcam_text text-center">
-                    <h3>All Dog</h3>
+                    <h3>All {{layname}}</h3>
                 </div>
             </div>
         </div>
@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col-lg-8 mb-5 mb-lg-0">
                 <div class="blog_left_sidebar">
-                    <article *ngFor ="let pet of listPet" class="blog_item">
+                    <article *ngFor ="let pet of listPet  | filter:term" class="blog_item">
                         <div class="blog_item_img">
                             <img class="card-img rounded-0" src= "{{pet.image}}" >
                             <a href="#" class="blog_item_date">
@@ -28,7 +28,7 @@
                         </div>
                         <div class="blog_details">
                             <a target="_top" class="d-inline-block" routerLink="{{pet.id}}">
-                                <h2>{{pet.name}}</h2>
+                                <h2 style="font-family: 'Quicksand', sans-serif;">{{pet.name}}</h2>
                             </a>
                             <p>{{pet.description}}</p>
                         </div>
@@ -63,15 +63,13 @@
                             <div class="form-group">
                                 <div class="input-group mb-3">
                                     <input type="text" class="form-control" placeholder='Search Keyword'
-                                        onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Search Keyword'">
+                                         [(ngModel)]="term" >
                                     <div class="input-group-append">
                                         <button class="btn" type="button"><i class="ti-search"></i></button>
                                     </div>
                                 </div>
                             </div>
-                            <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                                type="submit">Search</button>
+
                         </form>
                     </aside>
 

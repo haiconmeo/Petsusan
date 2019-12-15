@@ -1,109 +1,26 @@
-<div id="demo" class="carousel slide" data-ride="carousel">
+<div id="container">
+    <div ng2-carouselamos class="slides-wrapper"
+        [items]="items"
+        [width]="1000"
+        [$prev]="prev"
+        [$next]="next"
+        [$item]="item">
+    </div>
+    <ng-template #prev >
+        <i style="background: #f1f2f6; font-size: 250%; color: #2f3542;" class="fas fa-chevron-left" id="left"></i>
+    </ng-template>
 
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-      
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single_recepie text-center">
-                            <div class="recepie_thumb">
-                                <img style="border-radius: 50%;" src="assets/cat1.jpg" alt="">
-                            </div>
-                            <h3>Cat</h3>
-                            <a href="#" class="line_btn">View Full Cat</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                            <div class="single_recepie text-center">
-                                <div class="recepie_thumb">
-                                    <img src="assets/cat1.jpg" alt="">
-                                </div>
-                                <h3>Cat</h3>
-                                <a href="#" class="line_btn">View Full Cat</a>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6">
-                                <div class="single_recepie text-center">
-                                    <div class="recepie_thumb">
-                                        <img src="assets/cat1.jpg" alt="">
-                                    </div>
-                                    <h3>Cat</h3>
-                                    <a href="#" class="line_btn">View Full Cat</a>
-                                </div>
-                            </div>
-          </div>
-          <div class="carousel-item">
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single_recepie text-center">
-                            <div class="recepie_thumb">
-                                <img src="assets/dog1.jpg" alt="">
-                            </div>
-                            <h3>Cat</h3>
-                            <a href="#" class="line_btn">View Full Cat</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                            <div class="single_recepie text-center">
-                                <div class="recepie_thumb">
-                                    <img src="assets/dog1.jpg" alt="">
-                                </div>
-                                <h3>Cat</h3>
-                                <a href="#" class="line_btn">View Full Cat</a>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6">
-                                <div class="single_recepie text-center">
-                                    <div class="recepie_thumb">
-                                        <img src="assets/dog1.jpg" alt="">
-                                    </div>
-                                    <h3>Cat</h3>
-                                    <a href="#" class="line_btn">View Full Cat</a>
-                                </div>
-                            </div>
-          </div>
-          <div class="carousel-item">
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single_recepie text-center">
-                            <div class="recepie_thumb">
-                                <img src="assets/fox1.jpg" alt="">
-                            </div>
-                            <h3>Cat</h3>
-                            <a href="#" class="line_btn">View Full Cat</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                            <div class="single_recepie text-center">
-                                <div class="recepie_thumb">
-                                    <img src="assets/fox1.jpg" alt="">
-                                </div>
-                                <h3>Cat</h3>
-                                <a href="#" class="line_btn">View Full Cat</a>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6">
-                                <div class="single_recepie text-center">
-                                    <div class="recepie_thumb">
-                                        <img src="assets/fox1.jpg" alt="">
-                                    </div>
-                                    <h3>Cat</h3>
-                                    <a href="#" class="line_btn">View Full Cat</a>
-                                </div>
-                            </div>
-          </div>
+    <ng-template #next>
+        <i style="background: #f1f2f6; font-size: 250%; color: #2f3542;" class="fas fa-chevron-right" id="right"></i>
+    </ng-template>
+
+    <ng-template #item let-item let-i="index">
+        <div  class="items" style="text-align: center; margin: 10px; ">
+           
+            <a *ngIf="item.item.pet === true" target="_top" href="pet/{{item.item.cat_loai}}/{{item.item.id}}"  style="margin-bottom: 5px; font-size: 150%"> <img height="300px" src="{{item.item.image}}" style="border: 4px solid #f1c40f;">{{item.item.name}}</a>
+            <a *ngIf="item.item.pet !== true" target="_top" href="items/{{item.item.id}}"  style="margin-bottom: 5px; font-size: 150%"> <img height="300px" src="{{item.item.image}}" style="border: 4px solid #f1c40f;">{{item.item.name}}</a>
         </div>
-      
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
-      
-      </div>
+        
+    </ng-template>
+
+</div>
