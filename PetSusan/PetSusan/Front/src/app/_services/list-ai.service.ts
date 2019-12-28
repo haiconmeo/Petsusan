@@ -13,7 +13,7 @@ export class ListAiService {
     private http : HttpClient
   ) { }
 
-  public AI : string = 'http://127.0.0.1:8000/api/rate_rs/3';
+  public AI : string = 'http://127.0.0.1:8000/api/rate_rs/';
 
   getAllItems(id) : Observable<List_AI[]>{
     return this.http.get<List_AI[]>(this.AI + id);

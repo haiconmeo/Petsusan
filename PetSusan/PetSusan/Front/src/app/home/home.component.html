@@ -5,9 +5,8 @@
                     <div class="col-xl-8 ">
                         <div class="slider_text text-center">
                             <div class="text">
-                                <h3>
-                                    Life is better with pets
-                                </h3>
+                                <h3 style="font-family: 'Sedgwick Ave Display', cursive; color: #f39c12; font-size: 80px"> TẾT </h3>
+                                <countdown-timer style="font-size:50px; color: #f39c12; padding:30px;font-family: 'VT323', monospace;" [end]="'2020-1-25 00:00:00'"></countdown-timer>
                             </div>
                         </div>
                     </div>
@@ -16,18 +15,18 @@
         </div>
     </div>
 
-    <div style="  margin-top: 0%; margin-bottom: -16%;" class="recepie_header_area">
+    <div *ngIf="username" style="  margin-top: 0%; margin-bottom: -16%;" class="recepie_header_area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-10">
                     <div class="recepie_text text-center">
-                        <h3>maybe you need</h3>
+                        <h3>Maybe you need</h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div style="background: #dfe4ea;" class="recepie_area">
+    <div  *ngIf="username"  style="background: #dfe4ea;" class="recepie_area">
         <div style="margin: 0 10%;"  >
             <app-carousel></app-carousel>
         </div>

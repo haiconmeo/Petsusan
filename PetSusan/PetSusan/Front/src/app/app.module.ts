@@ -4,8 +4,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { HttpClientModule} from '@angular/common/http';
-import {NgxPaginationModule} from 'ngx-pagination';
+import { NgxPaginationModule } from 'ngx-pagination';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+import { CountdownTimerModule } from 'ngx-countdown-timer';
 
 
 
@@ -102,12 +103,11 @@ import { ExcelComponent } from './manager/excel/excel.component';
     HttpClientModule,
     NgxPaginationModule,
     AvatarModule,
-    Ng2CarouselamosModule
+    Ng2CarouselamosModule,
+    CountdownTimerModule.forRoot()
   ],
   providers: [
     ListItemsService,
-
-
     ListCartService,
     SignupService
 
