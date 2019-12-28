@@ -38,7 +38,14 @@ export class CarouselComponent implements OnInit {
     this.stdservice.loadUser().subscribe(re=>{
       this.id=re["id"];
       this.aisv.getAllItems(this.id).subscribe(data=>{
-      this.items = data;
+        if(data.length == 0){
+          this.aisv.getAllItems(1).subscribe(dat=>{
+                this.items = dat;
+              });
+        }
+        else{
+          this.items = data;
+        }
       
     });
       

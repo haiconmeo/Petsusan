@@ -82,7 +82,8 @@ export class AppComponent {
   // }
   checkLogin(){
      this.stdservice.loadUser().subscribe(
-       re=> {this.username=re["username"],this.admin=re["is_superuser"]}
+       re=> {this.username=re["username"],this.admin=re["is_superuser"],
+       this.stdservice.loadprofile_user(re["id"]).subscribe(a =>this.avatar=a["avatar"])}
        
      );
      
